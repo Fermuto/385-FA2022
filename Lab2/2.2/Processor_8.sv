@@ -5,8 +5,8 @@ module Processor_8 (input logic 		 Clk,     // Internal
 												 Execute, // Push button 3
                   input  logic [7:0] Din,     // input data
 															 // Hint for SignalTap, you want to comment out the following 2 lines to hardwire values for F and R
-                  input  logic [2:0] F,       // Function select 
-                  input  logic [1:0] R,       // Routing select
+//                  input  logic [2:0] F,       // Function select 
+//                  input  logic [1:0] R,       // Routing select
                   output logic [3:0] LED,     // DEBUG
                   output logic [7:0] Aval, 	 // DEBUG
 												 Bval,    
@@ -31,10 +31,10 @@ module Processor_8 (input logic 		 Clk,     // Internal
 	 //Note that you can hardwire F and R here with 'assign'. What to assign them to? Check the demo points!
 	 //Remember that when you comment out the ports above, you will need to define F and R as variables
 	 //uncomment the following lines when you hardwaire F and R (This was the solution to the problem during Q/A)
-	 //logic [2:0] F;
-	 //logic [1:0] R;
-	 //assign F = something;
-	 //assign R = something;
+	 logic [2:0] F;
+	 logic [1:0] R;
+	 assign F = something;
+	 assign R = something;
 	 
 	 //Instantiation of modules here
 	 register_unit_8    reg_unit (
