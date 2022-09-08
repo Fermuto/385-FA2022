@@ -1,15 +1,15 @@
-Analysis & Synthesis Status : Successful - Thu Sep 08 17:49:35 2022
+Analysis & Synthesis Status : Successful - Thu Sep 08 18:38:32 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Lab2-2
 Top-level Entity Name : Processor_8
 Family : MAX 10
-Total logic elements : 69
-    Total combinational functions : 59
-    Dedicated logic registers : 38
-Total registers : 38
+Total logic elements : 715
+    Total combinational functions : 499
+    Dedicated logic registers : 509
+Total registers : 509
 Total pins : 61
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 2,176
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0
 UFM blocks : 0

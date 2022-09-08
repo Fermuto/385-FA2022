@@ -33,7 +33,7 @@ module Processor_8 (input logic 		 Clk,     // Internal
 	 //uncomment the following lines when you hardwaire F and R (This was the solution to the problem during Q/A)
 	 logic [2:0] F;
 	 logic [1:0] R;
-	 assign F = 3'b0;
+	 assign F = {1'b0, 1'b1, 1'b0};
 	 assign R = {1'b0, 1'b1};
 	 
 	 //Instantiation of modules here

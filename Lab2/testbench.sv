@@ -8,11 +8,11 @@ timeprecision 1ns;
 // instantiated as a submodule in testbench.
 logic Clk = 0;
 logic Reset, LoadA, LoadB, Execute;
-logic [3:0] Din;
+logic [7:0] Din;
 logic [2:0] F;
 logic [1:0] R;
 logic [3:0] LED;
-logic [3:0] Aval,
+logic [7:0] Aval,
 		 Bval;
 logic [6:0] AhexL,
 		 AhexU,
@@ -20,7 +20,7 @@ logic [6:0] AhexL,
 		 BhexU; 
 
 // To store expected results
-logic [3:0] ans_1a, ans_2b;
+logic [7:0] ans_1a, ans_2b;
 				
 // A counter to count the instances where simulation results
 // do no match with expected results
@@ -28,7 +28,7 @@ integer ErrorCnt = 0;
 		
 // Instantiating the DUT
 // Make sure the module and signal names match with those in your design
-Processor processor0(.*);	
+Processor_8 processor0(.*);	
 
 // Toggle the clock
 // #1 means wait for a delay of 1 timeunit
@@ -49,7 +49,7 @@ Reset = 0;		// Toggle Rest
 LoadA = 0;
 LoadB = 0;
 Execute = 1;
-Din = 4'hB;	// Specify Din, F, and R
+Din = 8'h33;	// Specify Din, F, and R
 F = 3'b010;
 R = 2'b10;
 
@@ -59,19 +59,19 @@ R = 2'b10;
 #2 LoadA = 0;
 
 #2 LoadB = 1;	// Toggle LoadB
-	Din = 4'h2;	// Change Din
+   Din = 8'h55;	// Change Din
 #2 LoadB = 0;
-	Din = 4'h0;	// Change Din again
+   Din = 8'h00;	// Change Din again
 
 #2 Execute = 0;	// Toggle Execute
    
 #22 Execute = 1;
-    ans_1a = (4'hB ^ 4'h2); // Expected result of 1st cycle
-    // Aval is expected to be 4’hB XOR 4’h2
-    // Bval is expected to be the original 4’h2
+    ans_1a = (8'h33 ^ 8'h55); // Expected result of 1st cycle
+    // Aval is expected to be 8’h33 XOR 8’h55
+    // Bval is expected to be the original 8’h55
     if (Aval != ans_1a)
 	 ErrorCnt++;
-    if (Bval != 4'h2)
+    if (Bval != 8'h55)
 	 ErrorCnt++;
     F = 3'b110;	// Change F and R
     R = 2'b01;
@@ -81,10 +81,10 @@ R = 2'b10;
 
 #22 Execute = 0;
     // Aval is expected to stay the same
-    // Bval is expected to be the answer of 1st cycle XNOR 4’h2
+    // Bval is expected to be the answer of 1st cycle XNOR 8’h55
     if (Aval != ans_1a)	
 	 ErrorCnt++;
-    ans_2b = ~(ans_1a ^ 4'h2); // Expected result of 2nd  cycle
+    ans_2b = ~(ans_1a ^ 8'h55); // Expected result of 2nd  cycle
     if (Bval != ans_2b)
 	 ErrorCnt++;
     R = 2'b11;
