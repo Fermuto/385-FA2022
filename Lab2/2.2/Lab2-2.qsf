@@ -62,3 +62,4 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_
 set_global_assignment -name SYSTEMVERILOG_FILE reg_8.sv
 set_global_assignment -name SYSTEMVERILOG_FILE register_unit_8.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Processor_8.sv
+set_global_assignment -name SYSTEMVERILOG_FILE control_8.sv
