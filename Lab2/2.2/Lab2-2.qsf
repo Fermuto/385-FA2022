@@ -108,4 +108,17 @@ set_location_assignment PIN_B16 -to BhexU[3]
 set_location_assignment PIN_E18 -to BhexU[2]
 set_location_assignment PIN_D18 -to BhexU[1]
 set_location_assignment PIN_C18 -to BhexU[0]
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:\\Users\\dante\\Desktop\\Professional\\School\\Classes\\ECE 385\\385-FA2022\\Lab2\\2.2\\output_files\\rtl_work" -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Simulation -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME testbench_8 -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testbench_8
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1000 ns" -section_id testbench_8
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testbench_8 -section_id testbench_8
+set_global_assignment -name EDA_TEST_BENCH_FILE ../testbench_8.sv -section_id testbench_8
+set_global_assignment -name EDA_TEST_BENCH_NAME Simulation -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Simulation
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1000 ns" -section_id Simulation
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Simulation -section_id Simulation
+set_global_assignment -name EDA_TEST_BENCH_FILE ../testbench_8.sv -section_id Simulation
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

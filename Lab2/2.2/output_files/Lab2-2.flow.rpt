@@ -1,5 +1,5 @@
 Flow report for Lab2-2
-Thu Sep 08 16:53:43 2022
+Thu Sep 08 17:50:02 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Sep 08 16:53:43 2022       ;
+; Flow Status                        ; Successful - Thu Sep 08 17:50:02 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab2-2                                      ;
 ; Top-level Entity Name              ; Processor_8                                 ;
@@ -66,31 +66,44 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/08/2022 16:52:55 ;
+; Start date & time ; 09/08/2022 17:49:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab2-2              ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                            ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 1096109787756.166267397517124          ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; Processor_8 ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; Processor_8 ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; Processor_8 ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; Processor_8                            ; Lab2-2        ; --          ; --             ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                           ;
++--------------------------------------+------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                                                                                                ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 1096109787756.166267736301540                                                                        ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                                   ; --            ; --          ; Simulation     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                                   ; --            ; --          ; testbench_8    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Simulation                                                                                           ; --            ; --          ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR        ; C:\Users\dante\Desktop\Professional\School\Classes\ECE 385\385-FA2022\Lab2\2.2\output_files\rtl_work ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                                                                                    ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)                                                                      ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                                                                      ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; ../testbench_8.sv                                                                                    ; --            ; --          ; Simulation     ;
+; EDA_TEST_BENCH_FILE                  ; ../testbench_8.sv                                                                                    ; --            ; --          ; testbench_8    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Simulation                                                                                           ; --            ; --          ; Simulation     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; testbench_8                                                                                          ; --            ; --          ; testbench_8    ;
+; EDA_TEST_BENCH_NAME                  ; testbench_8                                                                                          ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; Simulation                                                                                           ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1000 ns                                                                                              ; --            ; --          ; Simulation     ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1000 ns                                                                                              ; --            ; --          ; testbench_8    ;
+; EDA_TIME_SCALE                       ; 1 ps                                                                                                 ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                                                                   ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                                                                    ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family)                                                               ; --            ; Processor_8 ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family)                                                               ; --            ; Processor_8 ; Top            ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family)                                                               ; --            ; Processor_8 ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                                                                  ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                                                ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                                                                         ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; Processor_8                                                                                          ; Lab2-2        ; --          ; --             ;
++--------------------------------------+------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -98,12 +111,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4839 MB             ; 00:00:25                           ;
-; Fitter               ; 00:00:18     ; 1.1                     ; 6603 MB             ; 00:00:20                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4682 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.1                     ; 4960 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4647 MB             ; 00:00:01                           ;
-; Total                ; 00:00:40     ; --                      ; --                  ; 00:00:54                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4838 MB             ; 00:00:27                           ;
+; Fitter               ; 00:00:14     ; 1.1                     ; 6601 MB             ; 00:00:20                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4683 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.2                     ; 4955 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
+; Total                ; 00:00:36     ; --                      ; --                  ; 00:00:55                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
