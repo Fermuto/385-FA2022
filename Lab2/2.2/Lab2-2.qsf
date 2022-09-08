@@ -38,12 +38,11 @@
 
 set_global_assignment -name FAMILY "MAX 10"
 set_global_assignment -name DEVICE 10M50DCF484C7G
-set_global_assignment -name TOP_LEVEL_ENTITY "Lab2-2"
+set_global_assignment -name TOP_LEVEL_ENTITY Processor_8
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:42:35  SEPTEMBER 07, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
 set_global_assignment -name SYSTEMVERILOG_FILE ../testbench_8.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../testbench.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../Synchronizers.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../Router.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../Register_unit.sv
@@ -63,4 +62,50 @@ set_global_assignment -name SYSTEMVERILOG_FILE reg_8.sv
 set_global_assignment -name SYSTEMVERILOG_FILE register_unit_8.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Processor_8.sv
 set_global_assignment -name SYSTEMVERILOG_FILE control_8.sv
-set_global_assignment -name SYSTEMVERILOG_FILE HexDriver_8.sv
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_A14 -to Din[7]
+set_location_assignment PIN_A13 -to Din[6]
+set_location_assignment PIN_B12 -to Din[5]
+set_location_assignment PIN_A12 -to Din[4]
+set_location_assignment PIN_C12 -to Din[3]
+set_location_assignment PIN_D12 -to Din[2]
+set_location_assignment PIN_C11 -to Din[1]
+set_location_assignment PIN_C10 -to Din[0]
+set_location_assignment PIN_A7 -to Execute
+set_location_assignment PIN_P11 -to Clk
+set_location_assignment PIN_F15 -to LoadA
+set_location_assignment PIN_B14 -to LoadB
+set_location_assignment PIN_B8 -to Reset
+set_location_assignment PIN_B22 -to AhexL[6]
+set_location_assignment PIN_C22 -to AhexL[5]
+set_location_assignment PIN_B21 -to AhexL[4]
+set_location_assignment PIN_A21 -to AhexL[3]
+set_location_assignment PIN_B19 -to AhexL[2]
+set_location_assignment PIN_A20 -to AhexL[1]
+set_location_assignment PIN_B20 -to AhexL[0]
+set_location_assignment PIN_E17 -to AhexU[6]
+set_location_assignment PIN_D19 -to AhexU[5]
+set_location_assignment PIN_C20 -to AhexU[4]
+set_location_assignment PIN_C19 -to AhexU[3]
+set_location_assignment PIN_E21 -to AhexU[2]
+set_location_assignment PIN_E22 -to AhexU[1]
+set_location_assignment PIN_F21 -to AhexU[0]
+set_location_assignment PIN_C17 -to BhexL[6]
+set_location_assignment PIN_D17 -to BhexL[5]
+set_location_assignment PIN_E16 -to BhexL[4]
+set_location_assignment PIN_C16 -to BhexL[3]
+set_location_assignment PIN_C15 -to BhexL[2]
+set_location_assignment PIN_E15 -to BhexL[1]
+set_location_assignment PIN_C14 -to BhexL[0]
+set_location_assignment PIN_B17 -to BhexU[6]
+set_location_assignment PIN_A18 -to BhexU[5]
+set_location_assignment PIN_A17 -to BhexU[4]
+set_location_assignment PIN_B16 -to BhexU[3]
+set_location_assignment PIN_E18 -to BhexU[2]
+set_location_assignment PIN_D18 -to BhexU[1]
+set_location_assignment PIN_C18 -to BhexU[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
