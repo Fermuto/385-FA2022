@@ -23,7 +23,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 16 624 32 792)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "EXECUTE" (rect 4 5 21 50)(font "Intel Clear" )(vertical))
+	(text "EXECUTE" (rect 4 5 21 49)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 64 624 80 792)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "LOAD_A" (rect 4 5 21 47)(font "Intel Clear" )(vertical))
+	(text "LOAD_A" (rect 4 5 21 46)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -57,7 +57,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 40 624 56 792)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "LOAD_B" (rect 4 5 21 47)(font "Intel Clear" )(vertical))
+	(text "LOAD_B" (rect 4 5 21 46)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -74,7 +74,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 448 248 464 416)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "D3" (rect 5 5 17 20)(font "Arial" )(vertical))
+	(text "D3" (rect 5 5 17 19)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -91,7 +91,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 472 248 488 416)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "D2" (rect 4 5 21 18)(font "Intel Clear" )(vertical))
+	(text "D2" (rect 4 5 21 17)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -108,7 +108,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 496 248 512 416)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "D1" (rect 4 5 21 18)(font "Intel Clear" )(vertical))
+	(text "D1" (rect 4 5 21 17)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -125,7 +125,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 520 248 536 416)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "D0" (rect 4 5 21 18)(font "Intel Clear" )(vertical))
+	(text "D0" (rect 4 5 21 17)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -142,7 +142,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -8 624 8 792)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "CLK" (rect 5 5 22 26)(font "Intel Clear" )(vertical))
+	(text "CLK" (rect 5 5 22 25)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -159,7 +159,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 720 424 736 592)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "F2" (rect 5 5 22 17)(font "Intel Clear" )(vertical))
+	(text "F2" (rect 5 5 22 16)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -176,7 +176,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 744 424 760 592)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "F1" (rect 5 5 22 17)(font "Intel Clear" )(vertical))
+	(text "F1" (rect 5 5 22 16)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -193,7 +193,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 768 424 784 592)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "F0" (rect 5 5 22 17)(font "Intel Clear" )(vertical))
+	(text "F0" (rect 5 5 22 16)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -210,7 +210,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 1024 440 1040 608)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "R0" (rect 5 5 22 18)(font "Intel Clear" )(vertical))
+	(text "R0" (rect 5 5 22 17)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -227,7 +227,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 1000 440 1016 608)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "R1" (rect 5 5 22 18)(font "Intel Clear" )(vertical))
+	(text "R1" (rect 5 5 22 17)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -610,16 +610,8 @@ refer to the applicable agreement for further details.
 	(pt 376 768)
 )
 (connector
-	(pt 208 624)
-	(pt 376 624)
-)
-(connector
 	(pt 312 632)
 	(pt 376 632)
-)
-(connector
-	(pt 296 760)
-	(pt 376 760)
 )
 (connector
 	(pt 456 448)
@@ -642,10 +634,6 @@ refer to the applicable agreement for further details.
 	(pt 528 704)
 )
 (connector
-	(pt 528 704)
-	(pt 528 736)
-)
-(connector
 	(pt 480 440)
 	(pt 360 440)
 )
@@ -656,18 +644,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 480 440)
 	(pt 480 456)
-)
-(connector
-	(pt 360 440)
-	(pt 360 712)
-)
-(connector
-	(pt 360 712)
-	(pt 504 712)
-)
-(connector
-	(pt 504 712)
-	(pt 504 736)
 )
 (connector
 	(pt 504 432)
@@ -686,14 +662,6 @@ refer to the applicable agreement for further details.
 	(pt 352 720)
 )
 (connector
-	(pt 352 720)
-	(pt 480 720)
-)
-(connector
-	(pt 480 720)
-	(pt 480 736)
-)
-(connector
 	(pt 528 424)
 	(pt 344 424)
 )
@@ -710,22 +678,6 @@ refer to the applicable agreement for further details.
 	(pt 344 728)
 )
 (connector
-	(pt 344 728)
-	(pt 456 728)
-)
-(connector
-	(pt 456 728)
-	(pt 456 736)
-)
-(connector
-	(pt 608 656)
-	(pt 640 656)
-)
-(connector
-	(pt 608 768)
-	(pt 640 768)
-)
-(connector
 	(pt 728 592)
 	(pt 728 608)
 )
@@ -738,36 +690,12 @@ refer to the applicable agreement for further details.
 	(pt 776 608)
 )
 (connector
-	(pt 872 720)
-	(pt 904 720)
-)
-(connector
-	(pt 872 704)
-	(pt 904 704)
-)
-(connector
-	(pt 872 736)
-	(pt 904 736)
-)
-(connector
 	(pt 1008 608)
 	(pt 1008 624)
 )
 (connector
 	(pt 1032 608)
 	(pt 1032 624)
-)
-(connector
-	(pt 1136 664)
-	(pt 1152 664)
-)
-(connector
-	(pt 1152 416)
-	(pt 624 416)
-)
-(connector
-	(pt 1152 416)
-	(pt 1152 664)
 )
 (connector
 	(pt 624 416)
@@ -782,10 +710,6 @@ refer to the applicable agreement for further details.
 	(pt 1152 784)
 )
 (connector
-	(pt 1152 784)
-	(pt 1152 848)
-)
-(connector
 	(pt 1152 848)
 	(pt 624 848)
 )
@@ -796,6 +720,95 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 624 792)
 	(pt 608 792)
+)
+(connector
+	(text "S0" (rect 323 608 334 625)(font "Intel Clear" ))
+	(pt 208 624)
+	(pt 376 624)
+)
+(connector
+	(text "S0" (rect 359 744 370 761)(font "Intel Clear" ))
+	(pt 296 760)
+	(pt 376 760)
+)
+(connector
+	(pt 1136 664)
+	(pt 1152 664)
+)
+(connector
+	(pt 624 416)
+	(pt 1152 416)
+)
+(connector
+	(text "A_SERIAL_IN" (rect 1136 579 1153 641)(font "Intel Clear" )(vertical))
+	(pt 1152 416)
+	(pt 1152 664)
+)
+(connector
+	(text "B_SERIAL_IN" (rect 1136 779 1153 841)(font "Intel Clear" )(vertical))
+	(pt 1152 784)
+	(pt 1152 848)
+)
+(connector
+	(text "F_A" (rect 874 688 892 705)(font "Intel Clear" ))
+	(pt 872 704)
+	(pt 904 704)
+)
+(connector
+	(text "F_B" (rect 874 704 892 721)(font "Intel Clear" ))
+	(pt 872 720)
+	(pt 904 720)
+)
+(connector
+	(text "F_A_B" (rect 876 720 907 737)(font "Intel Clear" ))
+	(pt 872 736)
+	(pt 904 736)
+)
+(connector
+	(text "B_OUT" (rect 606 752 640 769)(font "Intel Clear" ))
+	(pt 608 768)
+	(pt 640 768)
+)
+(connector
+	(text "A_OUT" (rect 606 640 640 657)(font "Intel Clear" ))
+	(pt 608 656)
+	(pt 640 656)
+)
+(connector
+	(text "D0" (rect 512 717 529 729)(font "Intel Clear" )(vertical))
+	(pt 528 704)
+	(pt 528 736)
+)
+(connector
+	(pt 344 728)
+	(pt 456 728)
+)
+(connector
+	(text "D3" (rect 440 717 457 729)(font "Intel Clear" )(vertical))
+	(pt 456 736)
+	(pt 456 728)
+)
+(connector
+	(pt 360 440)
+	(pt 360 712)
+)
+(connector
+	(pt 360 712)
+	(pt 504 712)
+)
+(connector
+	(text "D1" (rect 488 717 505 729)(font "Intel Clear" )(vertical))
+	(pt 504 736)
+	(pt 504 712)
+)
+(connector
+	(pt 352 720)
+	(pt 480 720)
+)
+(connector
+	(text "D2" (rect 464 717 481 729)(font "Intel Clear" )(vertical))
+	(pt 480 736)
+	(pt 480 720)
 )
 (junction (pt 224 792))
 (junction (pt 0 816))
