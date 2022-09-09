@@ -1,0 +1,45 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(block
+	(rect 440 416 672 656)
+	(text "4-Bit Register" (rect 5 5 86 24)(font "Intel Clear" (font_size 8)))	(text "Register A" (rect 5 220 53 237)(font "Intel Clear" ))	(block_io "D0" (input))
+	(block_io "D1" (input))
+	(block_io "D2" (input))
+	(block_io "D3" (input))
+	(block_io "SERIAL_IN" (input))
+	(block_io "CLK" (input))
+	(block_io "S0" (input))
+	(block_io "S1" (input))
+	(block_io "A_OUT" (output))
+)
+(block
+	(rect 440 744 672 984)
+	(text "4-Bit Register" (rect 5 5 86 24)(font "Intel Clear" (font_size 8)))	(text "Register_B" (rect 5 220 56 237)(font "Intel Clear" ))	(block_io "D0" (input))
+	(block_io "D1" (input))
+	(block_io "D2" (input))
+	(block_io "D3" (input))
+	(block_io "SERIAL_IN" (input))
+	(block_io "CLK" (input))
+	(block_io "S0" (input))
+	(block_io "S1" (input))
+	(block_io "B_OUT" (output))
+)
