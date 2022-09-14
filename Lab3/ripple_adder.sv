@@ -13,7 +13,7 @@ module ripple_adder
      * Feel free to create sub-modules or other files. */
 		logic c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15;
 		
-		full_adder FA0 (.x (A[0]), .y (B[0]), .z (c_in), .s (S[0]), .c (c1));
+		full_adder FA0 (.x (A[0]), .y (B[0]), .z (cin), .s (S[0]), .c (c1));
 		full_adder FA1 (.x (A[1]), .y (B[1]), .z (c1), .s (S[1]), .c (c2));
 		full_adder FA2 (.x (A[2]), .y (B[2]), .z (c2), .s (S[2]), .c (c3));
 		full_adder FA3 (.x (A[3]), .y (B[3]), .z (c3), .s (S[3]), .c (c4));
@@ -29,6 +29,6 @@ module ripple_adder
 		full_adder FA13 (.x (A[13]), .y (B[13]), .z (c13), .s (S[13]), .c (c14));
 		full_adder FA14 (.x (A[14]), .y (B[14]), .z (c14), .s (S[14]), .c (c15));
 		
-		full_adder FA15 (.x (A[15]), .y (B[15]), .z (c15), .s (S[15]), .c (c_out));
+		full_adder FA15 (.x (A[15]), .y (B[15]), .z (c15), .s (S[15]), .c (cout));
      
 endmodule
