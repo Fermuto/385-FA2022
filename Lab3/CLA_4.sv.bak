@@ -1,0 +1,13 @@
+module CLA_4 (
+	input logic cin,
+	input logic [3:0] A, B
+	output logic P_g,
+	output logic G_g,
+	output logic [3:0] S
+);
+
+	always_comb
+	begin
+		
+	end
+endmodule
