@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab2-2
-Thu Sep 08 18:38:32 2022
+Fri Sep 09 15:47:31 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -17,25 +17,17 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   9. Analysis & Synthesis IP Cores Summary
  10. State Machine - |Processor_8|control_8:control_unit|curr_state
  11. Registers Removed During Synthesis
- 12. Removed Registers Triggering Further Register Optimizations
- 13. General Register Statistics
- 14. Inverted Register Statistics
- 15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Source assignments for sld_signaltap:auto_signaltap_0
- 17. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 18. Port Connectivity Checks: "sync:R_sync[1]"
- 19. Port Connectivity Checks: "sync:R_sync[0]"
- 20. Port Connectivity Checks: "sync:F_sync[2]"
- 21. Port Connectivity Checks: "sync:F_sync[1]"
- 22. Port Connectivity Checks: "sync:F_sync[0]"
- 23. Signal Tap Logic Analyzer Settings
- 24. Post-Synthesis Netlist Statistics for Top Partition
- 25. Post-Synthesis Netlist Statistics for Partition sld_signaltap:auto_signaltap_0
- 26. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
- 27. Elapsed Time Per Partition
- 28. Connections to In-System Debugging Instance "auto_signaltap_0"
- 29. Analysis & Synthesis Messages
- 30. Analysis & Synthesis Suppressed Messages
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for sld_signaltap:auto_signaltap_0
+ 16. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 17. Signal Tap Logic Analyzer Settings
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 21. Analysis & Synthesis Messages
+ 22. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -61,16 +53,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 08 18:38:32 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep 09 15:47:31 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab2-2                                      ;
 ; Top-level Entity Name              ; Processor_8                                 ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 715                                         ;
-;     Total combinational functions  ; 499                                         ;
-;     Dedicated logic registers      ; 509                                         ;
-; Total registers                    ; 509                                         ;
-; Total pins                         ; 61                                          ;
+; Total logic elements               ; 731                                         ;
+;     Total combinational functions  ; 510                                         ;
+;     Dedicated logic registers      ; 514                                         ;
+; Total registers                    ; 514                                         ;
+; Total pins                         ; 66                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 2,176                                       ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -171,88 +163,89 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 16          ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                                                      ; Library     ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-; ../Synchronizers.sv                                                ; yes             ; User SystemVerilog HDL File                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/Synchronizers.sv                                                       ;             ;
-; ../Router.sv                                                       ; yes             ; User SystemVerilog HDL File                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/Router.sv                                                              ;             ;
-; ../HexDriver.sv                                                    ; yes             ; User SystemVerilog HDL File                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/HexDriver.sv                                                           ;             ;
-; ../compute.sv                                                      ; yes             ; User SystemVerilog HDL File                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/compute.sv                                                             ;             ;
-; reg_8.sv                                                           ; yes             ; User SystemVerilog HDL File                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/reg_8.sv                                                           ;             ;
-; register_unit_8.sv                                                 ; yes             ; User SystemVerilog HDL File                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/register_unit_8.sv                                                 ;             ;
-; Processor_8.sv                                                     ; yes             ; User SystemVerilog HDL File                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/Processor_8.sv                                                     ;             ;
-; control_8.sv                                                       ; yes             ; User SystemVerilog HDL File                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/control_8.sv                                                       ;             ;
-; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_signaltap.vhd                                                                          ;             ;
-; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                                                                     ;             ;
-; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_ela_control.vhd                                                                        ;             ;
-; lpm_shiftreg.tdf                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf                                                                           ;             ;
-; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.inc                                                                           ;             ;
-; dffeea.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/dffeea.inc                                                                                 ;             ;
-; aglobal181.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                                             ;             ;
-; sld_mbpmg.vhd                                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_mbpmg.vhd                                                                              ;             ;
-; sld_ela_trigger_flow_mgr.vhd                                       ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd                                                               ;             ;
-; sld_buffer_manager.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_buffer_manager.vhd                                                                     ;             ;
-; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                             ;             ;
-; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                      ;             ;
-; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                ;             ;
-; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                             ;             ;
-; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                              ;             ;
-; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                                                                 ;             ;
-; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                                                                 ;             ;
-; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                                                               ;             ;
-; db/altsyncram_sf14.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/altsyncram_sf14.tdf                                             ;             ;
-; altdpram.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf                                                                               ;             ;
-; memmodes.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/memmodes.inc                                                                             ;             ;
-; a_hdffe.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_hdffe.inc                                                                                ;             ;
-; alt_le_rden_reg.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_le_rden_reg.inc                                                                        ;             ;
-; altsyncram.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.inc                                                                             ;             ;
-; lpm_mux.tdf                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf                                                                                ;             ;
-; muxlut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc                                                                                 ;             ;
-; bypassff.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc                                                                               ;             ;
-; altshift.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc                                                                               ;             ;
-; db/mux_i7c.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/mux_i7c.tdf                                                     ;             ;
-; lpm_decode.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf                                                                             ;             ;
-; declut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/declut.inc                                                                                 ;             ;
-; lpm_compare.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.inc                                                                            ;             ;
-; db/decode_3af.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/decode_3af.tdf                                                  ;             ;
-; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.tdf                                                                            ;             ;
-; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                                            ;             ;
-; cmpconst.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/cmpconst.inc                                                                               ;             ;
-; lpm_counter.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.inc                                                                            ;             ;
-; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_counter_stratix.inc                                                                    ;             ;
-; db/cntr_7rh.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/cntr_7rh.tdf                                                    ;             ;
-; db/cmpr_hrb.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/cmpr_hrb.tdf                                                    ;             ;
-; db/cntr_8hi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/cntr_8hi.tdf                                                    ;             ;
-; db/cntr_4rh.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/cntr_4rh.tdf                                                    ;             ;
-; db/cmpr_grb.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/cmpr_grb.tdf                                                    ;             ;
-; db/cntr_odi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/cntr_odi.tdf                                                    ;             ;
-; db/cmpr_drb.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/cmpr_drb.tdf                                                    ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                                             ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                                              ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                                          ;             ;
-; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                                ; altera_sld  ;
-; db/ip/sld993c4aaa/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/alt_sld_fab.v                                    ; alt_sld_fab ;
-; db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
-; db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
-; db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
-; db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
-; db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
-; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                                           ;             ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                     ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                           ; Library     ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------+
+; ../Synchronizers.sv                                                ; yes             ; User SystemVerilog HDL File                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/Synchronizers.sv                                                       ;             ;
+; ../Router.sv                                                       ; yes             ; User SystemVerilog HDL File                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/Router.sv                                                              ;             ;
+; ../HexDriver.sv                                                    ; yes             ; User SystemVerilog HDL File                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/HexDriver.sv                                                           ;             ;
+; ../compute.sv                                                      ; yes             ; User SystemVerilog HDL File                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/compute.sv                                                             ;             ;
+; reg_8.sv                                                           ; yes             ; User SystemVerilog HDL File                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/reg_8.sv                                                           ;             ;
+; register_unit_8.sv                                                 ; yes             ; User SystemVerilog HDL File                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/register_unit_8.sv                                                 ;             ;
+; Processor_8.sv                                                     ; yes             ; User SystemVerilog HDL File                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/Processor_8.sv                                                     ;             ;
+; control_8.sv                                                       ; yes             ; User SystemVerilog HDL File                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/control_8.sv                                                       ;             ;
+; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_signaltap.vhd                                               ;             ;
+; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                                          ;             ;
+; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_ela_control.vhd                                             ;             ;
+; lpm_shiftreg.tdf                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf                                                ;             ;
+; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.inc                                                ;             ;
+; dffeea.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/dffeea.inc                                                      ;             ;
+; aglobal181.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                  ;             ;
+; sld_mbpmg.vhd                                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_mbpmg.vhd                                                   ;             ;
+; sld_ela_trigger_flow_mgr.vhd                                       ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd                                    ;             ;
+; sld_buffer_manager.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_buffer_manager.vhd                                          ;             ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                                  ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                           ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                                     ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                                  ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                   ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                                      ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                                      ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                                    ;             ;
+; db/altsyncram_sf14.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/altsyncram_sf14.tdf                                             ;             ;
+; altdpram.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf                                                    ;             ;
+; memmodes.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/memmodes.inc                                                  ;             ;
+; a_hdffe.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_hdffe.inc                                                     ;             ;
+; alt_le_rden_reg.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_le_rden_reg.inc                                             ;             ;
+; altsyncram.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.inc                                                  ;             ;
+; lpm_mux.tdf                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf                                                     ;             ;
+; muxlut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc                                                      ;             ;
+; bypassff.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc                                                    ;             ;
+; altshift.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc                                                    ;             ;
+; db/mux_i7c.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/mux_i7c.tdf                                                     ;             ;
+; lpm_decode.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf                                                  ;             ;
+; declut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/declut.inc                                                      ;             ;
+; lpm_compare.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.inc                                                 ;             ;
+; db/decode_3af.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/decode_3af.tdf                                                  ;             ;
+; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.tdf                                                 ;             ;
+; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                 ;             ;
+; cmpconst.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/cmpconst.inc                                                    ;             ;
+; lpm_counter.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.inc                                                 ;             ;
+; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_counter_stratix.inc                                         ;             ;
+; db/cntr_7rh.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/cntr_7rh.tdf                                                    ;             ;
+; db/cmpr_hrb.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/cmpr_hrb.tdf                                                    ;             ;
+; db/cntr_8hi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/cntr_8hi.tdf                                                    ;             ;
+; db/cntr_4rh.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/cntr_4rh.tdf                                                    ;             ;
+; db/cmpr_grb.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/cmpr_grb.tdf                                                    ;             ;
+; db/cntr_odi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/cntr_odi.tdf                                                    ;             ;
+; db/cmpr_drb.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/cmpr_drb.tdf                                                    ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                  ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                   ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                               ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_hub.vhd                                                     ; altera_sld  ;
+; db/ip/sld993c4aaa/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                ;             ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
 +------------------------------------------------------------------------+
@@ -260,31 +253,31 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 715                      ;
+; Estimated Total logic elements              ; 731                      ;
 ;                                             ;                          ;
-; Total combinational functions               ; 499                      ;
+; Total combinational functions               ; 510                      ;
 ; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 219                      ;
-;     -- 3 input functions                    ; 137                      ;
-;     -- <=2 input functions                  ; 143                      ;
+;     -- 4 input functions                    ; 226                      ;
+;     -- 3 input functions                    ; 139                      ;
+;     -- <=2 input functions                  ; 145                      ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 425                      ;
+;     -- normal mode                          ; 436                      ;
 ;     -- arithmetic mode                      ; 74                       ;
 ;                                             ;                          ;
-; Total registers                             ; 509                      ;
-;     -- Dedicated logic registers            ; 509                      ;
+; Total registers                             ; 514                      ;
+;     -- Dedicated logic registers            ; 514                      ;
 ;     -- I/O registers                        ; 0                        ;
 ;                                             ;                          ;
-; I/O pins                                    ; 61                       ;
+; I/O pins                                    ; 66                       ;
 ; Total memory bits                           ; 2176                     ;
 ;                                             ;                          ;
 ; Embedded Multiplier 9-bit elements          ; 0                        ;
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 324                      ;
-; Total fan-out                               ; 3606                     ;
-; Average fan-out                             ; 3.12                     ;
+; Total fan-out                               ; 3657                     ;
+; Average fan-out                             ; 3.09                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -293,15 +286,16 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                     ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |Processor_8                                                                                                                            ; 499 (0)             ; 509 (0)                   ; 2176        ; 0          ; 0            ; 0       ; 0         ; 61   ; 0            ; 0          ; |Processor_8                                                                                                                                                                                                                                                                                                                                            ; Processor_8                       ; work         ;
+; |Processor_8                                                                                                                            ; 510 (0)             ; 514 (0)                   ; 2176        ; 0          ; 0            ; 0       ; 0         ; 66   ; 0            ; 0          ; |Processor_8                                                                                                                                                                                                                                                                                                                                            ; Processor_8                       ; work         ;
 ;    |HexDriver:HexAL|                                                                                                                    ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|HexDriver:HexAL                                                                                                                                                                                                                                                                                                                            ; HexDriver                         ; work         ;
 ;    |HexDriver:HexAU|                                                                                                                    ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|HexDriver:HexAU                                                                                                                                                                                                                                                                                                                            ; HexDriver                         ; work         ;
 ;    |HexDriver:HexBL|                                                                                                                    ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|HexDriver:HexBL                                                                                                                                                                                                                                                                                                                            ; HexDriver                         ; work         ;
 ;    |HexDriver:HexBU|                                                                                                                    ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|HexDriver:HexBU                                                                                                                                                                                                                                                                                                                            ; HexDriver                         ; work         ;
-;    |control_8:control_unit|                                                                                                             ; 11 (11)             ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|control_8:control_unit                                                                                                                                                                                                                                                                                                                     ; control_8                         ; work         ;
-;    |register_unit_8:reg_unit|                                                                                                           ; 18 (0)              ; 16 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|register_unit_8:reg_unit                                                                                                                                                                                                                                                                                                                   ; register_unit_8                   ; work         ;
-;       |reg_8:reg_A|                                                                                                                     ; 9 (9)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|register_unit_8:reg_unit|reg_8:reg_A                                                                                                                                                                                                                                                                                                       ; reg_8                             ; work         ;
-;       |reg_8:reg_B|                                                                                                                     ; 9 (9)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|register_unit_8:reg_unit|reg_8:reg_B                                                                                                                                                                                                                                                                                                       ; reg_8                             ; work         ;
+;    |compute:compute_unit|                                                                                                               ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|compute:compute_unit                                                                                                                                                                                                                                                                                                                       ; compute                           ; work         ;
+;    |control_8:control_unit|                                                                                                             ; 10 (10)             ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|control_8:control_unit                                                                                                                                                                                                                                                                                                                     ; control_8                         ; work         ;
+;    |register_unit_8:reg_unit|                                                                                                           ; 28 (0)              ; 16 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|register_unit_8:reg_unit                                                                                                                                                                                                                                                                                                                   ; register_unit_8                   ; work         ;
+;       |reg_8:reg_A|                                                                                                                     ; 14 (14)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|register_unit_8:reg_unit|reg_8:reg_A                                                                                                                                                                                                                                                                                                       ; reg_8                             ; work         ;
+;       |reg_8:reg_B|                                                                                                                     ; 14 (14)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|register_unit_8:reg_unit|reg_8:reg_B                                                                                                                                                                                                                                                                                                       ; reg_8                             ; work         ;
 ;    |sld_hub:auto_hub|                                                                                                                   ; 130 (1)             ; 91 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
 ;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 129 (0)             ; 91 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
 ;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 129 (0)             ; 91 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
@@ -353,6 +347,11 @@ refer to the applicable agreement for further details.
 ;    |sync:Din_sync[5]|                                                                                                                   ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|sync:Din_sync[5]                                                                                                                                                                                                                                                                                                                           ; sync                              ; work         ;
 ;    |sync:Din_sync[6]|                                                                                                                   ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|sync:Din_sync[6]                                                                                                                                                                                                                                                                                                                           ; sync                              ; work         ;
 ;    |sync:Din_sync[7]|                                                                                                                   ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|sync:Din_sync[7]                                                                                                                                                                                                                                                                                                                           ; sync                              ; work         ;
+;    |sync:F_sync[0]|                                                                                                                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|sync:F_sync[0]                                                                                                                                                                                                                                                                                                                             ; sync                              ; work         ;
+;    |sync:F_sync[1]|                                                                                                                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|sync:F_sync[1]                                                                                                                                                                                                                                                                                                                             ; sync                              ; work         ;
+;    |sync:F_sync[2]|                                                                                                                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|sync:F_sync[2]                                                                                                                                                                                                                                                                                                                             ; sync                              ; work         ;
+;    |sync:R_sync[0]|                                                                                                                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|sync:R_sync[0]                                                                                                                                                                                                                                                                                                                             ; sync                              ; work         ;
+;    |sync:R_sync[1]|                                                                                                                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|sync:R_sync[1]                                                                                                                                                                                                                                                                                                                             ; sync                              ; work         ;
 ;    |sync:button_sync[0]|                                                                                                                ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|sync:button_sync[0]                                                                                                                                                                                                                                                                                                                        ; sync                              ; work         ;
 ;    |sync:button_sync[1]|                                                                                                                ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|sync:button_sync[1]                                                                                                                                                                                                                                                                                                                        ; sync                              ; work         ;
 ;    |sync:button_sync[2]|                                                                                                                ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Processor_8|sync:button_sync[2]                                                                                                                                                                                                                                                                                                                        ; sync                              ; work         ;
@@ -402,49 +401,17 @@ Encoding Type:  One-Hot
 +--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                                                                                                                                                                                                          ;
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                                                                                                          ; Reason for Removal                                                                                                                                                                                 ;
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; sync:R_sync[1]|q                                                                                                                                                                       ; Stuck at GND due to stuck port data_in                                                                                                                                                             ;
-; sync:R_sync[0]|q                                                                                                                                                                       ; Stuck at VCC due to stuck port data_in                                                                                                                                                             ;
-; sync:F_sync[2]|q                                                                                                                                                                       ; Stuck at GND due to stuck port data_in                                                                                                                                                             ;
-; sync:F_sync[1]|q                                                                                                                                                                       ; Stuck at VCC due to stuck port data_in                                                                                                                                                             ;
-; sync:F_sync[0]|q                                                                                                                                                                       ; Stuck at GND due to stuck port data_in                                                                                                                                                             ;
-; control_8:control_unit|curr_state~2                                                                                                                                                    ; Lost fanout                                                                                                                                                                                        ;
-; control_8:control_unit|curr_state~3                                                                                                                                                    ; Lost fanout                                                                                                                                                                                        ;
-; control_8:control_unit|curr_state~4                                                                                                                                                    ; Lost fanout                                                                                                                                                                                        ;
-; control_8:control_unit|curr_state~5                                                                                                                                                    ; Lost fanout                                                                                                                                                                                        ;
-; Total Number of Removed Registers = 9                                                                                                                                                  ;                                                                                                                                                                                                    ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|segment_shift_clk_ena                                                      ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_enable_delayed                                                ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[0] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[0] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[1] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[1] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[2] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[2] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[3] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[3] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[4] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[4] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[5] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[5] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[6] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[6] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[0]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[0]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[1]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[1]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[2]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[2]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[3]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[3]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[4]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[4]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[5]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[5]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[6]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[6]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[13..15]                       ; Stuck at GND due to stuck port data_in                                                                                                                                                             ;
-; Total Number of Removed Registers = 18                                                                                                                                                 ;                                                                                                                                                                                                    ;
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                                                                                                                                              ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                                                                                ; Reason for Removal        ; Registers Removed due to This Register                                                                                                                        ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[15] ; Stuck at GND              ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[14], ;
-;                                                                                                                                                              ; due to stuck port data_in ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[13]  ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; control_8:control_unit|curr_state~2   ; Lost fanout        ;
+; control_8:control_unit|curr_state~3   ; Lost fanout        ;
+; control_8:control_unit|curr_state~4   ; Lost fanout        ;
+; control_8:control_unit|curr_state~5   ; Lost fanout        ;
+; Total Number of Removed Registers = 4 ;                    ;
++---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -452,12 +419,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 509   ;
+; Total registers                              ; 514   ;
 ; Number of registers using Synchronous Clear  ; 65    ;
 ; Number of registers using Synchronous Load   ; 63    ;
 ; Number of registers using Asynchronous Clear ; 149   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 287   ;
+; Number of registers using Clock Enable       ; 285   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -481,28 +448,14 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                                                                                                                                                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                                                                                                                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Processor_8|register_unit_8:reg_unit|reg_8:reg_A|Data_Out[0]                                                                                                                                                                                                                                                                                                         ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Processor_8|register_unit_8:reg_unit|reg_8:reg_B|Data_Out[0]                                                                                                                                                                                                                                                                                                         ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |Processor_8|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|tdo_crc_val_shift_reg[13]                                                                                                                                                                                                                    ;
-; 3:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |Processor_8|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|tdo_crc_val_shift_reg[5]                                                                                                                                                                                                                     ;
-; 3:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |Processor_8|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[12]                                                                                                                                                                                             ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |Processor_8|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|tdo_crc_len_reg[16]                                                                                                                                                                                                                          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Processor_8|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr|word_counter[0]                                                                                                                                                                                                        ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Processor_8|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|counter[1]                                                                                                                                                                                        ;
-; 12:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |Processor_8|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr|WORD_SR[1]                                                                                                                                                                                                             ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; No         ; |Processor_8|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|offset_count                                                                                                                                                                                      ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |Processor_8|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[0]                             ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Processor_8|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[3]                    ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |Processor_8|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|word_counter[0] ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |Processor_8|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]              ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 56 LEs               ; 32 LEs                 ; Yes        ; |Processor_8|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]                      ;
-; 20:1               ; 4 bits    ; 52 LEs        ; 32 LEs               ; 20 LEs                 ; Yes        ; |Processor_8|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[1]      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |Processor_8|register_unit_8:reg_unit|reg_8:reg_A|Data_Out[2] ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |Processor_8|register_unit_8:reg_unit|reg_8:reg_B|Data_Out[6] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 
 
 +-------------------------------------------------------+
@@ -580,51 +533,6 @@ Encoding Type:  One-Hot
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------+
-; Port Connectivity Checks: "sync:R_sync[1]" ;
-+------+-------+----------+------------------+
-; Port ; Type  ; Severity ; Details          ;
-+------+-------+----------+------------------+
-; d    ; Input ; Info     ; Stuck at GND     ;
-+------+-------+----------+------------------+
-
-
-+--------------------------------------------+
-; Port Connectivity Checks: "sync:R_sync[0]" ;
-+------+-------+----------+------------------+
-; Port ; Type  ; Severity ; Details          ;
-+------+-------+----------+------------------+
-; d    ; Input ; Info     ; Stuck at VCC     ;
-+------+-------+----------+------------------+
-
-
-+--------------------------------------------+
-; Port Connectivity Checks: "sync:F_sync[2]" ;
-+------+-------+----------+------------------+
-; Port ; Type  ; Severity ; Details          ;
-+------+-------+----------+------------------+
-; d    ; Input ; Info     ; Stuck at GND     ;
-+------+-------+----------+------------------+
-
-
-+--------------------------------------------+
-; Port Connectivity Checks: "sync:F_sync[1]" ;
-+------+-------+----------+------------------+
-; Port ; Type  ; Severity ; Details          ;
-+------+-------+----------+------------------+
-; d    ; Input ; Info     ; Stuck at VCC     ;
-+------+-------+----------+------------------+
-
-
-+--------------------------------------------+
-; Port Connectivity Checks: "sync:F_sync[0]" ;
-+------+-------+----------+------------------+
-; Port ; Type  ; Severity ; Details          ;
-+------+-------+----------+------------------+
-; d    ; Input ; Info     ; Stuck at GND     ;
-+------+-------+----------+------------------+
-
-
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Signal Tap Logic Analyzer Settings                                                                                                                                                                                                                                      ;
 +----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
@@ -639,93 +547,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 77                          ;
-; cycloneiii_ff         ; 38                          ;
-;     ENA SCLR          ; 16                          ;
-;     SCLR              ; 1                           ;
-;     plain             ; 21                          ;
-; cycloneiii_lcell_comb ; 63                          ;
-;     normal            ; 63                          ;
+; boundary_port         ; 82                          ;
+; cycloneiii_ff         ; 43                          ;
+;     ENA SCLR          ; 14                          ;
+;     SCLR              ; 3                           ;
+;     plain             ; 26                          ;
+; cycloneiii_lcell_comb ; 74                          ;
+;     normal            ; 74                          ;
 ;         1 data inputs ; 6                           ;
-;         2 data inputs ; 8                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 47                          ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 54                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.15                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 1.51                        ;
 +-----------------------+-----------------------------+
 
 
-+--------------------------------------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Partition sld_signaltap:auto_signaltap_0 ;
-+-----------------------+--------------------------------------------------------+
-; Type                  ; Count                                                  ;
-+-----------------------+--------------------------------------------------------+
-; boundary_port         ; 137                                                    ;
-; cycloneiii_ff         ; 380                                                    ;
-;     CLR               ; 51                                                     ;
-;     ENA               ; 103                                                    ;
-;     ENA CLR           ; 60                                                     ;
-;     ENA SCLR SLD      ; 36                                                     ;
-;     ENA SLD           ; 8                                                      ;
-;     SLD               ; 9                                                      ;
-;     plain             ; 113                                                    ;
-; cycloneiii_lcell_comb ; 310                                                    ;
-;     arith             ; 66                                                     ;
-;         2 data inputs ; 65                                                     ;
-;         3 data inputs ; 1                                                      ;
-;     normal            ; 244                                                    ;
-;         0 data inputs ; 6                                                      ;
-;         1 data inputs ; 5                                                      ;
-;         2 data inputs ; 20                                                     ;
-;         3 data inputs ; 98                                                     ;
-;         4 data inputs ; 115                                                    ;
-; cycloneiii_ram_block  ; 17                                                     ;
-;                       ;                                                        ;
-; Max LUT depth         ; 4.30                                                   ;
-; Average LUT depth     ; 1.95                                                   ;
-+-----------------------+--------------------------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub ;
-+-----------------------+------------------------------------------+
-; Type                  ; Count                                    ;
-+-----------------------+------------------------------------------+
-; boundary_port         ; 107                                      ;
-; cycloneiii_ff         ; 91                                       ;
-;     CLR               ; 4                                        ;
-;     ENA               ; 16                                       ;
-;     ENA CLR           ; 33                                       ;
-;     ENA CLR SLD       ; 1                                        ;
-;     ENA SCLR          ; 5                                        ;
-;     ENA SLD           ; 9                                        ;
-;     SCLR              ; 7                                        ;
-;     plain             ; 16                                       ;
-; cycloneiii_lcell_comb ; 130                                      ;
-;     arith             ; 8                                        ;
-;         2 data inputs ; 8                                        ;
-;     normal            ; 122                                      ;
-;         0 data inputs ; 1                                        ;
-;         1 data inputs ; 6                                        ;
-;         2 data inputs ; 22                                       ;
-;         3 data inputs ; 36                                       ;
-;         4 data inputs ; 57                                       ;
-;                       ;                                          ;
-; Max LUT depth         ; 4.00                                     ;
-; Average LUT depth     ; 1.88                                     ;
-+-----------------------+------------------------------------------+
-
-
-+-----------------------------------------------+
-; Elapsed Time Per Partition                    ;
-+--------------------------------+--------------+
-; Partition Name                 ; Elapsed Time ;
-+--------------------------------+--------------+
-; sld_signaltap:auto_signaltap_0 ; 00:00:00     ;
-; sld_hub:auto_hub               ; 00:00:00     ;
-; Top                            ; 00:00:00     ;
-+--------------------------------+--------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -793,70 +638,70 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Sep 08 18:38:05 2022
+    Info: Processing started: Fri Sep 09 15:46:09 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2-2 -c Lab2-2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/dante/desktop/professional/school/classes/ece 385/385-fa2022/lab2/testbench.sv
-    Info (12023): Found entity 1: testbench File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/testbench.sv Line: 1
-Info (12021): Found 3 design units, including 3 entities, in source file /users/dante/desktop/professional/school/classes/ece 385/385-fa2022/lab2/synchronizers.sv
-    Info (12023): Found entity 1: sync File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/Synchronizers.sv Line: 4
-    Info (12023): Found entity 2: sync_r0 File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/Synchronizers.sv Line: 18
-    Info (12023): Found entity 3: sync_r1 File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/Synchronizers.sv Line: 39
-Info (12021): Found 1 design units, including 1 entities, in source file /users/dante/desktop/professional/school/classes/ece 385/385-fa2022/lab2/router.sv
-    Info (12023): Found entity 1: router File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/Router.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/dante/desktop/professional/school/classes/ece 385/385-fa2022/lab2/register_unit.sv
-    Info (12023): Found entity 1: register_unit File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/Register_unit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/dante/desktop/professional/school/classes/ece 385/385-fa2022/lab2/reg_4.sv
-    Info (12023): Found entity 1: reg_4 File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/Reg_4.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/dante/desktop/professional/school/classes/ece 385/385-fa2022/lab2/processor.sv
-    Info (12023): Found entity 1: Processor File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/Processor.sv Line: 8
-Info (12021): Found 1 design units, including 1 entities, in source file /users/dante/desktop/professional/school/classes/ece 385/385-fa2022/lab2/hexdriver.sv
-    Info (12023): Found entity 1: HexDriver File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/HexDriver.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/dante/desktop/professional/school/classes/ece 385/385-fa2022/lab2/control.sv
-    Info (12023): Found entity 1: control File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/Control.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /users/dante/desktop/professional/school/classes/ece 385/385-fa2022/lab2/compute.sv
-    Info (12023): Found entity 1: compute File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/compute.sv Line: 1
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/zdrag/documents/github/385-fa2022/lab2/testbench.sv
+    Info (12023): Found entity 1: testbench File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/testbench.sv Line: 1
+Info (12021): Found 3 design units, including 3 entities, in source file /users/zdrag/documents/github/385-fa2022/lab2/synchronizers.sv
+    Info (12023): Found entity 1: sync File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/Synchronizers.sv Line: 4
+    Info (12023): Found entity 2: sync_r0 File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/Synchronizers.sv Line: 18
+    Info (12023): Found entity 3: sync_r1 File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/Synchronizers.sv Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file /users/zdrag/documents/github/385-fa2022/lab2/router.sv
+    Info (12023): Found entity 1: router File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/Router.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/zdrag/documents/github/385-fa2022/lab2/register_unit.sv
+    Info (12023): Found entity 1: register_unit File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/Register_unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/zdrag/documents/github/385-fa2022/lab2/reg_4.sv
+    Info (12023): Found entity 1: reg_4 File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/Reg_4.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/zdrag/documents/github/385-fa2022/lab2/processor.sv
+    Info (12023): Found entity 1: Processor File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/Processor.sv Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file /users/zdrag/documents/github/385-fa2022/lab2/hexdriver.sv
+    Info (12023): Found entity 1: HexDriver File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/HexDriver.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/zdrag/documents/github/385-fa2022/lab2/control.sv
+    Info (12023): Found entity 1: control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/Control.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/zdrag/documents/github/385-fa2022/lab2/compute.sv
+    Info (12023): Found entity 1: compute File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/compute.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file reg_8.sv
-    Info (12023): Found entity 1: reg_8 File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/reg_8.sv Line: 1
+    Info (12023): Found entity 1: reg_8 File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/reg_8.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file register_unit_8.sv
-    Info (12023): Found entity 1: register_unit_8 File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/register_unit_8.sv Line: 1
+    Info (12023): Found entity 1: register_unit_8 File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/register_unit_8.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file processor_8.sv
-    Info (12023): Found entity 1: Processor_8 File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/Processor_8.sv Line: 1
+    Info (12023): Found entity 1: Processor_8 File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/Processor_8.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control_8.sv
-    Info (12023): Found entity 1: control_8 File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/control_8.sv Line: 1
+    Info (12023): Found entity 1: control_8 File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/control_8.sv Line: 1
 Info (12127): Elaborating entity "Processor_8" for the top level hierarchy
-Info (12128): Elaborating entity "register_unit_8" for hierarchy "register_unit_8:reg_unit" File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/Processor_8.sv Line: 52
-Info (12128): Elaborating entity "reg_8" for hierarchy "register_unit_8:reg_unit|reg_8:reg_A" File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/register_unit_8.sv Line: 10
-Info (12128): Elaborating entity "compute" for hierarchy "compute:compute_unit" File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/Processor_8.sv Line: 59
-Info (12128): Elaborating entity "router" for hierarchy "router:router" File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/Processor_8.sv Line: 66
-Info (12128): Elaborating entity "control_8" for hierarchy "control_8:control_unit" File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/Processor_8.sv Line: 75
-Info (10264): Verilog HDL Case Statement information at control_8.sv(41): all case item expressions in this case statement are onehot File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/control_8.sv Line: 41
-Info (12128): Elaborating entity "HexDriver" for hierarchy "HexDriver:HexAL" File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/Processor_8.sv Line: 78
-Info (12128): Elaborating entity "sync" for hierarchy "sync:button_sync[0]" File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/Processor_8.sv Line: 95
+Info (12128): Elaborating entity "register_unit_8" for hierarchy "register_unit_8:reg_unit" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/Processor_8.sv Line: 52
+Info (12128): Elaborating entity "reg_8" for hierarchy "register_unit_8:reg_unit|reg_8:reg_A" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/register_unit_8.sv Line: 10
+Info (12128): Elaborating entity "compute" for hierarchy "compute:compute_unit" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/Processor_8.sv Line: 59
+Info (12128): Elaborating entity "router" for hierarchy "router:router" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/Processor_8.sv Line: 66
+Info (12128): Elaborating entity "control_8" for hierarchy "control_8:control_unit" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/Processor_8.sv Line: 75
+Info (10264): Verilog HDL Case Statement information at control_8.sv(41): all case item expressions in this case statement are onehot File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/control_8.sv Line: 41
+Info (12128): Elaborating entity "HexDriver" for hierarchy "HexDriver:HexAL" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/Processor_8.sv Line: 78
+Info (12128): Elaborating entity "sync" for hierarchy "sync:button_sync[0]" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/Processor_8.sv Line: 95
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_sf14.tdf
-    Info (12023): Found entity 1: altsyncram_sf14 File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/altsyncram_sf14.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_sf14 File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/altsyncram_sf14.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_i7c.tdf
-    Info (12023): Found entity 1: mux_i7c File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/mux_i7c.tdf Line: 22
+    Info (12023): Found entity 1: mux_i7c File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/mux_i7c.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_3af.tdf
-    Info (12023): Found entity 1: decode_3af File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/decode_3af.tdf Line: 22
+    Info (12023): Found entity 1: decode_3af File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/decode_3af.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_7rh.tdf
-    Info (12023): Found entity 1: cntr_7rh File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/cntr_7rh.tdf Line: 27
+    Info (12023): Found entity 1: cntr_7rh File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/cntr_7rh.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_hrb.tdf
-    Info (12023): Found entity 1: cmpr_hrb File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/cmpr_hrb.tdf Line: 22
+    Info (12023): Found entity 1: cmpr_hrb File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/cmpr_hrb.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_8hi.tdf
-    Info (12023): Found entity 1: cntr_8hi File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/cntr_8hi.tdf Line: 25
+    Info (12023): Found entity 1: cntr_8hi File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/cntr_8hi.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_4rh.tdf
-    Info (12023): Found entity 1: cntr_4rh File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/cntr_4rh.tdf Line: 27
+    Info (12023): Found entity 1: cntr_4rh File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/cntr_4rh.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_grb.tdf
-    Info (12023): Found entity 1: cmpr_grb File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/cmpr_grb.tdf Line: 22
+    Info (12023): Found entity 1: cmpr_grb File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/cmpr_grb.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_odi.tdf
-    Info (12023): Found entity 1: cntr_odi File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/cntr_odi.tdf Line: 27
+    Info (12023): Found entity 1: cntr_odi File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/cntr_odi.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_drb.tdf
-    Info (12023): Found entity 1: cmpr_drb File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/cmpr_drb.tdf Line: 22
+    Info (12023): Found entity 1: cmpr_drb File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/cmpr_drb.tdf Line: 22
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2022.09.08.18:38:23 Progress: Loading sld993c4aaa/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2022.09.09.15:47:04 Progress: Loading sld993c4aaa/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -867,45 +712,39 @@ Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld993c4aaa/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/ip/sld993c4aaa/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 4 registers lost all their fanouts during netlist optimizations.
-Info (13000): Registers with preset signals will power-up high File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_buffer_manager.vhd Line: 356
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Info (286031): Timing-Driven Synthesis is running on partition "sld_signaltap:auto_signaltap_0"
-Info (13000): Registers with preset signals will power-up high File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd Line: 386
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
-Info (144001): Generated suppressed messages file C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/output_files/Lab2-2.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/output_files/Lab2-2.map.smsg
 Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 51 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 811 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 16 input pins
+Info (21057): Implemented 832 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 21 input pins
     Info (21059): Implemented 49 output pins
-    Info (21061): Implemented 728 logic cells
+    Info (21061): Implemented 744 logic cells
     Info (21064): Implemented 17 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4895 megabytes
-    Info: Processing ended: Thu Sep 08 18:38:32 2022
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:41
+    Info: Peak virtual memory: 4850 megabytes
+    Info: Processing ended: Fri Sep 09 15:47:31 2022
+    Info: Elapsed time: 00:01:22
+    Info: Total CPU time (on all processors): 00:02:13
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/output_files/Lab2-2.map.smsg.
+The suppressed messages can be found in C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/output_files/Lab2-2.map.smsg.
 
 

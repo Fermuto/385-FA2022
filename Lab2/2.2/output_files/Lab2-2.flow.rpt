@@ -1,5 +1,5 @@
 Flow report for Lab2-2
-Thu Sep 08 18:38:50 2022
+Fri Sep 09 15:48:30 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Sep 08 18:38:50 2022       ;
+; Flow Status                        ; Successful - Fri Sep 09 15:48:30 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab2-2                                      ;
 ; Top-level Entity Name              ; Processor_8                                 ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DCF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 700 / 49,760 ( 1 % )                        ;
-;     Total combinational functions  ; 502 / 49,760 ( 1 % )                        ;
-;     Dedicated logic registers      ; 509 / 49,760 ( 1 % )                        ;
-; Total registers                    ; 509                                         ;
-; Total pins                         ; 61 / 360 ( 17 % )                           ;
+; Total logic elements               ; 711 / 49,760 ( 1 % )                        ;
+;     Total combinational functions  ; 513 / 49,760 ( 1 % )                        ;
+;     Dedicated logic registers      ; 514 / 49,760 ( 1 % )                        ;
+; Total registers                    ; 514                                         ;
+; Total pins                         ; 66 / 360 ( 18 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 2,176 / 1,677,312 ( < 1 % )                 ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/08/2022 18:38:05 ;
+; Start date & time ; 09/09/2022 15:46:12 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab2-2              ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
 ; Assignment Name                      ; Value                                                                                                ; Default Value ; Entity Name ; Section Id       ;
 +--------------------------------------+------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID                ; 1096109787756.166268028502792                                                                        ; --            ; --          ; --               ;
+; COMPILER_SIGNATURE_ID                ; 186420051946.166275637102388                                                                         ; --            ; --          ; --               ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                                   ; --            ; --          ; Simulation       ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                                   ; --            ; --          ; testbench_8      ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                                   ; --            ; --          ; testbench        ;
@@ -146,12 +146,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:26     ; 1.0                     ; 4895 MB             ; 00:00:40                           ;
-; Fitter               ; 00:00:07     ; 1.3                     ; 6605 MB             ; 00:00:14                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4685 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.7                     ; 4965 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4669 MB             ; 00:00:02                           ;
-; Total                ; 00:00:40     ; --                      ; --                  ; 00:01:02                           ;
+; Analysis & Synthesis ; 00:01:18     ; 1.0                     ; 4850 MB             ; 00:02:10                           ;
+; Fitter               ; 00:00:27     ; 1.1                     ; 5644 MB             ; 00:00:34                           ;
+; Assembler            ; 00:00:09     ; 1.0                     ; 4681 MB             ; 00:00:09                           ;
+; Timing Analyzer      ; 00:00:08     ; 1.3                     ; 4818 MB             ; 00:00:09                           ;
+; EDA Netlist Writer   ; 00:00:06     ; 1.0                     ; 4668 MB             ; 00:00:06                           ;
+; Total                ; 00:02:08     ; --                      ; --                  ; 00:03:08                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -160,11 +160,11 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; LAPTOP-7B153L77  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; LAPTOP-7B153L77  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; LAPTOP-7B153L77  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; LAPTOP-7B153L77  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-7B153L77  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; LAPTOP-GMJRP5OK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; LAPTOP-GMJRP5OK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; LAPTOP-GMJRP5OK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; LAPTOP-GMJRP5OK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-GMJRP5OK  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
