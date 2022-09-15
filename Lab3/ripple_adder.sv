@@ -20,7 +20,7 @@ module ripple_adder
 		full_adder FA4 (.x (A[4]), .y (B[4]), .z (c4), .s (S[4]), .c (c5));
 		full_adder FA5 (.x (A[5]), .y (B[5]), .z (c5), .s (S[5]), .c (c6));
 		full_adder FA6 (.x (A[6]), .y (B[6]), .z (c6), .s (S[6]), .c (c7));
-		full_adder FA7 (.x (A[7]), .y (B[7]), .z (c7), .s (S[7]), .c (c7));
+		full_adder FA7 (.x (A[7]), .y (B[7]), .z (c7), .s (S[7]), .c (c8));
 		full_adder FA8 (.x (A[8]), .y (B[8]), .z (c8), .s (S[8]), .c (c9));
 		full_adder FA9 (.x (A[9]), .y (B[9]), .z (c9), .s (S[9]), .c (c10));
 		full_adder FA10 (.x (A[10]), .y (B[10]), .z (c10), .s (S[10]), .c (c11));
