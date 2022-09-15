@@ -1,0 +1,185 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Lab3_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:08:23 on Sep 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv 
+# -- Compiling module router
+# 
+# Top level modules:
+# 	router
+# End time: 17:08:23 on Sep 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/ripple_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:08:23 on Sep 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/ripple_adder.sv 
+# -- Compiling module ripple_adder
+# 
+# Top level modules:
+# 	ripple_adder
+# End time: 17:08:23 on Sep 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/reg_17.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:08:24 on Sep 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/reg_17.sv 
+# -- Compiling module reg_17
+# 
+# Top level modules:
+# 	reg_17
+# End time: 17:08:24 on Sep 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/HexDriver.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:08:24 on Sep 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/HexDriver.sv 
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# End time: 17:08:24 on Sep 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/control.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:08:24 on Sep 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/control.sv 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 17:08:24 on Sep 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/full_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:08:24 on Sep 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 17:08:24 on Sep 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/adder2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:08:24 on Sep 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/adder2.sv 
+# -- Compiling module adder2
+# 
+# Top level modules:
+# 	adder2
+# End time: 17:08:24 on Sep 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/testbench_L3.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:08:24 on Sep 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/testbench_L3.sv 
+# -- Compiling module testbench_L3
+# 
+# Top level modules:
+# 	testbench_L3
+# End time: 17:08:24 on Sep 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench_L3
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench_L3 
+# Start time: 17:08:24 on Sep 15,2022
+# Loading sv_std.std
+# Loading work.testbench_L3
+# Loading work.adder2
+# Loading work.control
+# Loading work.router
+# Loading work.reg_17
+# Loading work.ripple_adder
+# Loading work.full_adder
+# Loading work.HexDriver
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ns
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(135): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(127): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(119): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(111): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(103): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(96): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(88): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(80): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(72): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(64): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(56): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(48): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(40): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(33): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(25): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(17): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(9): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/control.sv(19): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L3/adder2/run_once
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(80): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(72): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(64): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(56): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(48): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(40): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(33): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(25): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(17): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(9): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(135): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(127): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(119): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(111): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(103): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(96): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/router.sv(88): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/control.sv(19): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 2  Instance: /testbench_L3/adder2/run_once

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab2-2
-Fri Sep 09 15:47:31 2022
+Thu Sep 15 17:23:36 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -53,7 +53,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 09 15:47:31 2022       ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 15 17:23:36 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab2-2                                      ;
 ; Top-level Entity Name              ; Processor_8                                 ;
@@ -171,8 +171,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -569,7 +568,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -638,7 +637,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Sep 09 15:46:09 2022
+    Info: Processing started: Thu Sep 15 17:22:55 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2-2 -c Lab2-2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -701,7 +700,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_drb File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/db/cmpr_drb.tdf Line: 22
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2022.09.09.15:47:04 Progress: Loading sld993c4aaa/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2022.09.15.17:23:20 Progress: Loading sld993c4aaa/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -736,10 +735,10 @@ Info (21057): Implemented 832 device resources after synthesis - the final resou
     Info (21061): Implemented 744 logic cells
     Info (21064): Implemented 17 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4850 megabytes
-    Info: Processing ended: Fri Sep 09 15:47:31 2022
-    Info: Elapsed time: 00:01:22
-    Info: Total CPU time (on all processors): 00:02:13
+    Info: Peak virtual memory: 4842 megabytes
+    Info: Processing ended: Thu Sep 15 17:23:36 2022
+    Info: Elapsed time: 00:00:41
+    Info: Total CPU time (on all processors): 00:01:17
 
 
 +------------------------------------------+

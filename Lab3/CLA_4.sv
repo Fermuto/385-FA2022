@@ -3,6 +3,7 @@ module CLA_4 (
 	input logic [3:0] A, B, P, G,
 	output logic [3:0] S
 );
+	logic c1, c2, c3;
 	always_comb
 	begin
 		c1 = ((cin&P[0])|G[0]);
