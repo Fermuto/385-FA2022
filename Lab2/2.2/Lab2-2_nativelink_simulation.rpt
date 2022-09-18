@@ -19,6 +19,6 @@ Sim dir               :  simulation\modelsim
 Error: Can't create directory C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab2/2.2/C:/Users/dante/Desktop/Professional/School/Classes/ECE 385/385-FA2022/Lab2/2.2/output_files/rtl_work
 Info: Starting NativeLink simulation with ModelSim-Altera software
 Sourced NativeLink script c:/intelfpga_lite/18.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
-Warning: File Lab2-2_run_msim_rtl_verilog.do already exists - backing up current file as Lab2-2_run_msim_rtl_verilog.do.bak
+Warning: File Lab2-2_run_msim_rtl_verilog.do already exists - backing up current file as Lab2-2_run_msim_rtl_verilog.do.bak1
 Info: Spawning ModelSim-Altera Simulation software 
 Info: NativeLink simulation flow was successful
