@@ -1,0 +1,10 @@
+module compute (
+	input logic  [7:0] A, B, S,
+	input logic        X,
+	output logic [7:0] A_Out, B_Out,
+	output logic       X_Out
+);
+	logic c1, c2, c3, c4, c5, c6, c7, ignr;
+	
+
+endmodule

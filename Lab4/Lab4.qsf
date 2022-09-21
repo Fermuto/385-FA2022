@@ -56,3 +56,4 @@ set_global_assignment -name SYSTEMVERILOG_FILE multiplier.sv
 set_global_assignment -name SYSTEMVERILOG_FILE reg_8.sv
 set_global_assignment -name SYSTEMVERILOG_FILE subtractor8.sv
 set_global_assignment -name SYSTEMVERILOG_FILE full_adder8.sv
+set_global_assignment -name SYSTEMVERILOG_FILE compute.sv

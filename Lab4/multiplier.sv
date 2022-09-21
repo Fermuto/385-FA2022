@@ -11,4 +11,8 @@ module multiplier (input logic Clk, Reset_Load_Clear, Run,
 
 );
 
+logic M, Busy;
+
+
+
 endmodule
