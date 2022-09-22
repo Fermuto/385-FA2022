@@ -68,4 +68,29 @@ module multiplier (input Clk, Reset_Load_Clear, Run,
 					, .D (Mid_B), .Data_Out (Bval));
 	reg_8 REG_A (.Clk (Clk), .Reset (Reset_Load_Clear), .Shift_In (Xval), .Load (ALoad), .Shift_En (Shift)
 					, .D (Mid_A), .Data_Out (Aval));
+					
+					
+	HexDriver		SWHex0 (
+								.In0(SW[3:0]),
+								.Out0(HEX0) );
+								
+	HexDriver		SWHex1 (
+								.In0(SW[7:4]),
+								.Out0(HEX1) );
+								
+	HexDriver		BHex0 (
+								.In0(Bval[3:0]),
+								.Out0(HEX2) );
+								
+	HexDriver		BHex1 (
+								.In0(Bval[7:4]),
+								.Out0(HEX3) );
+		
+	HexDriver		AHex0 (
+								.In0(Aval[11:8]),
+								.Out0(HEX4) );
+								
+	HexDriver		AHex1 (
+								.In0(Aval[15:12]),
+								.Out0(HEX5) );
 endmodule

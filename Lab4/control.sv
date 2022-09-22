@@ -43,7 +43,7 @@ module control (	input logic Clk, Reset_Load_Clear, Run, M,
 					H2:    next_state = I;
 					I :    next_state = I2;
 					I2:    next_state = J;
-					J :    next_state = J;
+					J :    next_state = A;
 
 			  endcase
 		
