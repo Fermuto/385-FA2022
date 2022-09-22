@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab3
-Thu Sep 15 17:31:42 2022
+Fri Sep 16 14:00:30 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -54,7 +54,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 15 17:31:42 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep 16 14:00:30 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab3                                        ;
 ; Top-level Entity Name              ; adder2                                      ;
@@ -405,7 +405,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -415,7 +415,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Sep 15 17:31:28 2022
+    Info: Processing started: Fri Sep 16 14:00:07 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -478,9 +478,9 @@ Info (21057): Implemented 131 device resources after synthesis - the final resou
     Info (21061): Implemented 66 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
     Info: Peak virtual memory: 4763 megabytes
-    Info: Processing ended: Thu Sep 15 17:31:42 2022
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Processing ended: Fri Sep 16 14:00:30 2022
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:45
 
 
 +------------------------------------------+

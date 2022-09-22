@@ -183,3 +183,5 @@
 #    Time: 0 ps  Iteration: 1  Instance: /testbench_L3/adder2/route
 # ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab3/control.sv(19): No condition is true in the unique/priority if/case statement.
 #    Time: 0 ps  Iteration: 2  Instance: /testbench_L3/adder2/run_once
+# End time: 13:39:52 on Sep 16,2022, Elapsed time: 20:31:28
+# Errors: 0, Warnings: 36

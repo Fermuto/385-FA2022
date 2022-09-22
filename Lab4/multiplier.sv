@@ -10,9 +10,19 @@ module multiplier (input logic Clk, Reset_Load_Clear, Run,
 										 HEX5
 
 );
-
-logic M, Busy;
-
-
-
+	logic M, Busy, Add, Sub, Shift, Clr_Ld;
+	assign M = Bval[0];
+	control control (.Clk (Clk), .Reset_Load_Clear (Reset_Load_Clear), .Run (Run), .M (M), .Busy (Busy)
+							.Clr_Ld (Clr_Ld), .Shift (Shift), .Add (Add), .Sub (Sub));
+	 
+	if(Add == 1'b1)
+	 begin
+		full_adder9 ADD ();
+	 end
+	if(Sub == 1'b1)
+	 begin
+		subtractor8 SUB ();
+	 end
+	reg_8 REG_A ();
+	reg_8 REG_B ();
 endmodule

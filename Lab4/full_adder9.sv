@@ -2,7 +2,8 @@ module full_adder9 (
 	input  [7:0] A, S,
 	input         cin,
 	output [7:0] A_Out,
-	output       X
+	output       X,
+	output Done
 );
 	logic c1, c2, c3, c4, c5, c6, c7, cout, ignr;
 	
@@ -14,7 +15,7 @@ module full_adder9 (
 	full_adder FA5 (.x (A[5]), .y (S[5]), .z (c5), .s (A_Out[5]), .c (c6));
 	full_adder FA6 (.x (A[6]), .y (S[6]), .z (c6), .s (A_Out[6]), .c (c7));
 	full_adder FA7 (.x (A[7]), .y (S[7]), .z (c7), .s (A_Out[7]), .c (cout));
-	full_adder FA8 (.x (A[7]), .y (S[7]), .z (cout), .s (X), .c (ignr));
-	if (
+	full_adder FA8 (.x (A[7]), .y (S[7]), .z (cout), .s (X), .c (ignr), .Done (Done));
+	
 	
 endmodule

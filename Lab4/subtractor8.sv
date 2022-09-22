@@ -1,7 +1,8 @@
 module subtractor8 (
 	input  [7:0] A, B,
 	output [7:0] D,
-	output        cout
+	output        cout,
+	output Done
 );
 	logic c1, c2, c3, c4, c5, c6, c7;
 	
@@ -20,6 +21,6 @@ module subtractor8 (
 	full_adder FA4 (.x (A[4]), .y (B[4]), .z (c4), .s (D[4]), .c (c5));
 	full_adder FA5 (.x (A[5]), .y (B[5]), .z (c5), .s (D[5]), .c (c6));
 	full_adder FA6 (.x (A[6]), .y (B[6]), .z (c6), .s (D[6]), .c (c7));
-	full_adder FA7 (.x (A[7]), .y (B[7]), .z (c7), .s (D[7]), .c (cout));
+	full_adder FA7 (.x (A[7]), .y (B[7]), .z (c7), .s (D[7]), .c (cout), .Done (Done));
 
 endmodule

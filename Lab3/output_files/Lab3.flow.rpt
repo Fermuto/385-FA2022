@@ -1,5 +1,5 @@
 Flow report for Lab3
-Thu Sep 15 17:32:06 2022
+Fri Sep 16 14:01:05 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Sep 15 17:32:06 2022       ;
+; Flow Status                        ; Successful - Fri Sep 16 14:01:05 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab3                                        ;
 ; Top-level Entity Name              ; adder2                                      ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/15/2022 17:31:28 ;
+; Start date & time ; 09/16/2022 14:00:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab3                ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+--------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                                        ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+--------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 186420051946.166328108803688                                 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 186420051946.166335480807560                                 ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                           ; --            ; --          ; testbench_L3   ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench_L3                                                 ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR        ; C:\Users\zdrag\Documents\GitHub\385-FA2022\Lab3\output_files ; --            ; --          ; eda_simulation ;
@@ -106,12 +106,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4763 MB             ; 00:00:33                           ;
-; Fitter               ; 00:00:11     ; 1.0                     ; 5632 MB             ; 00:00:16                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4683 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4816 MB             ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4641 MB             ; 00:00:01                           ;
-; Total                ; 00:00:34     ; --                      ; --                  ; 00:00:58                           ;
+; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 4763 MB             ; 00:00:45                           ;
+; Fitter               ; 00:00:16     ; 1.0                     ; 5638 MB             ; 00:00:22                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4683 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:06     ; 1.1                     ; 4825 MB             ; 00:00:06                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4641 MB             ; 00:00:02                           ;
+; Total                ; 00:00:52     ; --                      ; --                  ; 00:01:20                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
