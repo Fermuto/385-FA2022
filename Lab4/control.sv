@@ -71,7 +71,7 @@ module control (	input logic Clk, Reset_Load_Clear, Run, M,
 					end
 					default:
 					begin 
-						if (FollowO == 2'b10)
+						if ((Follow == 2'b10))
 						 begin
 							Clr_Ld = 1'b0;
 							Shift = 1'b0;
@@ -79,7 +79,7 @@ module control (	input logic Clk, Reset_Load_Clear, Run, M,
 							Sub = 1'b0;
 							FollowO = 2'b00;
 						 end
-						else if ((M == 1'b1) & (curr_state != (I | I2)) & ((curr_state == B) | (curr_state == C) | (curr_state == D) | (curr_state == E) | (curr_state == F) | (curr_state == G) | (curr_state == H)))
+						else if ((M == 1'b1) & ((curr_state != (I)) | (curr_state != (I2))) & ((curr_state == B) | (curr_state == C) | (curr_state == D) | (curr_state == E) | (curr_state == F) | (curr_state == G) | (curr_state == H)))
 						 begin
 							Clr_Ld = 1'b0;
 							Shift = 1'b0;
@@ -88,7 +88,7 @@ module control (	input logic Clk, Reset_Load_Clear, Run, M,
 							FollowO = 2'b01;
 						 end
 						 
-						else if ((Follow == 2'b01) & (curr_state != (I | I2)) & ((curr_state == B2) | (curr_state == C2) | (curr_state == D2) | (curr_state == E2) | (curr_state == F2) | (curr_state == G2) | (curr_state == H2)))
+						else if ((Follow == 2'b01) & ((curr_state != (I)) | (curr_state != (I2))) & ((curr_state == B2) | (curr_state == C2) | (curr_state == D2) | (curr_state == E2) | (curr_state == F2) | (curr_state == G2) | (curr_state == H2)))
 						 begin
 							Clr_Ld = 1'b0;
 							Shift = 1'b1;
@@ -121,7 +121,7 @@ module control (	input logic Clk, Reset_Load_Clear, Run, M,
 							Shift = 1'b1;
 							Add = 1'b0;
 							Sub = 1'b0;
-							if ((curr_state == B) | (curr_state == C) | (curr_state == D) | (curr_state == E) | (curr_state == F) | (curr_state == G) | (curr_state == H))
+							if ((curr_state == B) | (curr_state == C) | (curr_state == D) | (curr_state == E) | (curr_state == F) | (curr_state == G) | (curr_state == H) | (curr_state == I))
 								FollowO = 2'b10;
 							else
 								FollowO = 2'b00;

@@ -8,7 +8,8 @@ module multiplier (input Clk, Reset_Load_Clear, Run,
 										 HEX3, 
 										 HEX4,
 										 HEX5);
-	logic M, Clr_Ld, ALoad, BLoad, Follow, X_Out, X_Sub;
+	logic M, Clr_Ld, ALoad, BLoad, X_Out, X_Sub;
+	logic [1:0] Follow;
 	logic [7:0] Mid_A, Mid_B, Add_Out, Sub_Out;
 	initial Follow = 0;
 	assign M = Bval[0];
@@ -17,10 +18,13 @@ module multiplier (input Clk, Reset_Load_Clear, Run,
 	 begin
 		if (Reset_Load_Clear)
 			Xval <= 1'b0;
+		if (Run)
+			Xval <= 1'b0;
 		if (Add)
 			Xval <= X_Out;
 		if (Sub)
 			Xval <= X_Sub;
+
 	 end
 	
 	control control (.Clk (Clk), .Reset_Load_Clear (Reset_Load_Clear), .Run (Run), .M (M), .FollowI (Follow),
@@ -37,7 +41,7 @@ module multiplier (input Clk, Reset_Load_Clear, Run,
 		else if (Run)
 		 begin
 			Mid_A = 8'b00000000;
-			Xval = 1'b0;
+			Mid_B = 8'b00000000;
 		 end
 		else
 		 begin

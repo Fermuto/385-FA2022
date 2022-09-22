@@ -96,6 +96,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "Run",
+					"strict" : false
+				},
+				{
 					"name" : "SW[1]",
 					"strict" : false
 				},
@@ -121,10 +125,6 @@
 				},
 				{
 					"name" : "SW[7]",
-					"strict" : false
-				},
-				{
-					"name" : "Run",
 					"strict" : false
 				}
 			]

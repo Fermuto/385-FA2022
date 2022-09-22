@@ -2,14 +2,14 @@
 Clk => Clk.IN3
 Reset_Load_Clear => Reset_Load_Clear.IN3
 Run => Run.IN1
-SW[0] => SW[0].IN2
-SW[1] => SW[1].IN2
-SW[2] => SW[2].IN2
-SW[3] => SW[3].IN2
-SW[4] => SW[4].IN2
-SW[5] => SW[5].IN2
-SW[6] => SW[6].IN2
-SW[7] => SW[7].IN2
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
 Aval[0] <= Aval[0].DB_MAX_OUTPUT_PORT_TYPE
 Aval[1] <= Aval[1].DB_MAX_OUTPUT_PORT_TYPE
 Aval[2] <= Aval[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -77,14 +77,7 @@ HEX5[6] <= <GND>
 |multiplier|control:control
 Clk => Follow[0].CLK
 Clk => Follow[1].CLK
-Clk => curr_state[0].CLK
-Clk => curr_state[1].CLK
-Clk => curr_state[2].CLK
-Clk => curr_state[3].CLK
-Clk => curr_state[4].CLK
-Clk => curr_state[5].CLK
-Clk => curr_state[6].CLK
-Clk => curr_state[7].CLK
+Clk => curr_state~1.DATAIN
 Reset_Load_Clear => curr_state.OUTPUTSELECT
 Reset_Load_Clear => curr_state.OUTPUTSELECT
 Reset_Load_Clear => curr_state.OUTPUTSELECT
@@ -93,6 +86,26 @@ Reset_Load_Clear => curr_state.OUTPUTSELECT
 Reset_Load_Clear => curr_state.OUTPUTSELECT
 Reset_Load_Clear => curr_state.OUTPUTSELECT
 Reset_Load_Clear => curr_state.OUTPUTSELECT
+Reset_Load_Clear => curr_state.OUTPUTSELECT
+Reset_Load_Clear => curr_state.OUTPUTSELECT
+Reset_Load_Clear => curr_state.OUTPUTSELECT
+Reset_Load_Clear => curr_state.OUTPUTSELECT
+Reset_Load_Clear => curr_state.OUTPUTSELECT
+Reset_Load_Clear => curr_state.OUTPUTSELECT
+Reset_Load_Clear => curr_state.OUTPUTSELECT
+Reset_Load_Clear => curr_state.OUTPUTSELECT
+Reset_Load_Clear => curr_state.OUTPUTSELECT
+Reset_Load_Clear => curr_state.OUTPUTSELECT
+Run => next_state.OUTPUTSELECT
+Run => next_state.OUTPUTSELECT
+Run => next_state.OUTPUTSELECT
+Run => next_state.OUTPUTSELECT
+Run => next_state.OUTPUTSELECT
+Run => next_state.OUTPUTSELECT
+Run => next_state.OUTPUTSELECT
+Run => next_state.OUTPUTSELECT
+Run => next_state.OUTPUTSELECT
+Run => next_state.OUTPUTSELECT
 Run => next_state.OUTPUTSELECT
 Run => next_state.OUTPUTSELECT
 Run => next_state.OUTPUTSELECT
@@ -102,10 +115,10 @@ Run => next_state.OUTPUTSELECT
 Run => next_state.OUTPUTSELECT
 Run => next_state.OUTPUTSELECT
 M => always1.IN1
-M => always1.IN1
+M => always1.IN0
 FollowI[0] => Follow[0].DATAIN
 FollowI[1] => Follow[1].DATAIN
-Clr_Ld <= Equal35.DB_MAX_OUTPUT_PORT_TYPE
+Clr_Ld <= Clr_Ld.DB_MAX_OUTPUT_PORT_TYPE
 Shift <= Shift.DB_MAX_OUTPUT_PORT_TYPE
 Add <= Add.DB_MAX_OUTPUT_PORT_TYPE
 Sub <= Sub.DB_MAX_OUTPUT_PORT_TYPE
@@ -268,7 +281,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplier|subtractor8:SUB
+|multiplier|full_adder9:SUB
 A[0] => A[0].IN1
 A[1] => A[1].IN1
 A[2] => A[2].IN1
@@ -276,27 +289,28 @@ A[3] => A[3].IN1
 A[4] => A[4].IN1
 A[5] => A[5].IN1
 A[6] => A[6].IN1
-A[7] => A[7].IN1
-B[0] => _.IN1
-B[1] => _.IN1
-B[2] => _.IN1
-B[3] => _.IN1
-B[4] => _.IN1
-B[5] => _.IN1
-B[6] => _.IN1
-B[7] => _.IN1
-D[0] <= full_adder:FA0.s
-D[1] <= full_adder:FA1.s
-D[2] <= full_adder:FA2.s
-D[3] <= full_adder:FA3.s
-D[4] <= full_adder:FA4.s
-D[5] <= full_adder:FA5.s
-D[6] <= full_adder:FA6.s
-D[7] <= full_adder:FA7.s
-cout <= full_adder:FA7.c
+A[7] => A[7].IN2
+S[0] => S[0].IN1
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+S[3] => S[3].IN1
+S[4] => S[4].IN1
+S[5] => S[5].IN1
+S[6] => S[6].IN1
+S[7] => S[7].IN2
+cin => cin.IN1
+A_Out[0] <= full_adder:FA0.s
+A_Out[1] <= full_adder:FA1.s
+A_Out[2] <= full_adder:FA2.s
+A_Out[3] <= full_adder:FA3.s
+A_Out[4] <= full_adder:FA4.s
+A_Out[5] <= full_adder:FA5.s
+A_Out[6] <= full_adder:FA6.s
+A_Out[7] <= full_adder:FA7.s
+X <= full_adder:FA8.s
 
 
-|multiplier|subtractor8:SUB|full_adder:FA0
+|multiplier|full_adder9:SUB|full_adder:FA0
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -310,7 +324,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplier|subtractor8:SUB|full_adder:FA1
+|multiplier|full_adder9:SUB|full_adder:FA1
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -324,7 +338,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplier|subtractor8:SUB|full_adder:FA2
+|multiplier|full_adder9:SUB|full_adder:FA2
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -338,7 +352,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplier|subtractor8:SUB|full_adder:FA3
+|multiplier|full_adder9:SUB|full_adder:FA3
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -352,7 +366,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplier|subtractor8:SUB|full_adder:FA4
+|multiplier|full_adder9:SUB|full_adder:FA4
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -366,7 +380,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplier|subtractor8:SUB|full_adder:FA5
+|multiplier|full_adder9:SUB|full_adder:FA5
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -380,7 +394,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplier|subtractor8:SUB|full_adder:FA6
+|multiplier|full_adder9:SUB|full_adder:FA6
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -394,7 +408,21 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplier|subtractor8:SUB|full_adder:FA7
+|multiplier|full_adder9:SUB|full_adder:FA7
+x => s.IN0
+x => c.IN0
+x => c.IN0
+y => s.IN1
+y => c.IN1
+y => c.IN0
+z => s.IN1
+z => c.IN1
+z => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|full_adder9:SUB|full_adder:FA8
 x => s.IN0
 x => c.IN0
 x => c.IN0

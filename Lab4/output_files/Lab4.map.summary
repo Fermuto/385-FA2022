@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Thu Sep 22 05:10:26 2022
+Analysis & Synthesis Status : Successful - Thu Sep 22 16:47:27 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Lab4
 Top-level Entity Name : multiplier
 Family : MAX 10
-Total logic elements : 67
-    Total combinational functions : 67
-    Dedicated logic registers : 22
-Total registers : 22
+Total logic elements : 90
+    Total combinational functions : 90
+    Dedicated logic registers : 37
+Total registers : 37
 Total pins : 73
 Total virtual pins : 0
 Total memory bits : 0

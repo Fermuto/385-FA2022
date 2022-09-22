@@ -45,5 +45,6 @@ Run = 0;
 Reset_Load_Clear = 0;
 Run = 1;
 
+#2 Run = 0;
 end
 endmodule
