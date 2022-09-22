@@ -14,11 +14,18 @@ module multiplier (input Clk, Reset_Load_Clear, Run,
 	initial Follow = 0;
 	assign M = Bval[0];
 	
+	always_comb	
+		begin
+				RLC_h = ~Reset_Load_Clear;
+				Run_h = ~Run;
+
+		end
+	
 	always_ff @ (posedge Clk)
 	 begin
-		if (Reset_Load_Clear)
+		if (RLC_h)
 			Xval <= 1'b0;
-		if (Run)
+		if (Run_h)
 			Xval <= 1'b0;
 		if (Add)
 			Xval <= X_Out;
@@ -27,18 +34,18 @@ module multiplier (input Clk, Reset_Load_Clear, Run,
 
 	 end
 	
-	control control (.Clk (Clk), .Reset_Load_Clear (Reset_Load_Clear), .Run (Run), .M (M), .FollowI (Follow),
+	control control (.Clk (Clk), .Reset_Load_Clear (RLC_h), .Run (Run_h), .M (M), .FollowI (Follow),
 							.Clr_Ld (Clr_Ld), .Shift (Shift), .Add (Add), .Sub (Sub), .FollowO (Follow));
 	full_adder9 ADD (.A (Aval), .S (SW), .cin (1'b0), .A_Out (Add_Out), .X (X_Out));
 	full_adder9 SUB (.A (Aval), .S (~SW), .cin (1'b1), .A_Out (Sub_Out), .X (X_Sub));
 	always_comb
 	begin
-		if (Reset_Load_Clear)
+		if (RLC_h)
 		 begin
 			Mid_B = SW;
 			Mid_A = 8'b00000000;
 		 end
-		else if (Run)
+		else if (Run_h)
 		 begin
 			Mid_A = 8'b00000000;
 			Mid_B = 8'b00000000;
@@ -63,10 +70,10 @@ module multiplier (input Clk, Reset_Load_Clear, Run,
 		 end	
 	end
 	assign ALoad = (Add | Sub);
-	assign BLoad = (Reset_Load_Clear);
+	assign BLoad = (RLC_h);
 	reg_8 REG_B (.Clk (Clk), .Reset (1'b0), .Shift_In (Aval[0]), .Load (BLoad), .Shift_En (Shift)
 					, .D (Mid_B), .Data_Out (Bval));
-	reg_8 REG_A (.Clk (Clk), .Reset (Reset_Load_Clear), .Shift_In (Xval), .Load (ALoad), .Shift_En (Shift)
+	reg_8 REG_A (.Clk (Clk), .Reset (RLC_h), .Shift_In (Xval), .Load (ALoad), .Shift_En (Shift)
 					, .D (Mid_A), .Data_Out (Aval));
 					
 					
@@ -87,10 +94,10 @@ module multiplier (input Clk, Reset_Load_Clear, Run,
 								.Out0(HEX3) );
 		
 	HexDriver		AHex0 (
-								.In0(Aval[11:8]),
+								.In0(Aval[3:0]),
 								.Out0(HEX4) );
 								
 	HexDriver		AHex1 (
-								.In0(Aval[15:12]),
+								.In0(Aval[7:4]),
 								.Out0(HEX5) );
 endmodule

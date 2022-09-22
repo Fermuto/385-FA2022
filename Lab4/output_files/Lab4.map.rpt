@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab4
-Thu Sep 22 17:03:30 2022
+Thu Sep 22 17:32:39 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -52,13 +52,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 22 17:03:30 2022       ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 22 17:32:39 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab4                                        ;
 ; Top-level Entity Name              ; multiplier                                  ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 90                                          ;
-;     Total combinational functions  ; 90                                          ;
+; Total logic elements               ; 132                                         ;
+;     Total combinational functions  ; 132                                         ;
 ;     Dedicated logic registers      ; 37                                          ;
 ; Total registers                    ; 37                                          ;
 ; Total pins                         ; 73                                          ;
@@ -184,6 +184,7 @@ refer to the applicable agreement for further details.
 ; full_adder9.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv ;         ;
 ; multiplier.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv  ;         ;
 ; reg_8.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv       ;         ;
+; HexDriver.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/HexDriver.sv   ;         ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
 
 
@@ -192,16 +193,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 90        ;
+; Estimated Total logic elements              ; 132       ;
 ;                                             ;           ;
-; Total combinational functions               ; 90        ;
+; Total combinational functions               ; 132       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 32        ;
-;     -- 3 input functions                    ; 30        ;
+;     -- 4 input functions                    ; 75        ;
+;     -- 3 input functions                    ; 29        ;
 ;     -- <=2 input functions                  ; 28        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 90        ;
+;     -- normal mode                          ; 132       ;
 ;     -- arithmetic mode                      ; 0         ;
 ;                                             ;           ;
 ; Total registers                             ; 37        ;
@@ -214,8 +215,8 @@ refer to the applicable agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; Clk~input ;
 ; Maximum fan-out                             ; 37        ;
-; Total fan-out                               ; 481       ;
-; Average fan-out                             ; 1.76      ;
+; Total fan-out                               ; 691       ;
+; Average fan-out                             ; 2.19      ;
 +---------------------------------------------+-----------+
 
 
@@ -224,7 +225,13 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                        ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+-------------+--------------+
-; |multiplier                ; 90 (3)              ; 37 (1)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 73   ; 0            ; 0          ; |multiplier                                ; multiplier  ; work         ;
+; |multiplier                ; 132 (3)             ; 37 (1)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 73   ; 0            ; 0          ; |multiplier                                ; multiplier  ; work         ;
+;    |HexDriver:AHex0|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|HexDriver:AHex0                ; HexDriver   ; work         ;
+;    |HexDriver:AHex1|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|HexDriver:AHex1                ; HexDriver   ; work         ;
+;    |HexDriver:BHex0|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|HexDriver:BHex0                ; HexDriver   ; work         ;
+;    |HexDriver:BHex1|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|HexDriver:BHex1                ; HexDriver   ; work         ;
+;    |HexDriver:SWHex0|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|HexDriver:SWHex0               ; HexDriver   ; work         ;
+;    |HexDriver:SWHex1|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|HexDriver:SWHex1               ; HexDriver   ; work         ;
 ;    |control:control|       ; 29 (29)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|control:control                ; control     ; work         ;
 ;    |full_adder9:ADD|       ; 19 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD                ; full_adder9 ; work         ;
 ;       |full_adder:FA1|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD|full_adder:FA1 ; full_adder  ; work         ;
@@ -300,7 +307,7 @@ Encoding Type:  One-Hot
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 37    ;
-; Number of registers using Synchronous Clear  ; 9     ;
+; Number of registers using Synchronous Clear  ; 8     ;
 ; Number of registers using Synchronous Load   ; 8     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -309,15 +316,14 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |multiplier|reg_8:REG_B|Data_Out[5]    ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 14 LEs               ; 21 LEs                 ; Yes        ; |multiplier|reg_8:REG_A|Data_Out[6]    ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |multiplier|control:control|curr_state ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |multiplier|reg_8:REG_B|Data_Out[6] ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 14 LEs               ; 21 LEs                 ; Yes        ; |multiplier|reg_8:REG_A|Data_Out[6] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------+
@@ -384,19 +390,18 @@ Encoding Type:  One-Hot
 ; cycloneiii_ff         ; 37                          ;
 ;     ENA               ; 8                           ;
 ;     ENA SCLR SLD      ; 7                           ;
-;     SCLR              ; 2                           ;
+;     SCLR              ; 1                           ;
 ;     SLD               ; 1                           ;
-;     plain             ; 19                          ;
-; cycloneiii_lcell_comb ; 92                          ;
-;     normal            ; 92                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
+;     plain             ; 20                          ;
+; cycloneiii_lcell_comb ; 139                         ;
+;     normal            ; 139                         ;
+;         1 data inputs ; 7                           ;
 ;         2 data inputs ; 28                          ;
-;         3 data inputs ; 30                          ;
-;         4 data inputs ; 32                          ;
+;         3 data inputs ; 29                          ;
+;         4 data inputs ; 75                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 3.69                        ;
+; Average LUT depth     ; 3.12                        ;
 +-----------------------+-----------------------------+
 
 
@@ -415,7 +420,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Sep 22 17:03:23 2022
+    Info: Processing started: Thu Sep 22 17:32:31 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab4 -c Lab4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -435,75 +440,29 @@ Info (12021): Found 1 design units, including 1 entities, in source file full_ad
     Info (12023): Found entity 1: full_adder8 File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder8.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file testbench_l4.sv
     Info (12023): Found entity 1: testbench_L4 File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/testbench_L4.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file hexdriver.sv
+    Info (12023): Found entity 1: HexDriver File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/HexDriver.sv Line: 1
 Info (12127): Elaborating entity "multiplier" for the top level hierarchy
-Warning (10034): Output port "HEX0" at multiplier.sv(5) has no driver File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 5
-Warning (10034): Output port "HEX1" at multiplier.sv(6) has no driver File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 6
-Warning (10034): Output port "HEX2" at multiplier.sv(7) has no driver File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 7
-Warning (10034): Output port "HEX3" at multiplier.sv(8) has no driver File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 8
-Warning (10034): Output port "HEX4" at multiplier.sv(9) has no driver File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 9
-Warning (10034): Output port "HEX5" at multiplier.sv(10) has no driver File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 10
 Info (12128): Elaborating entity "control" for hierarchy "control:control" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 31
 Info (10264): Verilog HDL Case Statement information at control.sv(54): all case item expressions in this case statement are onehot File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv Line: 54
 Info (12128): Elaborating entity "full_adder9" for hierarchy "full_adder9:ADD" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 32
 Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder9:ADD|full_adder:FA0" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv Line: 9
 Info (12128): Elaborating entity "reg_8" for hierarchy "reg_8:REG_B" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 68
+Info (12128): Elaborating entity "HexDriver" for hierarchy "HexDriver:SWHex0" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 75
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 5
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 5
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 5
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 5
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 5
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 5
-    Warning (13410): Pin "HEX0[6]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 5
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 6
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 6
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 6
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 6
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 6
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 6
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 6
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 7
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 7
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 7
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 7
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 7
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 7
-    Warning (13410): Pin "HEX2[6]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 7
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 8
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 8
-    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 8
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 8
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 8
-    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 8
-    Warning (13410): Pin "HEX3[6]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 8
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 9
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 9
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 9
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 9
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 9
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 9
-    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 9
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 10
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 10
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 10
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 10
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 10
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 10
-    Warning (13410): Pin "HEX5[6]" is stuck at GND File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/output_files/Lab4.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 164 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 206 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 62 output pins
-    Info (21061): Implemented 91 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 51 warnings
-    Info: Peak virtual memory: 4818 megabytes
-    Info: Processing ended: Thu Sep 22 17:03:30 2022
-    Info: Elapsed time: 00:00:07
+    Info (21061): Implemented 133 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4819 megabytes
+    Info: Processing ended: Thu Sep 22 17:32:39 2022
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:14
 
 

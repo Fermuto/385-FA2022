@@ -55,7 +55,14 @@ module control (	input logic Clk, Reset_Load_Clear, Run, M,
 					
 					A: 
 					begin
+						if (Reset_Load_Clear)
+						 begin
 						 Clr_Ld = 1'b1;
+						 end
+						else
+						 begin
+							Clr_Ld = 1'b0;
+						 end
 						 Shift = 1'b0;
 						 Add = 1'b0;
 						 Sub = 1'b0;
