@@ -34,6 +34,11 @@ module multiplier (input Clk, Reset_Load_Clear, Run,
 			Mid_B = SW;
 			Mid_A = 8'b00000000;
 		 end
+		else if (Run)
+		 begin
+			Mid_A = 8'b00000000;
+			Xval = 1'b0;
+		 end
 		else
 		 begin
 			if(Add == 1'b1)
