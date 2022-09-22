@@ -1,10 +1,8 @@
-module full_adder (logic input x, y, z,
-	logic output s, c, Done);
+module full_adder (input x, y, z,
+	output logic s, c);
 	always_comb
 	 begin
-		Done = 1'b0;
 		s = x^y^z;
 		c = (x&y)|(y&z)|(x&z);
-		Done = 1'b1;
 	 end
 endmodule

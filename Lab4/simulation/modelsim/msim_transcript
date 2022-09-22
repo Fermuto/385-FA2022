@@ -1,0 +1,873 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Lab4_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:02:57 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 05:02:57 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:02:57 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 05:02:57 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:02:57 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv 
+# -- Compiling module full_adder9
+# 
+# Top level modules:
+# 	full_adder9
+# End time: 05:02:57 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:02:57 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv 
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# End time: 05:02:57 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:02:57 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv 
+# -- Compiling module reg_8
+# 
+# Top level modules:
+# 	reg_8
+# End time: 05:02:57 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:02:57 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv 
+# -- Compiling module subtractor8
+# 
+# Top level modules:
+# 	subtractor8
+# End time: 05:02:57 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/testbench_L4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:02:57 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/testbench_L4.sv 
+# -- Compiling module testbench_L4
+# 
+# Top level modules:
+# 	testbench_L4
+# End time: 05:02:57 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench_L4
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench_L4 
+# Start time: 05:02:57 on Sep 22,2022
+# Loading sv_std.std
+# Loading work.testbench_L4
+# Loading work.multiplier
+# Loading work.control
+# Loading work.full_adder9
+# Loading work.full_adder
+# Loading work.subtractor8
+# Loading work.reg_8
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(23): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowI'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(23): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowO'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(25): [PCDPC] - Port size (1) does not match connection size (8) for port 'X'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/ADD File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/SUB File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(55): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_B File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(55): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(57): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_A File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(57): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3839) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(13): Variable '/testbench_L4/multiplier/Follow', driven via a port connection, is multiply driven. See C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 105 ns
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench_L4/multiplier/control
+restart -f; run 500ns
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(23): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowI'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(23): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowO'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(25): [PCDPC] - Port size (1) does not match connection size (8) for port 'X'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/ADD File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/SUB File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(55): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_B File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(55): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(57): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_A File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(57): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3839) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(13): Variable '/testbench_L4/multiplier/Follow', driven via a port connection, is multiply driven. See C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench_L4/multiplier/control
+add wave -position end  sim:/testbench_L4/Xval
+restart -f; run 500ns
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(23): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowI'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(23): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowO'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(25): [PCDPC] - Port size (1) does not match connection size (8) for port 'X'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/ADD File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/SUB File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(55): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_B File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(55): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(57): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_A File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(57): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3839) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(13): Variable '/testbench_L4/multiplier/Follow', driven via a port connection, is multiply driven. See C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench_L4/multiplier/control
+do Lab4_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:08:12 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 05:08:12 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:08:12 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 05:08:12 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:08:12 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv 
+# -- Compiling module full_adder9
+# 
+# Top level modules:
+# 	full_adder9
+# End time: 05:08:12 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:08:12 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv 
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# End time: 05:08:12 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:08:12 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv 
+# -- Compiling module reg_8
+# 
+# Top level modules:
+# 	reg_8
+# End time: 05:08:12 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:08:12 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv 
+# -- Compiling module subtractor8
+# 
+# Top level modules:
+# 	subtractor8
+# End time: 05:08:12 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/testbench_L4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:08:12 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/testbench_L4.sv 
+# -- Compiling module testbench_L4
+# 
+# Top level modules:
+# 	testbench_L4
+# End time: 05:08:12 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench_L4
+# End time: 05:08:13 on Sep 22,2022, Elapsed time: 0:05:16
+# Errors: 0, Warnings: 39
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench_L4 
+# Start time: 05:08:13 on Sep 22,2022
+# Loading sv_std.std
+# Loading work.testbench_L4
+# Loading work.multiplier
+# Loading work.control
+# Loading work.full_adder9
+# Loading work.full_adder
+# Loading work.subtractor8
+# Loading work.reg_8
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowI'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowO'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [PCDPC] - Port size (1) does not match connection size (8) for port 'X'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/ADD File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/SUB File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_B File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_A File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3839) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(13): Variable '/testbench_L4/multiplier/Follow', driven via a port connection, is multiply driven. See C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 105 ns
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench_L4/multiplier/control
+restart -f; run 500ns
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowI'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowO'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [PCDPC] - Port size (1) does not match connection size (8) for port 'X'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/ADD File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/SUB File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_B File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_A File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3839) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(13): Variable '/testbench_L4/multiplier/Follow', driven via a port connection, is multiply driven. See C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench_L4/multiplier/control
+add wave -position insertpoint  \
+sim:/testbench_L4/multiplier/X_Out
+restart -f; run 500ns
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowI'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowO'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [PCDPC] - Port size (1) does not match connection size (8) for port 'X'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/ADD File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/SUB File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_B File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_A File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3839) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(13): Variable '/testbench_L4/multiplier/Follow', driven via a port connection, is multiply driven. See C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench_L4/multiplier/control
+restart -f; run 500ns
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowI'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowO'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [PCDPC] - Port size (1) does not match connection size (8) for port 'X'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/ADD File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/SUB File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_B File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_A File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3839) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(13): Variable '/testbench_L4/multiplier/Follow', driven via a port connection, is multiply driven. See C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench_L4/multiplier/control
+do Lab4_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:09:43 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 05:09:43 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:09:43 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 05:09:43 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:09:43 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv 
+# -- Compiling module full_adder9
+# 
+# Top level modules:
+# 	full_adder9
+# End time: 05:09:43 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:09:43 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv 
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# End time: 05:09:43 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:09:43 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv 
+# -- Compiling module reg_8
+# 
+# Top level modules:
+# 	reg_8
+# End time: 05:09:44 on Sep 22,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:09:44 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv 
+# -- Compiling module subtractor8
+# 
+# Top level modules:
+# 	subtractor8
+# End time: 05:09:44 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/testbench_L4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:09:44 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/testbench_L4.sv 
+# -- Compiling module testbench_L4
+# 
+# Top level modules:
+# 	testbench_L4
+# End time: 05:09:44 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench_L4
+# End time: 05:09:44 on Sep 22,2022, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 52
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench_L4 
+# Start time: 05:09:44 on Sep 22,2022
+# Loading sv_std.std
+# Loading work.testbench_L4
+# Loading work.multiplier
+# Loading work.control
+# Loading work.full_adder9
+# Loading work.full_adder
+# Loading work.subtractor8
+# Loading work.reg_8
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowI'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowO'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [PCDPC] - Port size (1) does not match connection size (8) for port 'X'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/ADD File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/SUB File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_B File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_A File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3839) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(13): Variable '/testbench_L4/multiplier/Follow', driven via a port connection, is multiply driven. See C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 105 ns
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench_L4/multiplier/control
+restart -f; run 500ns
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowI'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowO'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [PCDPC] - Port size (1) does not match connection size (8) for port 'X'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/ADD File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/SUB File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_B File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_A File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3839) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(13): Variable '/testbench_L4/multiplier/Follow', driven via a port connection, is multiply driven. See C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench_L4/multiplier/control
+add wave -position insertpoint  \
+sim:/testbench_L4/multiplier/X_Out
+do Lab4_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:06 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 05:11:06 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:06 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 05:11:06 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:06 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv 
+# -- Compiling module full_adder9
+# 
+# Top level modules:
+# 	full_adder9
+# End time: 05:11:06 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:06 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv 
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# End time: 05:11:07 on Sep 22,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:07 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv 
+# -- Compiling module reg_8
+# 
+# Top level modules:
+# 	reg_8
+# End time: 05:11:07 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:07 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv 
+# -- Compiling module subtractor8
+# 
+# Top level modules:
+# 	subtractor8
+# End time: 05:11:07 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/testbench_L4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:07 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/testbench_L4.sv 
+# -- Compiling module testbench_L4
+# 
+# Top level modules:
+# 	testbench_L4
+# End time: 05:11:07 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench_L4
+# End time: 05:11:07 on Sep 22,2022, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 26
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench_L4 
+# Start time: 05:11:07 on Sep 22,2022
+# Loading sv_std.std
+# Loading work.testbench_L4
+# Loading work.multiplier
+# Loading work.control
+# Loading work.full_adder9
+# Loading work.full_adder
+# Loading work.subtractor8
+# Loading work.reg_8
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowI'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowO'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/SUB File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_B File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_A File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3839) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(13): Variable '/testbench_L4/multiplier/Follow', driven via a port connection, is multiply driven. See C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 105 ns
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench_L4/multiplier/control
+restart -f; run 500ns
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowI'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowO'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/SUB File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_B File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_A File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3839) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(13): Variable '/testbench_L4/multiplier/Follow', driven via a port connection, is multiply driven. See C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench_L4/multiplier/control
+add wave -position insertpoint  \
+sim:/testbench_L4/multiplier/X_Out
+restart -f; run 500ns
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowI'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowO'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/SUB File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_B File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_A File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3839) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(13): Variable '/testbench_L4/multiplier/Follow', driven via a port connection, is multiply driven. See C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench_L4/multiplier/control
+restart -f; run 500ns
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowI'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowO'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/SUB File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(27): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_B File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(56): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_A File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3839) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(13): Variable '/testbench_L4/multiplier/Follow', driven via a port connection, is multiply driven. See C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(24).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench_L4/multiplier/control
+do Lab4_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:14:13 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 05:14:13 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:14:13 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 05:14:13 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:14:13 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv 
+# -- Compiling module full_adder9
+# 
+# Top level modules:
+# 	full_adder9
+# End time: 05:14:13 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:14:13 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv 
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# End time: 05:14:13 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:14:13 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv 
+# -- Compiling module reg_8
+# 
+# Top level modules:
+# 	reg_8
+# End time: 05:14:13 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:14:13 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/subtractor8.sv 
+# -- Compiling module subtractor8
+# 
+# Top level modules:
+# 	subtractor8
+# End time: 05:14:13 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/testbench_L4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:14:13 on Sep 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4" C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/testbench_L4.sv 
+# -- Compiling module testbench_L4
+# 
+# Top level modules:
+# 	testbench_L4
+# End time: 05:14:13 on Sep 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench_L4
+# End time: 05:14:14 on Sep 22,2022, Elapsed time: 0:03:07
+# Errors: 0, Warnings: 48
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench_L4 
+# Start time: 05:14:14 on Sep 22,2022
+# Loading sv_std.std
+# Loading work.testbench_L4
+# Loading work.multiplier
+# Loading work.control
+# Loading work.full_adder9
+# Loading work.full_adder
+# Loading work.reg_8
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowI'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowO'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_B File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(60): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_A File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(60): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3839) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(13): Variable '/testbench_L4/multiplier/Follow', driven via a port connection, is multiply driven. See C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 105 ns
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench_L4/multiplier/control
+restart -f; run 500ns
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowI'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowO'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_B File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(60): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_A File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(60): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3839) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(13): Variable '/testbench_L4/multiplier/Follow', driven via a port connection, is multiply driven. See C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench_L4/multiplier/control
+add wave -position insertpoint /testbench_L4/multiplier/Xval
+restart -f; run 500ns
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowI'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3015) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26): [PCDPC] - Port size (2) does not match connection size (1) for port 'FollowO'. The port definition is at: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_B File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(58): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3017) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(60): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/REG_A File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv
+# ** Warning: (vsim-3722) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(60): [TFMPC] - Missing connection for port 'Shift_Out'.
+# ** Warning: (vsim-3839) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(13): Variable '/testbench_L4/multiplier/Follow', driven via a port connection, is multiply driven. See C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv(26).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench_L4/multiplier/control
+# ** Warning: (vsim-8315) C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv(26): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench_L4/multiplier/control
