@@ -37,18 +37,16 @@ end
 // Everything happens sequentially inside an initial block
 // as in a software program
 initial begin: TEST_VECTORS
-SW = 8'b11111111;
-Reset_Load_Clear = 1;
-Run = 0;
-
-#2 SW = 8'b11111111;
+SW = 8'b11000101;
 Reset_Load_Clear = 0;
 Run = 1;
 
-#2 Run = 0;
+#2 SW = 8'b00000111;
+Reset_Load_Clear = 1;
+Run = 0;
 
-#50 Run = 1;
+#2 Run = 1;
 
-#2 Run = 0;
+#50 Run = 0;
 end
 endmodule

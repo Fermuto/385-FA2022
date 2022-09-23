@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Sep 22 17:51:48 2022
+Fitter Status : Successful - Fri Sep 23 01:00:17 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Lab4
 Top-level Entity Name : multiplier
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 145 / 49,760 ( < 1 % )
-    Total combinational functions : 144 / 49,760 ( < 1 % )
+Total logic elements : 127 / 49,760 ( < 1 % )
+    Total combinational functions : 127 / 49,760 ( < 1 % )
     Dedicated logic registers : 37 / 49,760 ( < 1 % )
 Total registers : 37
 Total pins : 73 / 360 ( 20 % )

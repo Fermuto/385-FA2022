@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab4
-Thu Sep 22 17:51:38 2022
+Fri Sep 23 00:59:55 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -52,13 +52,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 22 17:51:38 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep 23 00:59:55 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Lab4                                        ;
 ; Top-level Entity Name              ; multiplier                                  ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 143                                         ;
-;     Total combinational functions  ; 143                                         ;
+; Total logic elements               ; 126                                         ;
+;     Total combinational functions  ; 126                                         ;
 ;     Dedicated logic registers      ; 37                                          ;
 ; Total registers                    ; 37                                          ;
 ; Total pins                         ; 73                                          ;
@@ -162,15 +162,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -188,36 +188,36 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 143       ;
-;                                             ;           ;
-; Total combinational functions               ; 143       ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 92        ;
-;     -- 3 input functions                    ; 22        ;
-;     -- <=2 input functions                  ; 29        ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 143       ;
-;     -- arithmetic mode                      ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 37        ;
-;     -- Dedicated logic registers            ; 37        ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 73        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; Clk~input ;
-; Maximum fan-out                             ; 37        ;
-; Total fan-out                               ; 719       ;
-; Average fan-out                             ; 2.21      ;
-+---------------------------------------------+-----------+
++----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                          ;
++---------------------------------------------+------------------------+
+; Resource                                    ; Usage                  ;
++---------------------------------------------+------------------------+
+; Estimated Total logic elements              ; 126                    ;
+;                                             ;                        ;
+; Total combinational functions               ; 126                    ;
+; Logic element usage by number of LUT inputs ;                        ;
+;     -- 4 input functions                    ; 70                     ;
+;     -- 3 input functions                    ; 31                     ;
+;     -- <=2 input functions                  ; 25                     ;
+;                                             ;                        ;
+; Logic elements by mode                      ;                        ;
+;     -- normal mode                          ; 126                    ;
+;     -- arithmetic mode                      ; 0                      ;
+;                                             ;                        ;
+; Total registers                             ; 37                     ;
+;     -- Dedicated logic registers            ; 37                     ;
+;     -- I/O registers                        ; 0                      ;
+;                                             ;                        ;
+; I/O pins                                    ; 73                     ;
+;                                             ;                        ;
+; Embedded Multiplier 9-bit elements          ; 0                      ;
+;                                             ;                        ;
+; Maximum fan-out node                        ; Reset_Load_Clear~input ;
+; Maximum fan-out                             ; 38                     ;
+; Total fan-out                               ; 672                    ;
+; Average fan-out                             ; 2.17                   ;
++---------------------------------------------+------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -225,31 +225,32 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                        ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+-------------+--------------+
-; |multiplier                ; 143 (4)             ; 37 (1)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 73   ; 0            ; 0          ; |multiplier                                ; multiplier  ; work         ;
+; |multiplier                ; 126 (4)             ; 37 (1)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 73   ; 0            ; 0          ; |multiplier                                ; multiplier  ; work         ;
 ;    |HexDriver:AHex0|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|HexDriver:AHex0                ; HexDriver   ; work         ;
 ;    |HexDriver:AHex1|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|HexDriver:AHex1                ; HexDriver   ; work         ;
 ;    |HexDriver:BHex0|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|HexDriver:BHex0                ; HexDriver   ; work         ;
 ;    |HexDriver:BHex1|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|HexDriver:BHex1                ; HexDriver   ; work         ;
 ;    |HexDriver:SWHex0|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|HexDriver:SWHex0               ; HexDriver   ; work         ;
 ;    |HexDriver:SWHex1|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|HexDriver:SWHex1               ; HexDriver   ; work         ;
-;    |control:control|       ; 32 (32)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|control:control                ; control     ; work         ;
+;    |control:control|       ; 29 (29)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|control:control                ; control     ; work         ;
 ;    |full_adder9:ADD|       ; 15 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD                ; full_adder9 ; work         ;
-;       |full_adder:FA1|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD|full_adder:FA1 ; full_adder  ; work         ;
-;       |full_adder:FA2|     ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD|full_adder:FA2 ; full_adder  ; work         ;
-;       |full_adder:FA3|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD|full_adder:FA3 ; full_adder  ; work         ;
-;       |full_adder:FA4|     ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD|full_adder:FA4 ; full_adder  ; work         ;
+;       |full_adder:FA1|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD|full_adder:FA1 ; full_adder  ; work         ;
+;       |full_adder:FA2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD|full_adder:FA2 ; full_adder  ; work         ;
+;       |full_adder:FA3|     ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD|full_adder:FA3 ; full_adder  ; work         ;
+;       |full_adder:FA4|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD|full_adder:FA4 ; full_adder  ; work         ;
 ;       |full_adder:FA5|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD|full_adder:FA5 ; full_adder  ; work         ;
-;       |full_adder:FA6|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD|full_adder:FA6 ; full_adder  ; work         ;
-;       |full_adder:FA7|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD|full_adder:FA7 ; full_adder  ; work         ;
-;       |full_adder:FA8|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD|full_adder:FA8 ; full_adder  ; work         ;
-;    |full_adder9:SUB|       ; 13 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:SUB                ; full_adder9 ; work         ;
-;       |full_adder:FA1|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:SUB|full_adder:FA1 ; full_adder  ; work         ;
+;       |full_adder:FA6|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD|full_adder:FA6 ; full_adder  ; work         ;
+;       |full_adder:FA7|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:ADD|full_adder:FA7 ; full_adder  ; work         ;
+;    |full_adder9:SUB|       ; 16 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:SUB                ; full_adder9 ; work         ;
+;       |full_adder:FA1|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:SUB|full_adder:FA1 ; full_adder  ; work         ;
+;       |full_adder:FA2|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:SUB|full_adder:FA2 ; full_adder  ; work         ;
 ;       |full_adder:FA3|     ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:SUB|full_adder:FA3 ; full_adder  ; work         ;
 ;       |full_adder:FA4|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:SUB|full_adder:FA4 ; full_adder  ; work         ;
-;       |full_adder:FA5|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:SUB|full_adder:FA5 ; full_adder  ; work         ;
-;       |full_adder:FA6|     ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:SUB|full_adder:FA6 ; full_adder  ; work         ;
+;       |full_adder:FA5|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:SUB|full_adder:FA5 ; full_adder  ; work         ;
+;       |full_adder:FA6|     ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:SUB|full_adder:FA6 ; full_adder  ; work         ;
+;       |full_adder:FA7|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:SUB|full_adder:FA7 ; full_adder  ; work         ;
 ;       |full_adder:FA8|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|full_adder9:SUB|full_adder:FA8 ; full_adder  ; work         ;
-;    |reg_8:REG_A|           ; 29 (29)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|reg_8:REG_A                    ; reg_8       ; work         ;
+;    |reg_8:REG_A|           ; 12 (12)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|reg_8:REG_A                    ; reg_8       ; work         ;
 ;    |reg_8:REG_B|           ; 8 (8)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |multiplier|reg_8:REG_B                    ; reg_8       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -305,8 +306,8 @@ Encoding Type:  One-Hot
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 37    ;
-; Number of registers using Synchronous Clear  ; 1     ;
-; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Synchronous Clear  ; 9     ;
+; Number of registers using Synchronous Load   ; 8     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 15    ;
@@ -314,14 +315,15 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |multiplier|reg_8:REG_B|Data_Out[6] ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 14 LEs               ; 21 LEs                 ; Yes        ; |multiplier|reg_8:REG_A|Data_Out[6] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |multiplier|reg_8:REG_B|Data_Out[5]    ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |multiplier|reg_8:REG_A|Data_Out[6]    ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |multiplier|control:control|curr_state ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------+
@@ -386,19 +388,20 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; boundary_port         ; 73                          ;
 ; cycloneiii_ff         ; 37                          ;
-;     ENA               ; 15                          ;
-;     SCLR              ; 1                           ;
+;     ENA               ; 8                           ;
+;     ENA SCLR SLD      ; 7                           ;
+;     SCLR              ; 2                           ;
 ;     SLD               ; 1                           ;
-;     plain             ; 20                          ;
-; cycloneiii_lcell_comb ; 150                         ;
-;     normal            ; 150                         ;
+;     plain             ; 19                          ;
+; cycloneiii_lcell_comb ; 133                         ;
+;     normal            ; 133                         ;
 ;         1 data inputs ; 7                           ;
-;         2 data inputs ; 29                          ;
-;         3 data inputs ; 22                          ;
-;         4 data inputs ; 92                          ;
+;         2 data inputs ; 25                          ;
+;         3 data inputs ; 31                          ;
+;         4 data inputs ; 70                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 3.44                        ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 3.22                        ;
 +-----------------------+-----------------------------+
 
 
@@ -407,7 +410,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -417,10 +420,10 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Sep 22 17:51:31 2022
+    Info: Processing started: Fri Sep 23 00:59:33 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab4 -c Lab4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file control.sv
     Info (12023): Found entity 1: control File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder.sv
@@ -440,27 +443,27 @@ Info (12021): Found 1 design units, including 1 entities, in source file testben
 Info (12021): Found 1 design units, including 1 entities, in source file hexdriver.sv
     Info (12023): Found entity 1: HexDriver File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/HexDriver.sv Line: 1
 Info (12127): Elaborating entity "multiplier" for the top level hierarchy
-Info (12128): Elaborating entity "control" for hierarchy "control:control" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 38
+Info (12128): Elaborating entity "control" for hierarchy "control:control" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 36
 Info (10264): Verilog HDL Case Statement information at control.sv(54): all case item expressions in this case statement are onehot File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv Line: 54
-Info (12128): Elaborating entity "full_adder9" for hierarchy "full_adder9:ADD" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 39
+Info (12128): Elaborating entity "full_adder9" for hierarchy "full_adder9:ADD" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 37
 Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder9:ADD|full_adder:FA0" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv Line: 9
-Info (12128): Elaborating entity "reg_8" for hierarchy "reg_8:REG_B" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 75
-Info (12128): Elaborating entity "HexDriver" for hierarchy "HexDriver:SWHex0" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 82
+Info (12128): Elaborating entity "reg_8" for hierarchy "reg_8:REG_B" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 68
+Info (12128): Elaborating entity "HexDriver" for hierarchy "HexDriver:SWHex0" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 75
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/output_files/Lab4.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 217 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 200 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 62 output pins
-    Info (21061): Implemented 144 logic cells
+    Info (21061): Implemented 127 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4822 megabytes
-    Info: Processing ended: Thu Sep 22 17:51:38 2022
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 4765 megabytes
+    Info: Processing ended: Fri Sep 23 00:59:55 2022
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:50
 
 
 +------------------------------------------+

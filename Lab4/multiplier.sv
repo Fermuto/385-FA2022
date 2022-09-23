@@ -25,8 +25,6 @@ module multiplier (input Clk, Reset_Load_Clear, Run,
 	 begin
 		if (RLC_h)
 			Xval <= 1'b0;
-		if (Run_h)
-			Xval <= 1'b0;
 		if (Add)
 			Xval <= X_Out;
 		if (Sub)
@@ -44,11 +42,6 @@ module multiplier (input Clk, Reset_Load_Clear, Run,
 		 begin
 			Mid_B = SW;
 			Mid_A = 8'b00000000;
-		 end
-		else if (Run_h)
-		 begin
-			Mid_A = 8'b00000000;
-			Mid_B = 8'b00000000;
 		 end
 		else
 		 begin
@@ -69,7 +62,7 @@ module multiplier (input Clk, Reset_Load_Clear, Run,
 			 end
 		 end	
 	end
-	assign ALoad = (Add | Sub | Run_h);
+	assign ALoad = (Add | Sub);
 	assign BLoad = (RLC_h);
 	reg_8 REG_B (.Clk (Clk), .Reset (1'b0), .Shift_In (Aval[0]), .Load (BLoad), .Shift_En (Shift)
 					, .D (Mid_B), .Data_Out (Bval));
