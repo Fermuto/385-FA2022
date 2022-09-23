@@ -83,11 +83,11 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : A11       :        :                   :      
 SW[4]                        : A12       : input  : 2.5 V             :         : 7         : Y              
 SW[6]                        : A13       : input  : 2.5 V             :         : 7         : Y              
 SW[7]                        : A14       : input  : 2.5 V             :         : 7         : Y              
-Bval[3]                      : A15       : output : 2.5 V             :         : 7         : N              
-Bval[0]                      : A16       : output : 2.5 V             :         : 7         : N              
+Sub                          : A15       : output : 2.5 V             :         : 7         : N              
+Aval[5]                      : A16       : output : 2.5 V             :         : 7         : N              
 HEX1[4]                      : A17       : output : 2.5 V             :         : 7         : Y              
 HEX1[5]                      : A18       : output : 2.5 V             :         : 7         : Y              
-Add                          : A19       : output : 2.5 V             :         : 7         : N              
+Bval[2]                      : A19       : output : 2.5 V             :         : 7         : N              
 HEX2[1]                      : A20       : output : 2.5 V             :         : 7         : Y              
 HEX2[3]                      : A21       : output : 2.5 V             :         : 6         : Y              
 GND                          : A22       : gnd    :                   :         :           :                
@@ -148,8 +148,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : B10       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : B11       :        :                   :         : 7         :                
 SW[5]                        : B12       : input  : 2.5 V             :         : 7         : Y              
 GND                          : B13       : gnd    :                   :         :           :                
-Bval[5]                      : B14       : output : 2.5 V             :         : 7         : N              
-Bval[1]                      : B15       : output : 2.5 V             :         : 7         : N              
+Aval[6]                      : B14       : output : 2.5 V             :         : 7         : N              
+Shift                        : B15       : output : 2.5 V             :         : 7         : N              
 HEX1[3]                      : B16       : output : 2.5 V             :         : 7         : Y              
 HEX1[6]                      : B17       : output : 2.5 V             :         : 7         : Y              
 GND                          : B18       : gnd    :                   :         :           :                
@@ -169,7 +169,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :      
 SW[0]                        : C10       : input  : 2.5 V             :         : 7         : Y              
 SW[1]                        : C11       : input  : 2.5 V             :         : 7         : Y              
 SW[3]                        : C12       : input  : 2.5 V             :         : 7         : Y              
-Bval[2]                      : C13       : output : 2.5 V             :         : 7         : N              
+Aval[3]                      : C13       : output : 2.5 V             :         : 7         : N              
 HEX0[0]                      : C14       : output : 2.5 V             :         : 7         : Y              
 HEX0[2]                      : C15       : output : 2.5 V             :         : 7         : Y              
 HEX0[3]                      : C16       : output : 2.5 V             :         : 7         : Y              
@@ -191,9 +191,9 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 8         :                
 GND                          : D11       : gnd    :                   :         :           :                
 SW[2]                        : D12       : input  : 2.5 V             :         : 7         : Y              
-Bval[7]                      : D13       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D14       :        :                   :         : 7         :                
-Sub                          : D15       : output : 2.5 V             :         : 7         : N              
+Aval[7]                      : D13       : output : 2.5 V             :         : 7         : N              
+Aval[2]                      : D14       : output : 2.5 V             :         : 7         : N              
+Bval[1]                      : D15       : output : 2.5 V             :         : 7         : N              
 GND                          : D16       : gnd    :                   :         :           :                
 HEX0[5]                      : D17       : output : 2.5 V             :         : 7         : Y              
 HEX1[1]                      : D18       : output : 2.5 V             :         : 6         : Y              
@@ -212,9 +212,9 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : E8        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : E9        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E10       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E11       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E12       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E13       :        :                   :         : 7         :                
-Shift                        : E14       : output : 2.5 V             :         : 7         : N              
+Xval                         : E12       : output : 2.5 V             :         : 7         : N              
+Aval[1]                      : E13       : output : 2.5 V             :         : 7         : N              
+Aval[0]                      : E14       : output : 2.5 V             :         : 7         : N              
 HEX0[1]                      : E15       : output : 2.5 V             :         : 7         : Y              
 HEX0[4]                      : E16       : output : 2.5 V             :         : 7         : Y              
 HEX3[6]                      : E17       : output : 2.5 V             :         : 6         : Y              
@@ -237,9 +237,9 @@ VCCIO8                       : F11       : power  :                   : 2.5V    
 VCCIO7                       : F12       : power  :                   : 2.5V    : 7         :                
 GND                          : F13       : gnd    :                   :         :           :                
 VCCIO7                       : F14       : power  :                   : 2.5V    : 7         :                
-Aval[7]                      : F15       : output : 2.5 V             :         : 7         : N              
-Aval[6]                      : F16       : output : 2.5 V             :         : 7         : N              
-Xval                         : F17       : output : 2.5 V             :         : 6         : N              
+Bval[3]                      : F15       : output : 2.5 V             :         : 7         : N              
+Aval[4]                      : F16       : output : 2.5 V             :         : 7         : N              
+Bval[4]                      : F17       : output : 2.5 V             :         : 6         : N              
 HEX4[0]                      : F18       : output : 2.5 V             :         : 6         : Y              
 HEX4[5]                      : F19       : output : 2.5 V             :         : 6         : Y              
 HEX4[6]                      : F20       : output : 2.5 V             :         : 6         : Y              
@@ -261,7 +261,7 @@ VCCIO7                       : G13       : power  :                   : 2.5V    
 VCCIO7                       : G14       : power  :                   : 2.5V    : 7         :                
 GND                          : G15       : gnd    :                   :         :           :                
 VCCD_PLL2                    : G16       : power  :                   : 1.2V    :           :                
-Aval[1]                      : G17       : output : 2.5 V             :         : 6         : N              
+Bval[6]                      : G17       : output : 2.5 V             :         : 6         : N              
 GND                          : G18       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G19       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G20       :        :                   :         : 6         :                
@@ -280,13 +280,13 @@ VCCA3                        : H8        : power  :                   : 2.5V    
 RESERVED_INPUT_WITH_WEAK_PULLUP : H11       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H12       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H13       :        :                   :         : 7         :                
-Bval[6]                      : H14       : output : 2.5 V             :         : 7         : N              
+Add                          : H14       : output : 2.5 V             :         : 7         : N              
 VCCA2                        : H15       : power  :                   : 2.5V    :           :                
 VCCIO6                       : H16       : power  :                   : 2.5V    : 6         :                
-Aval[3]                      : H17       : output : 2.5 V             :         : 6         : N              
-Aval[2]                      : H18       : output : 2.5 V             :         : 6         : N              
+Bval[5]                      : H17       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H18       :        :                   :         : 6         :                
 HEX4[4]                      : H19       : output : 2.5 V             :         : 6         : Y              
-Aval[0]                      : H20       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H20       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H21       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H22       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J1        :        :                   :         : 1B        :                
@@ -301,9 +301,9 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : J9        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : J10       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J11       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J12       :        :                   :         : 7         :                
-Bval[4]                      : J13       : output : 2.5 V             :         : 7         : N              
-Aval[4]                      : J14       : output : 2.5 V             :         : 6         : N              
-Aval[5]                      : J15       : output : 2.5 V             :         : 6         : N              
+Bval[0]                      : J13       : output : 2.5 V             :         : 7         : N              
+Bval[7]                      : J14       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J15       :        :                   :         : 6         :                
 GND                          : J16       : gnd    :                   :         :           :                
 VCCIO6                       : J17       : power  :                   : 2.5V    : 6         :                
 HEX4[3]                      : J18       : output : 2.5 V             :         : 6         : Y              
