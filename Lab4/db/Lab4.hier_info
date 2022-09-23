@@ -1,15 +1,15 @@
 |multiplier
 Clk => Clk.IN3
-Reset_Load_Clear => RLC_h.IN3
-Run => Run_h.IN1
-SW[0] => SW[0].IN2
-SW[1] => SW[1].IN2
-SW[2] => SW[2].IN2
-SW[3] => SW[3].IN2
-SW[4] => SW[4].IN2
-SW[5] => SW[5].IN2
-SW[6] => SW[6].IN2
-SW[7] => SW[7].IN2
+Reset_Load_Clear => sync:button_sync[1].d
+Run => sync:button_sync[0].d
+SW[0] => sync:Din_sync[0].d
+SW[1] => sync:Din_sync[1].d
+SW[2] => sync:Din_sync[2].d
+SW[3] => sync:Din_sync[3].d
+SW[4] => sync:Din_sync[4].d
+SW[5] => sync:Din_sync[5].d
+SW[6] => sync:Din_sync[6].d
+SW[7] => sync:Din_sync[7].d
 Aval[0] <= Aval[0].DB_MAX_OUTPUT_PORT_TYPE
 Aval[1] <= Aval[1].DB_MAX_OUTPUT_PORT_TYPE
 Aval[2] <= Aval[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -541,6 +541,66 @@ Data_Out[4] <= Data_Out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Data_Out[5] <= Data_Out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Data_Out[6] <= Data_Out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Data_Out[7] <= Data_Out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|sync:button_sync[0]
+Clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|sync:button_sync[1]
+Clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|sync:Din_sync[0]
+Clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|sync:Din_sync[1]
+Clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|sync:Din_sync[2]
+Clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|sync:Din_sync[3]
+Clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|sync:Din_sync[4]
+Clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|sync:Din_sync[5]
+Clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|sync:Din_sync[6]
+Clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier|sync:Din_sync[7]
+Clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multiplier|HexDriver:SWHex0
