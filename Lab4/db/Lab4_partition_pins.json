@@ -288,11 +288,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "Run",
+					"name" : "Reset_Load_Clear",
 					"strict" : false
 				},
 				{
-					"name" : "Reset_Load_Clear",
+					"name" : "Run",
 					"strict" : false
 				}
 			]

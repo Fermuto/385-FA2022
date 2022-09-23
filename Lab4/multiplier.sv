@@ -8,7 +8,7 @@ module multiplier (input Clk, Reset_Load_Clear, Run,
 										 HEX3, 
 										 HEX4,
 										 HEX5);
-	logic M, Clr_Ld, ALoad, BLoad, X_Out, X_Sub, RLC_h, Run_h;
+	logic M, Clr_Ld, ALoad, BLoad, X_Out, X_Sub;
 	logic [1:0] Follow;
 	logic [7:0] Mid_A, Mid_B, Add_Out, Sub_Out;
 	initial Follow = 0;
@@ -69,7 +69,7 @@ module multiplier (input Clk, Reset_Load_Clear, Run,
 			 end
 		 end	
 	end
-	assign ALoad = (Add | Sub | Run_h);
+	assign ALoad = (Add | Sub);
 	assign BLoad = (RLC_h);
 	reg_8 REG_B (.Clk (Clk), .Reset (1'b0), .Shift_In (Aval[0]), .Load (BLoad), .Shift_En (Shift)
 					, .D (Mid_B), .Data_Out (Bval));
