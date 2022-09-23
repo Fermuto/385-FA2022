@@ -10,7 +10,6 @@ vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/
 vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/full_adder9.sv}
 vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv}
 vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/reg_8.sv}
-vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/HexDriver.sv}
 
 vlog -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4 {C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/testbench_L4.sv}
 

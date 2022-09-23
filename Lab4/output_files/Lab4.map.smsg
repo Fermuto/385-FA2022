@@ -1,4 +1,3 @@
 Warning (10268): Verilog HDL information at control.sv(13): always construct contains both blocking and non-blocking assignments File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/control.sv Line: 13
 Info (10281): Verilog HDL Declaration information at multiplier.sv(4): object "Add" differs only in case from object "ADD" in the same scope File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 4
 Info (10281): Verilog HDL Declaration information at multiplier.sv(4): object "Sub" differs only in case from object "SUB" in the same scope File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/multiplier.sv Line: 4
-Warning (10273): Verilog HDL warning at HexDriver.sv(24): extended using "x" or "z" File: C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab4/HexDriver.sv Line: 24
