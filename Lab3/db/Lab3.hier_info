@@ -222,60 +222,61 @@ Data_Out[15] <= Data_Out[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Data_Out[16] <= Data_Out[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders
+|adder2|lookahead_adder:adderla
 A[0] => A[0].IN1
 A[1] => A[1].IN1
 A[2] => A[2].IN1
 A[3] => A[3].IN1
-A[4] => A[4].IN2
-A[5] => A[5].IN2
-A[6] => A[6].IN2
-A[7] => A[7].IN2
-A[8] => A[8].IN2
-A[9] => A[9].IN2
-A[10] => A[10].IN2
-A[11] => A[11].IN2
-A[12] => A[12].IN2
-A[13] => A[13].IN2
-A[14] => A[14].IN2
-A[15] => A[15].IN2
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+A[10] => A[10].IN1
+A[11] => A[11].IN1
+A[12] => A[12].IN1
+A[13] => A[13].IN1
+A[14] => A[14].IN1
+A[15] => A[15].IN1
 B[0] => B[0].IN1
 B[1] => B[1].IN1
 B[2] => B[2].IN1
 B[3] => B[3].IN1
-B[4] => B[4].IN2
-B[5] => B[5].IN2
-B[6] => B[6].IN2
-B[7] => B[7].IN2
-B[8] => B[8].IN2
-B[9] => B[9].IN2
-B[10] => B[10].IN2
-B[11] => B[11].IN2
-B[12] => B[12].IN2
-B[13] => B[13].IN2
-B[14] => B[14].IN2
-B[15] => B[15].IN2
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+B[10] => B[10].IN1
+B[11] => B[11].IN1
+B[12] => B[12].IN1
+B[13] => B[13].IN1
+B[14] => B[14].IN1
+B[15] => B[15].IN1
 cin => cin.IN1
-S[0] <= full_adder4:S4.S
-S[1] <= full_adder4:S4.S
-S[2] <= full_adder4:S4.S
-S[3] <= full_adder4:S4.S
-S[4] <= S.DB_MAX_OUTPUT_PORT_TYPE
-S[5] <= S.DB_MAX_OUTPUT_PORT_TYPE
-S[6] <= S.DB_MAX_OUTPUT_PORT_TYPE
-S[7] <= S.DB_MAX_OUTPUT_PORT_TYPE
-S[8] <= S.DB_MAX_OUTPUT_PORT_TYPE
-S[9] <= S.DB_MAX_OUTPUT_PORT_TYPE
-S[10] <= S.DB_MAX_OUTPUT_PORT_TYPE
-S[11] <= S.DB_MAX_OUTPUT_PORT_TYPE
-S[12] <= S.DB_MAX_OUTPUT_PORT_TYPE
-S[13] <= S.DB_MAX_OUTPUT_PORT_TYPE
-S[14] <= S.DB_MAX_OUTPUT_PORT_TYPE
-S[15] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[0] <= CLA_4:F03.S
+S[1] <= CLA_4:F03.S
+S[2] <= CLA_4:F03.S
+S[3] <= CLA_4:F03.S
+S[4] <= CLA_4:F47.S
+S[5] <= CLA_4:F47.S
+S[6] <= CLA_4:F47.S
+S[7] <= CLA_4:F47.S
+S[8] <= CLA_4:F811.S
+S[9] <= CLA_4:F811.S
+S[10] <= CLA_4:F811.S
+S[11] <= CLA_4:F811.S
+S[12] <= CLA_4:F1215.S
+S[13] <= CLA_4:F1215.S
+S[14] <= CLA_4:F1215.S
+S[15] <= CLA_4:F1215.S
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders|full_adder4:S4
+|adder2|lookahead_adder:adderla|CLA_4:F03
+cin => cin.IN1
 A[0] => A[0].IN1
 A[1] => A[1].IN1
 A[2] => A[2].IN1
@@ -284,15 +285,31 @@ B[0] => B[0].IN1
 B[1] => B[1].IN1
 B[2] => B[2].IN1
 B[3] => B[3].IN1
-cin => cin.IN1
+P[0] => c1.IN0
+P[0] => c2.IN1
+P[0] => c3.IN0
+P[1] => c2.IN0
+P[1] => c2.IN0
+P[1] => c3.IN1
+P[1] => c3.IN0
+P[2] => c3.IN1
+P[2] => c3.IN1
+P[2] => c3.IN0
+P[3] => ~NO_FANOUT~
+G[0] => c1.IN1
+G[0] => c2.IN1
+G[0] => c3.IN1
+G[1] => c2.IN1
+G[1] => c3.IN1
+G[2] => c3.IN1
+G[3] => ~NO_FANOUT~
 S[0] <= full_adder:FA0.s
 S[1] <= full_adder:FA1.s
 S[2] <= full_adder:FA2.s
 S[3] <= full_adder:FA3.s
-cout <= full_adder:FA3.c
 
 
-|adder2|select_adder:adders|full_adder4:S4|full_adder:FA0
+|adder2|lookahead_adder:adderla|CLA_4:F03|full_adder:FA0
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -306,7 +323,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders|full_adder4:S4|full_adder:FA1
+|adder2|lookahead_adder:adderla|CLA_4:F03|full_adder:FA1
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -320,7 +337,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders|full_adder4:S4|full_adder:FA2
+|adder2|lookahead_adder:adderla|CLA_4:F03|full_adder:FA2
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -334,7 +351,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders|full_adder4:S4|full_adder:FA3
+|adder2|lookahead_adder:adderla|CLA_4:F03|full_adder:FA3
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -348,7 +365,8 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders|full_adder4:S8_0
+|adder2|lookahead_adder:adderla|CLA_4:F47
+cin => cin.IN1
 A[0] => A[0].IN1
 A[1] => A[1].IN1
 A[2] => A[2].IN1
@@ -357,15 +375,31 @@ B[0] => B[0].IN1
 B[1] => B[1].IN1
 B[2] => B[2].IN1
 B[3] => B[3].IN1
-cin => cin.IN1
+P[0] => c1.IN0
+P[0] => c2.IN1
+P[0] => c3.IN0
+P[1] => c2.IN0
+P[1] => c2.IN0
+P[1] => c3.IN1
+P[1] => c3.IN0
+P[2] => c3.IN1
+P[2] => c3.IN1
+P[2] => c3.IN0
+P[3] => ~NO_FANOUT~
+G[0] => c1.IN1
+G[0] => c2.IN1
+G[0] => c3.IN1
+G[1] => c2.IN1
+G[1] => c3.IN1
+G[2] => c3.IN1
+G[3] => ~NO_FANOUT~
 S[0] <= full_adder:FA0.s
 S[1] <= full_adder:FA1.s
 S[2] <= full_adder:FA2.s
 S[3] <= full_adder:FA3.s
-cout <= full_adder:FA3.c
 
 
-|adder2|select_adder:adders|full_adder4:S8_0|full_adder:FA0
+|adder2|lookahead_adder:adderla|CLA_4:F47|full_adder:FA0
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -379,7 +413,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders|full_adder4:S8_0|full_adder:FA1
+|adder2|lookahead_adder:adderla|CLA_4:F47|full_adder:FA1
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -393,7 +427,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders|full_adder4:S8_0|full_adder:FA2
+|adder2|lookahead_adder:adderla|CLA_4:F47|full_adder:FA2
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -407,7 +441,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders|full_adder4:S8_0|full_adder:FA3
+|adder2|lookahead_adder:adderla|CLA_4:F47|full_adder:FA3
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -421,7 +455,8 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders|full_adder4:S8_1
+|adder2|lookahead_adder:adderla|CLA_4:F811
+cin => cin.IN1
 A[0] => A[0].IN1
 A[1] => A[1].IN1
 A[2] => A[2].IN1
@@ -430,15 +465,31 @@ B[0] => B[0].IN1
 B[1] => B[1].IN1
 B[2] => B[2].IN1
 B[3] => B[3].IN1
-cin => cin.IN1
+P[0] => c1.IN0
+P[0] => c2.IN1
+P[0] => c3.IN0
+P[1] => c2.IN0
+P[1] => c2.IN0
+P[1] => c3.IN1
+P[1] => c3.IN0
+P[2] => c3.IN1
+P[2] => c3.IN1
+P[2] => c3.IN0
+P[3] => ~NO_FANOUT~
+G[0] => c1.IN1
+G[0] => c2.IN1
+G[0] => c3.IN1
+G[1] => c2.IN1
+G[1] => c3.IN1
+G[2] => c3.IN1
+G[3] => ~NO_FANOUT~
 S[0] <= full_adder:FA0.s
 S[1] <= full_adder:FA1.s
 S[2] <= full_adder:FA2.s
 S[3] <= full_adder:FA3.s
-cout <= full_adder:FA3.c
 
 
-|adder2|select_adder:adders|full_adder4:S8_1|full_adder:FA0
+|adder2|lookahead_adder:adderla|CLA_4:F811|full_adder:FA0
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -452,7 +503,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders|full_adder4:S8_1|full_adder:FA1
+|adder2|lookahead_adder:adderla|CLA_4:F811|full_adder:FA1
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -466,7 +517,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders|full_adder4:S8_1|full_adder:FA2
+|adder2|lookahead_adder:adderla|CLA_4:F811|full_adder:FA2
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -480,7 +531,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders|full_adder4:S8_1|full_adder:FA3
+|adder2|lookahead_adder:adderla|CLA_4:F811|full_adder:FA3
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -494,7 +545,8 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders|full_adder4:S12_0
+|adder2|lookahead_adder:adderla|CLA_4:F1215
+cin => cin.IN1
 A[0] => A[0].IN1
 A[1] => A[1].IN1
 A[2] => A[2].IN1
@@ -503,15 +555,31 @@ B[0] => B[0].IN1
 B[1] => B[1].IN1
 B[2] => B[2].IN1
 B[3] => B[3].IN1
-cin => cin.IN1
+P[0] => c1.IN0
+P[0] => c2.IN1
+P[0] => c3.IN0
+P[1] => c2.IN0
+P[1] => c2.IN0
+P[1] => c3.IN1
+P[1] => c3.IN0
+P[2] => c3.IN1
+P[2] => c3.IN1
+P[2] => c3.IN0
+P[3] => ~NO_FANOUT~
+G[0] => c1.IN1
+G[0] => c2.IN1
+G[0] => c3.IN1
+G[1] => c2.IN1
+G[1] => c3.IN1
+G[2] => c3.IN1
+G[3] => ~NO_FANOUT~
 S[0] <= full_adder:FA0.s
 S[1] <= full_adder:FA1.s
 S[2] <= full_adder:FA2.s
 S[3] <= full_adder:FA3.s
-cout <= full_adder:FA3.c
 
 
-|adder2|select_adder:adders|full_adder4:S12_0|full_adder:FA0
+|adder2|lookahead_adder:adderla|CLA_4:F1215|full_adder:FA0
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -525,7 +593,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders|full_adder4:S12_0|full_adder:FA1
+|adder2|lookahead_adder:adderla|CLA_4:F1215|full_adder:FA1
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -539,7 +607,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders|full_adder4:S12_0|full_adder:FA2
+|adder2|lookahead_adder:adderla|CLA_4:F1215|full_adder:FA2
 x => s.IN0
 x => c.IN0
 x => c.IN0
@@ -553,226 +621,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|adder2|select_adder:adders|full_adder4:S12_0|full_adder:FA3
-x => s.IN0
-x => c.IN0
-x => c.IN0
-y => s.IN1
-y => c.IN1
-y => c.IN0
-z => s.IN1
-z => c.IN1
-z => c.IN1
-s <= s.DB_MAX_OUTPUT_PORT_TYPE
-c <= c.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|adder2|select_adder:adders|full_adder4:S12_1
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-S[0] <= full_adder:FA0.s
-S[1] <= full_adder:FA1.s
-S[2] <= full_adder:FA2.s
-S[3] <= full_adder:FA3.s
-cout <= full_adder:FA3.c
-
-
-|adder2|select_adder:adders|full_adder4:S12_1|full_adder:FA0
-x => s.IN0
-x => c.IN0
-x => c.IN0
-y => s.IN1
-y => c.IN1
-y => c.IN0
-z => s.IN1
-z => c.IN1
-z => c.IN1
-s <= s.DB_MAX_OUTPUT_PORT_TYPE
-c <= c.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|adder2|select_adder:adders|full_adder4:S12_1|full_adder:FA1
-x => s.IN0
-x => c.IN0
-x => c.IN0
-y => s.IN1
-y => c.IN1
-y => c.IN0
-z => s.IN1
-z => c.IN1
-z => c.IN1
-s <= s.DB_MAX_OUTPUT_PORT_TYPE
-c <= c.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|adder2|select_adder:adders|full_adder4:S12_1|full_adder:FA2
-x => s.IN0
-x => c.IN0
-x => c.IN0
-y => s.IN1
-y => c.IN1
-y => c.IN0
-z => s.IN1
-z => c.IN1
-z => c.IN1
-s <= s.DB_MAX_OUTPUT_PORT_TYPE
-c <= c.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|adder2|select_adder:adders|full_adder4:S12_1|full_adder:FA3
-x => s.IN0
-x => c.IN0
-x => c.IN0
-y => s.IN1
-y => c.IN1
-y => c.IN0
-z => s.IN1
-z => c.IN1
-z => c.IN1
-s <= s.DB_MAX_OUTPUT_PORT_TYPE
-c <= c.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|adder2|select_adder:adders|full_adder4:S16_0
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-S[0] <= full_adder:FA0.s
-S[1] <= full_adder:FA1.s
-S[2] <= full_adder:FA2.s
-S[3] <= full_adder:FA3.s
-cout <= full_adder:FA3.c
-
-
-|adder2|select_adder:adders|full_adder4:S16_0|full_adder:FA0
-x => s.IN0
-x => c.IN0
-x => c.IN0
-y => s.IN1
-y => c.IN1
-y => c.IN0
-z => s.IN1
-z => c.IN1
-z => c.IN1
-s <= s.DB_MAX_OUTPUT_PORT_TYPE
-c <= c.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|adder2|select_adder:adders|full_adder4:S16_0|full_adder:FA1
-x => s.IN0
-x => c.IN0
-x => c.IN0
-y => s.IN1
-y => c.IN1
-y => c.IN0
-z => s.IN1
-z => c.IN1
-z => c.IN1
-s <= s.DB_MAX_OUTPUT_PORT_TYPE
-c <= c.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|adder2|select_adder:adders|full_adder4:S16_0|full_adder:FA2
-x => s.IN0
-x => c.IN0
-x => c.IN0
-y => s.IN1
-y => c.IN1
-y => c.IN0
-z => s.IN1
-z => c.IN1
-z => c.IN1
-s <= s.DB_MAX_OUTPUT_PORT_TYPE
-c <= c.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|adder2|select_adder:adders|full_adder4:S16_0|full_adder:FA3
-x => s.IN0
-x => c.IN0
-x => c.IN0
-y => s.IN1
-y => c.IN1
-y => c.IN0
-z => s.IN1
-z => c.IN1
-z => c.IN1
-s <= s.DB_MAX_OUTPUT_PORT_TYPE
-c <= c.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|adder2|select_adder:adders|full_adder4:S16_1
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-S[0] <= full_adder:FA0.s
-S[1] <= full_adder:FA1.s
-S[2] <= full_adder:FA2.s
-S[3] <= full_adder:FA3.s
-cout <= full_adder:FA3.c
-
-
-|adder2|select_adder:adders|full_adder4:S16_1|full_adder:FA0
-x => s.IN0
-x => c.IN0
-x => c.IN0
-y => s.IN1
-y => c.IN1
-y => c.IN0
-z => s.IN1
-z => c.IN1
-z => c.IN1
-s <= s.DB_MAX_OUTPUT_PORT_TYPE
-c <= c.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|adder2|select_adder:adders|full_adder4:S16_1|full_adder:FA1
-x => s.IN0
-x => c.IN0
-x => c.IN0
-y => s.IN1
-y => c.IN1
-y => c.IN0
-z => s.IN1
-z => c.IN1
-z => c.IN1
-s <= s.DB_MAX_OUTPUT_PORT_TYPE
-c <= c.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|adder2|select_adder:adders|full_adder4:S16_1|full_adder:FA2
-x => s.IN0
-x => c.IN0
-x => c.IN0
-y => s.IN1
-y => c.IN1
-y => c.IN0
-z => s.IN1
-z => c.IN1
-z => c.IN1
-s <= s.DB_MAX_OUTPUT_PORT_TYPE
-c <= c.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|adder2|select_adder:adders|full_adder4:S16_1|full_adder:FA3
+|adder2|lookahead_adder:adderla|CLA_4:F1215|full_adder:FA3
 x => s.IN0
 x => c.IN0
 x => c.IN0
