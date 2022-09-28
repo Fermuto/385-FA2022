@@ -1,10 +1,12 @@
 module bufferMUX(
 input [3:0] Select,
 input [15:0] PC, MDR, ALU, ADDR_R,
-output [15:0] Output;
+output logic [15:0] Output
 );
 //	assign Select = {GatePC, GateMDR, GateALU, GateMARMUX};
 
+always_comb
+begin
 	case (Select)
 		4'b1000: Output = PC;
 		4'b0100: Output = MDR;
@@ -12,5 +14,6 @@ output [15:0] Output;
 		4'b0001: Output = ADDR_R;
 		default: Output = 16'bzzzzzzzzzzzzzzzz;
 	endcase
+end
 
 endmodule
