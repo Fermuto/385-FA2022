@@ -1,0 +1,17 @@
+// QUICK AND DIRTY: ONLY WORKS UP TO 4-INPUT MUX
+module o16MUX 
+#(int unsigned WIDTH = 4)
+(input [((WIDTH/2) + (WIDTH % 2)):0] Sel;
+input [15:0] i_data [X];
+output [15:0] o_data;
+);
+
+	always_comb 
+	begin
+		o_data = 'z;
+		for(int i = 0; i < X; i++) begin
+			if (onehot == (1 << i))
+				o_data = i_data[i];
+		end
+	end
+endmodule

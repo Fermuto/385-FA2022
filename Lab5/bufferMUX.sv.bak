@@ -1,0 +1,7 @@
+module bufferMUX(
+input GatePC, GateMDR, GateALU, GateMARMUX,
+input [15:0] PC, MDR, ALU, MAR,
+output [15:0] Select;
+);
+
+endmodule

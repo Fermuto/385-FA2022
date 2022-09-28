@@ -49,6 +49,9 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name SYSTEMVERILOG_FILE bufferMUX.sv
 set_global_assignment -name SYSTEMVERILOG_FILE provided/test_memory.sv
 set_global_assignment -name SYSTEMVERILOG_FILE provided/synchronizers.sv
 set_global_assignment -name SYSTEMVERILOG_FILE provided/slc3_testtop.sv
@@ -65,7 +68,10 @@ set_global_assignment -name SYSTEMVERILOG_FILE MDR.sv
 set_global_assignment -name SYSTEMVERILOG_FILE MAR.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Instruction.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Status.sv
-set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
-set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name QIP_FILE ram.qip
 set_global_assignment -name SDC_FILE SDC1.sdc
+set_global_assignment -name SYSTEMVERILOG_FILE reg_16.sv
+set_global_assignment -name SYSTEMVERILOG_FILE o16MUX21.sv
+set_global_assignment -name SYSTEMVERILOG_FILE o3MUX.sv
+set_global_assignment -name SYSTEMVERILOG_FILE o16MUX31.sv
+set_global_assignment -name SYSTEMVERILOG_FILE o16MUX41.sv
