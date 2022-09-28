@@ -1,0 +1,5 @@
+module reg_file (input LD-Reg, 
+					input [15:0] IR, data,
+					output [15:0] SR2, SR1);
+
+	

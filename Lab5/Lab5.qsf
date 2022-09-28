@@ -75,3 +75,4 @@ set_global_assignment -name SYSTEMVERILOG_FILE o16MUX21.sv
 set_global_assignment -name SYSTEMVERILOG_FILE o3MUX.sv
 set_global_assignment -name SYSTEMVERILOG_FILE o16MUX31.sv
 set_global_assignment -name SYSTEMVERILOG_FILE o16MUX41.sv
+set_global_assignment -name SYSTEMVERILOG_FILE reg_file.sv
