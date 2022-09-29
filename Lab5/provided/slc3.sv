@@ -47,6 +47,12 @@ logic [1:0] PCMUX, ADDR2MUX, ALUK;
 logic [15:0] MDR_In;
 logic [15:0] MAR, MDR, IR, PC, ALU, datapath, 
 		MIO_val;
+		
+assign hex_4[0] = IR[3:0];
+assign hex_4[1] = IR[7:4];
+assign hex_4[2] = IR[11:8];
+assign hex_4[3] = IR[15:12];
+
 
 // Connect MAR to ADDR, which is also connected as an input into MEM2IO
 //	MEM2IO will determine what gets put onto Data_CPU (which serves as a potential
@@ -68,7 +74,8 @@ reg_16  PC_reg (.Clk (Clk), .Reset (Reset), .Load (LD_PC),  .D (PC + 16'b0000000
 
 Mem2IO memory_subsystem(
     .*, .Reset(Reset), .ADDR(ADDR), .Switches(SW),
-    .HEX0(hex_4[0][3:0]), .HEX1(hex_4[1][3:0]), .HEX2(hex_4[2][3:0]), .HEX3(hex_4[3][3:0]),
+	 .HEX0(), .HEX1(), .HEX2(), .HEX3()
+    /*.HEX0(hex_4[0][3:0]), .HEX1(hex_4[1][3:0]), .HEX2(hex_4[2][3:0]), .HEX3(hex_4[3][3:0]),*/,
     .Data_from_CPU(MDR), .Data_to_CPU(MDR_In),
     .Data_from_SRAM(Data_from_SRAM), .Data_to_SRAM(Data_to_SRAM)
 );

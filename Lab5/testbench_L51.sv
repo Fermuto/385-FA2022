@@ -20,29 +20,30 @@ module testbench_L51 ();
 	
 	
 	initial begin: TEST_VECTORS
-	Continue = 1'b1;
-	Run = 1'b1;
-	
-	#2 Run = 1'b0;
+	Continue = 1'b0;
+	Run = 1'b0;
 	
 	#2 Run = 1'b1;
+	Continue = 1'b1;
 	
-	#5 Continue = 1'b0;
+	#4 Run = 1'b0;
 	
-	#2 Continue = 1'b1;
+	#4 Run = 1'b1;
 	
-	#5 Continue = 1'b0;
+	#8 Continue = 1'b0;
 	
-	#2 Continue = 1'b1;
+	#4 Continue = 1'b1;
 	
-	#5 Continue = 1'b0;
+	#8 Continue = 1'b0;
 	
-	#2 Continue = 1'b1;
+	#4 Continue = 1'b1;
 	
-	#5 Run = 1'b0;
+	#8 Continue = 1'b0;
 	
-	#2 Continue = 1'b0;
-	Run = 1'b0;
+	#4 Continue = 1'b1;
+	
+	#8 Run = 1'b0;
+	Continue = 1'b0;
 	end
 	
 endmodule
