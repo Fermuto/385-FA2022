@@ -1,0 +1,417 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/simulation/modelsim
+vbufferMUX
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1664412412
+!i10b 1
+!s100 nJdF@A6`O3bAY5UUEO1Hz1
+IEo?j17>RPSYCFfe3@:gTc0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 bufferMUX_sv_unit
+S1
+R0
+w1664406818
+8C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/bufferMUX.sv
+FC:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/bufferMUX.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1664412412.000000
+!s107 C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/bufferMUX.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5|C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/bufferMUX.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5
+Z8 tCvgOpt 0
+nbuffer@m@u@x
+vHexDriver
+R1
+R2
+!i10b 1
+!s100 F7dDJLKONLDlAhT4ll@HA3
+IRX8REY;mHLSilaBZV:UWE2
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+w1664403190
+8C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/HexDriver.sv
+FC:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/HexDriver.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5|C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/HexDriver.sv|
+!i113 1
+R6
+R7
+R8
+n@hex@driver
+vISDU
+R1
+R2
+!i10b 1
+!s100 o<HDN31gC[S60SlkACfff0
+IYUNRjN4>OlG3YTjSiQ=`J0
+R3
+!s105 ISDU_sv_unit
+S1
+R0
+Z9 w1664320368
+8C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/ISDU.sv
+FC:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/ISDU.sv
+L0 19
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/ISDU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided|C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/ISDU.sv|
+!i113 1
+R6
+Z10 !s92 -sv -work work +incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided
+R8
+n@i@s@d@u
+vMem2IO
+R1
+R2
+!i10b 1
+!s100 ]Q:NN9GIUgNPLn_MG6U5k1
+IOX9;3O<?5W^1Jz3^5Sa@32
+R3
+!s105 Mem2IO_sv_unit
+S1
+R0
+R9
+8C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/Mem2IO.sv
+FC:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/Mem2IO.sv
+Z11 L0 16
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/Mem2IO.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided|C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/Mem2IO.sv|
+!i113 1
+R6
+R10
+R8
+n@mem2@i@o
+Xmemory_contents_sv_unit
+R1
+Z12 DXx4 work 6 SLC3_2 0 22 V?c]D3VB^NG>B^17BFeGO1
+V29PeeG4hWdEKfIC30Mh>a3
+r1
+!s85 0
+31
+!i10b 1
+!s100 3HBe^oHDgeVH<TZocfCK[0
+I29PeeG4hWdEKfIC30Mh>a3
+!i103 1
+S1
+R0
+R9
+Z13 8C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/memory_contents.sv
+Z14 FC:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/memory_contents.sv
+R11
+R4
+R5
+Z15 !s107 C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/memory_contents.sv|
+Z16 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided|C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/memory_contents.sv|
+!i113 1
+R6
+R10
+R8
+vmemory_parser
+R1
+R12
+DXx4 work 23 memory_contents_sv_unit 0 22 29PeeG4hWdEKfIC30Mh>a3
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 o:B0TTcXZa[?Oo3HFa9T;0
+Izz3h@4BYOWH3JRG>X9meb3
+!s105 memory_contents_sv_unit
+S1
+R0
+R9
+R13
+R14
+L0 18
+R4
+R5
+R15
+R16
+!i113 1
+R6
+R10
+R8
+vo16MUX21
+R1
+R2
+!i10b 1
+!s100 ;4>5ob;2^nnn0oUl=2UWX1
+I_3M8^a6<Nk3OoSj<GSn3^0
+R3
+!s105 o16MUX21_sv_unit
+S1
+R0
+w1664406860
+8C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/o16MUX21.sv
+FC:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/o16MUX21.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/o16MUX21.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5|C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/o16MUX21.sv|
+!i113 1
+R6
+R7
+R8
+no16@m@u@x21
+vreg_16
+R1
+R2
+!i10b 1
+!s100 J1cVVVMX;oiDM>>`IOHOg1
+IXOaAG;kOjjmaF00=PkiO?3
+R3
+!s105 reg_16_sv_unit
+S1
+R0
+w1664404760
+8C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/reg_16.sv
+FC:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/reg_16.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/reg_16.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5|C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/reg_16.sv|
+!i113 1
+R6
+R7
+R8
+vslc3
+R1
+R2
+!i10b 1
+!s100 kojY5Zzb=o;nA?;jK3[bj3
+IZ7Vj=goZna`3=8>4_mG001
+R3
+!s105 slc3_sv_unit
+S1
+R0
+w1664412404
+8C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/slc3.sv
+FC:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/slc3.sv
+L0 20
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/slc3.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided|C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/slc3.sv|
+!i113 1
+R6
+R10
+R8
+XSLC3_2
+R1
+R2
+!i10b 1
+!s100 Cz8_^@QRefP31?j=Zf>lj0
+IV?c]D3VB^NG>B^17BFeGO1
+VV?c]D3VB^NG>B^17BFeGO1
+S1
+R0
+R9
+8C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/SLC3_2.sv
+FC:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/SLC3_2.sv
+L0 24
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/SLC3_2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided|C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/SLC3_2.sv|
+!i113 1
+R6
+R10
+R8
+n@s@l@c3_2
+vslc3_testtop
+R1
+Z17 !s110 1664412413
+!i10b 1
+!s100 ^4hhCjYV2aT;kkekDk8a71
+IYO2Yk]kYM@JJF9jE>b]ll2
+R3
+!s105 slc3_testtop_sv_unit
+S1
+R0
+R9
+8C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/slc3_testtop.sv
+FC:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/slc3_testtop.sv
+L0 4
+R4
+r1
+!s85 0
+31
+Z18 !s108 1664412413.000000
+!s107 C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/slc3_testtop.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided|C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/slc3_testtop.sv|
+!i113 1
+R6
+R10
+R8
+vsync
+R1
+R2
+!i10b 1
+!s100 OHNUFN]797>kYzRL;ikZR2
+I2gZe[S@>dBLl9iM5@HzUU2
+R3
+Z19 !s105 synchronizers_sv_unit
+S1
+R0
+R9
+Z20 8C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/synchronizers.sv
+Z21 FC:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/synchronizers.sv
+L0 7
+R4
+r1
+!s85 0
+31
+R5
+Z22 !s107 C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/synchronizers.sv|
+Z23 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided|C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/synchronizers.sv|
+!i113 1
+R6
+R10
+R8
+vsync_r0
+R1
+R2
+!i10b 1
+!s100 _Sn:CfHFjznVZen=7jc>C2
+I2cdd1^VcU3]_H^]A7^<kd2
+R3
+R19
+S1
+R0
+R9
+R20
+R21
+L0 21
+R4
+r1
+!s85 0
+31
+R5
+R22
+R23
+!i113 1
+R6
+R10
+R8
+vsync_r1
+R1
+R2
+!i10b 1
+!s100 4jfZd?z`MK2Y<NLFC0<QH2
+I88>BXGKSo8Y`j?P8iJmFF2
+R3
+R19
+S1
+R0
+R9
+R20
+R21
+L0 42
+R4
+r1
+!s85 0
+31
+R5
+R22
+R23
+!i113 1
+R6
+R10
+R8
+vtest_memory
+R1
+R2
+!i10b 1
+!s100 JAXhO?6GV:H>``me>_X5<1
+Igcd4[T=UK>z2m[^=X]JcF3
+R3
+!s105 test_memory_sv_unit
+S1
+R0
+R9
+8C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/test_memory.sv
+FC:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/test_memory.sv
+L0 26
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/test_memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided|C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/provided/test_memory.sv|
+!i113 1
+R6
+R10
+R8
+vtestbench_L51
+R1
+R17
+!i10b 1
+!s100 aE0akjPm5DWmoa2k@<a]l3
+I3kSF>O57]X@<HPQQ^FNhT3
+R3
+!s105 testbench_L51_sv_unit
+S1
+R0
+w1664411238
+8C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/testbench_L51.sv
+FC:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/testbench_L51.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/testbench_L51.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5|C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/testbench_L51.sv|
+!i113 1
+R6
+R7
+R8
+ntestbench_@l51
