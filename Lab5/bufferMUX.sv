@@ -12,7 +12,7 @@ begin
 		4'b0100: Output = MDR;
 		4'b0010: Output = ALU;
 		4'b0001: Output = ADDR_R;
-		default: Output = 16'bzzzzzzzzzzzzzzzz;
+		default: Output = 16'bxxxxxxxxxxxxxxxx;
 	endcase
 end
 

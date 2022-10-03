@@ -46,7 +46,10 @@ logic BEN, MIO_EN, DRMUX, SR1MUX;
 logic [1:0] PCMUX, ADDR2MUX, ALUK;
 logic [15:0] MDR_In;
 logic [15:0] MAR, MDR, IR, PC, ALU, datapath, 
-		MIO_val;
+		MIO_val, PC_val,
+		ADDR2_3, ADDR2_2, ADDR2_1,
+		ADDR2_R, ADDR1_R, ADDR_R;
+		
 		
 assign hex_4[0] = IR[3:0];
 assign hex_4[1] = IR[7:4];
@@ -60,22 +63,32 @@ assign hex_4[3] = IR[15:12];
 assign ADDR = MAR; 
 assign MIO_EN = OE;
 // Connect everything to the data path (you have to figure out this part)
-bufferMUX bufferMUX (.Select ({GatePC, GateMDR, GateALU, GateMARMUX}), .*, .ADDR_R (16'b0000000000000000), .Output (datapath));
+bufferMUX bufferMUX (.Select ({GatePC, GateMDR, GateALU, GateMARMUX}), .*, .Output (datapath));
 
 o16MUX21 MIO (.Sel (MIO_EN), .i_data ('{Data_from_SRAM, datapath}), .o_data (MIO_val));
 
+i6SEXT i6	(IR[5:0]	, ADDR2_1);
+i9SEXT i9	(IR[8:0] , ADDR2_2);
+i11SEXT i11 (IR[10:0], ADDR2_3);
+
+o16MUX41 ADDR2 (.Sel (ADDR2MUX), .i_data(), o_data());
+
+o16MUX21 ADDR1 (.Sel (ADDR1MUX), .i_data(), o_data());
+
+
+
+
 reg_16 MAR_reg (.Clk (Clk), .Reset (Reset), .Load (LD_MAR), .D (datapath), .Data_Out (MAR));
 reg_16  IR_reg (.Clk (Clk), .Reset (Reset), .Load (LD_IR),  .D (datapath), .Data_Out (IR));
-reg_16 MDR_reg (.Clk (Clk), .Reset (Reset), .Load (LD_MDR), .D (MIO_val), .Data_Out (MDR));
-reg_16  PC_reg (.Clk (Clk), .Reset (Reset), .Load (LD_PC),  .D (PC + 16'b0000000000000001), .Data_Out (PC));
+reg_16 MDR_reg (.Clk (Clk), .Reset (Reset), .Load (LD_MDR), .D (MIO_val), 	.Data_Out (MDR));
+reg_16  PC_reg (.Clk (Clk), .Reset (Reset), .Load (LD_PC),  .D (PC_val), 	.Data_Out (PC));
 
 
 // Our SRAM and I/O controller (note, this plugs into MDR/MAR)
 
 Mem2IO memory_subsystem(
     .*, .Reset(Reset), .ADDR(ADDR), .Switches(SW),
-	 .HEX0(), .HEX1(), .HEX2(), .HEX3()
-    /*.HEX0(hex_4[0][3:0]), .HEX1(hex_4[1][3:0]), .HEX2(hex_4[2][3:0]), .HEX3(hex_4[3][3:0]),*/,
+    .HEX0(hex_4[0][3:0]), .HEX1(hex_4[1][3:0]), .HEX2(hex_4[2][3:0]), .HEX3(hex_4[3][3:0]),
     .Data_from_CPU(MDR), .Data_to_CPU(MDR_In),
     .Data_from_SRAM(Data_from_SRAM), .Data_to_SRAM(Data_to_SRAM)
 );
@@ -100,3 +113,5 @@ ISDU state_controller(
 
 	
 endmodule
+
+//
