@@ -67,21 +67,36 @@ bufferMUX bufferMUX (.Select ({GatePC, GateMDR, GateALU, GateMARMUX}), .*, .Outp
 
 o16MUX21 MIO (.Sel (MIO_EN), .i_data ('{Data_from_SRAM, datapath}), .o_data (MIO_val));
 
-i6SEXT i6	(IR[5:0]	, ADDR2_1);
-i9SEXT i9	(IR[8:0] , ADDR2_2);
-i11SEXT i11 (IR[10:0], ADDR2_3);
+i6SEXT i6	(.s_in (IR[5:0]) , .s_out (ADDR2_1));
+i9SEXT i9	(.s_in (IR[8:0]) , .s_out (ADDR2_2));
+i11SEXT i11 (.s_in (IR[10:0]), .s_out (ADDR2_3));
 
-o16MUX41 ADDR2 (.Sel (ADDR2MUX), .i_data(), o_data());
+o16MUX41 ADDR2 (.Sel (ADDR2MUX), .i_data (`{}), .o_data (ADDR2_R));
+o16MUX21 ADDR1 (.Sel (ADDR1MUX), .i_data (`{}), .o_data (ADDR1_R));
 
-o16MUX21 ADDR1 (.Sel (ADDR1MUX), .i_data(), o_data());
+//adder
+always_comb
+ begin
+	ADDR_R = ADDR2_R + ADDR1_R;
+ end
+ 
+o16MUX31 PCSel (.Sel (PCMUX), .i_data ('{datapath, ADDR_R, PC + 1}), .o_data (PC_val));
 
 
+i5SEXT i5 ();
+o16MUX21 SR2 ();
 
+ALU Compute ();
 
 reg_16 MAR_reg (.Clk (Clk), .Reset (Reset), .Load (LD_MAR), .D (datapath), .Data_Out (MAR));
 reg_16  IR_reg (.Clk (Clk), .Reset (Reset), .Load (LD_IR),  .D (datapath), .Data_Out (IR));
 reg_16 MDR_reg (.Clk (Clk), .Reset (Reset), .Load (LD_MDR), .D (MIO_val), 	.Data_Out (MDR));
 reg_16  PC_reg (.Clk (Clk), .Reset (Reset), .Load (LD_PC),  .D (PC_val), 	.Data_Out (PC));
+
+reg_file regfile ();
+
+BEN_cal Br_En ();
+
 
 
 // Our SRAM and I/O controller (note, this plugs into MDR/MAR)
