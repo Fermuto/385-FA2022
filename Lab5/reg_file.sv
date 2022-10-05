@@ -12,27 +12,27 @@ output logic [15:0] SR2, SR1
 	o3MUX Reg_1 (.Sel (cSR1), .i_data('{IR[11:9], IR[8:6]}), .o_data(SR_1));
 	assign SR_2 = IR[2:0];
 	
-	always_comb
+	always_ff @ (posedge Clk)
 	begin
 	case(D_R)
-		3'b000: data0 = data;
-		3'b001: data1 = data;
-		3'b010: data2 = data;
-		3'b011: data3 = data;
-		3'b100: data4 = data;
-		3'b101: data5 = data;
-		3'b110: data6 = data;
-		3'b111: data7 = data;
+		3'b000: data0 <= data;
+		3'b001: data1 <= data;
+		3'b010: data2 <= data;
+		3'b011: data3 <= data;
+		3'b100: data4 <= data;
+		3'b101: data5 <= data;
+		3'b110: data6 <= data;
+		3'b111: data7 <= data;
 		default:  
 		begin
-		data0 = 16'b0000000000000000;
-		data1 = 16'b0000000000000000;
-		data2 = 16'b0000000000000000;
-		data3 = 16'b0000000000000000;
-		data4 = 16'b0000000000000000;
-		data5 = 16'b0000000000000000;
-		data6 = 16'b0000000000000000;
-		data7 = 16'b0000000000000000;
+		data0 <= 16'bxxxxxxxxxxxxxxxx;
+		data1 <= 16'bxxxxxxxxxxxxxxxx;
+		data2 <= 16'bxxxxxxxxxxxxxxxx;
+		data3 <= 16'bxxxxxxxxxxxxxxxx;
+		data4 <= 16'bxxxxxxxxxxxxxxxx;
+		data5 <= 16'bxxxxxxxxxxxxxxxx;
+		data6 <= 16'bxxxxxxxxxxxxxxxx;
+		data7 <= 16'bxxxxxxxxxxxxxxxx;
 		end
 	endcase
 	end
@@ -46,30 +46,30 @@ output logic [15:0] SR2, SR1
 	reg_16 Register6	( .*, .Reset(reset), .Load(LD_Reg), .D(data6), .Data_Out(out6));
 	reg_16 Register7	( .*, .Reset(reset), .Load(LD_Reg), .D(data7), .Data_Out(out7));
 	
-	always_comb
+	always_ff @ (posedge Clk)
 	begin
 	case(SR_1)
-		3'b000: SR1 = out0;
-		3'b001: SR1 = out1;
-		3'b010: SR1 = out2;
-		3'b011: SR1 = out3;
-		3'b100: SR1 = out4;
-		3'b101: SR1 = out5;
-		3'b110: SR1 = out6;
-		3'b111: SR1 = out7;
-		default: SR1 = 16'b0000000000000000;
+		3'b000: SR1 <= out0;
+		3'b001: SR1 <= out1;
+		3'b010: SR1 <= out2;
+		3'b011: SR1 <= out3;
+		3'b100: SR1 <= out4;
+		3'b101: SR1 <= out5;
+		3'b110: SR1 <= out6;
+		3'b111: SR1 <= out7;
+		default: SR1 <= 16'bxxxxxxxxxxxxxxxx;
 	endcase
 	
 	case(SR_2)
-		3'b000: SR2 = out0;
-		3'b001: SR2 = out1;
-		3'b010: SR2 = out2;
-		3'b011: SR2 = out3;
-		3'b100: SR2 = out4;
-		3'b101: SR2 = out5;
-		3'b110: SR2 = out6;
-		3'b111: SR2 = out7;
-		default: SR2 = 16'b0000000000000000;
+		3'b000: SR2 <= out0;
+		3'b001: SR2 <= out1;
+		3'b010: SR2 <= out2;
+		3'b011: SR2 <= out3;
+		3'b100: SR2 <= out4;
+		3'b101: SR2 <= out5;
+		3'b110: SR2 <= out6;
+		3'b111: SR2 <= out7;
+		default: SR2 <= 16'bxxxxxxxxxxxxxxxx;
 	endcase
 	end
 	
