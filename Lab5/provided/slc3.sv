@@ -48,7 +48,8 @@ logic [15:0] MDR_In;
 logic [15:0] MAR, MDR, IR, PC, ALU, datapath, 
 		MIO_val, PC_val,
 		ADDR2_3, ADDR2_2, ADDR2_1,
-		ADDR2_R, ADDR1_R, ADDR_R;
+		ADDR2_R, ADDR1_R, ADDR_R,
+		SR1_OUT, SR2_OUT, i5_OUT, SR2M_val;
 		
 		
 assign hex_4[0] = IR[3:0];
@@ -71,20 +72,17 @@ i6SEXT i6	(.s_in (IR[5:0]) , .s_out (ADDR2_1));
 i9SEXT i9	(.s_in (IR[8:0]) , .s_out (ADDR2_2));
 i11SEXT i11 (.s_in (IR[10:0]), .s_out (ADDR2_3));
 
-o16MUX41 ADDR2 (.Sel (ADDR2MUX), .i_data (`{}), .o_data (ADDR2_R));
-o16MUX21 ADDR1 (.Sel (ADDR1MUX), .i_data (`{}), .o_data (ADDR1_R));
+o16MUX41 ADDR2 (.Sel (ADDR2MUX), .i_data (`{ADDR2_3, ADDR2_2, ADDR2_1, 16'b0000000000000000}), .o_data (ADDR2_R));
+o16MUX21 ADDR1 (.Sel (ADDR1MUX), .i_data (`{SR2_OUT, PC}), .o_data (ADDR1_R));
 
 //adder
-always_comb
- begin
-	ADDR_R = ADDR2_R + ADDR1_R;
- end
+assign ADDR_R = ADDR2_R + ADDR1_R;
  
 o16MUX31 PCSel (.Sel (PCMUX), .i_data ('{datapath, ADDR_R, PC + 1}), .o_data (PC_val));
 
 
-i5SEXT i5 ();
-o16MUX21 SR2 ();
+i5SEXT i5 (.s_in (IR[4:0]), .s_out (i5_OUT));
+o16MUX21 SR2M (.Sel (SR2MUX), .i_data ('{i5_OUT, SR2_OUT}), .o_data (SR2M_val));
 
 ALU Compute ();
 
@@ -95,12 +93,10 @@ reg_16  PC_reg (.Clk (Clk), .Reset (Reset), .Load (LD_PC),  .D (PC_val), 	.Data_
 
 reg_file regfile ();
 
-BEN_cal Br_En ();
+BEN_cal Br_En (.nzp (IR[11:9]), .*);
 
-
-
-// Our SRAM and I/O controller (note, this plugs into MDR/MAR)
-
+// Our SRAM and I/O controller
+ (note, this plugs into MDR/MAR)
 Mem2IO memory_subsystem(
     .*, .Reset(Reset), .ADDR(ADDR), .Switches(SW),
     .HEX0(hex_4[0][3:0]), .HEX1(hex_4[1][3:0]), .HEX2(hex_4[2][3:0]), .HEX3(hex_4[3][3:0]),
@@ -128,5 +124,3 @@ ISDU state_controller(
 
 	
 endmodule
-
-//
