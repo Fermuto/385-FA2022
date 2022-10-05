@@ -80,18 +80,17 @@ assign ADDR_R = ADDR2_R + ADDR1_R;
  
 o16MUX31 PCSel (.Sel (PCMUX), .i_data ('{datapath, ADDR_R, PC + 1}), .o_data (PC_val));
 
-
 i5SEXT i5 (.s_in (IR[4:0]), .s_out (i5_OUT));
 o16MUX21 SR2M (.Sel (SR2MUX), .i_data ('{i5_OUT, SR2_OUT}), .o_data (SR2M_val));
 
-ALU Compute ();
+ALU Compute (.SR1 (SR1_OUT), .OP2 (SR2M_val), .ALUK (ALUK), .Result (ALU));
 
 reg_16 MAR_reg (.Clk (Clk), .Reset (Reset), .Load (LD_MAR), .D (datapath), .Data_Out (MAR));
 reg_16  IR_reg (.Clk (Clk), .Reset (Reset), .Load (LD_IR),  .D (datapath), .Data_Out (IR));
 reg_16 MDR_reg (.Clk (Clk), .Reset (Reset), .Load (LD_MDR), .D (MIO_val), 	.Data_Out (MDR));
 reg_16  PC_reg (.Clk (Clk), .Reset (Reset), .Load (LD_PC),  .D (PC_val), 	.Data_Out (PC));
 
-reg_file regfile ();
+reg_file regfile (.LD_Reg (LD_REG), .cDR (DRMUX), .cSR1 (SR1MUX), .Clk (Clk), .reset (Reset));
 
 BEN_cal Br_En (.nzp (IR[11:9]), .*);
 

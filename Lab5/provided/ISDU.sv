@@ -56,11 +56,15 @@ module ISDU (   input logic         Clk,
 						PauseIR1, 
 						PauseIR2, 
 						S_18, 
-						S_33_1, 
-						S_33_2, 
+						S_33_1, S_33_2, S_33_3, S_33_4, 
 						S_35, 
 						S_32, 
-						S_01}   State, Next_state;   // Internal state logic
+						S_01, S_05, S_09,
+						S_06, S_25_1, S_25_2, S_25_3, S_25_4, S_27,
+						S_07, S_23, S_16_1, S_16_2, S_16_3, S_16_4,
+						S_00, S_22,
+						S_12,
+						S_4, S_21}   State, Next_state;   // Internal state logic
 		
 	always_ff @ (posedge Clk)
 	begin
@@ -163,14 +167,25 @@ module ISDU (   input logic         Clk,
 					LD_PC = 1'b1;
 				end
 			S_33_1 : 
-				Mem_OE = 1'b1;
+				begin 
+					Mem_OE = 1'b1;
+					LD_MDR = 1'b1;
+				end
 			S_33_2 : 
 				begin 
 					Mem_OE = 1'b1;
 					LD_MDR = 1'b1;
 				end
 			S_33_3 :
+				begin 
+					Mem_OE = 1'b1;
+					LD_MDR = 1'b1;
+				end
 			S_33_4 :
+				begin 
+					Mem_OE = 1'b1;
+					LD_MDR = 1'b1;
+				end
 			S_35 : 
 				begin 
 					GateMDR = 1'b1;
