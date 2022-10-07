@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Lab5
-Fri Sep 30 15:33:14 2022
+Thu Oct 06 20:23:30 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Sep 30 15:33:14 2022 ;
+; EDA Netlist Writer Status ; Successful - Thu Oct 06 20:23:30 2022 ;
 ; Revision Name             ; Lab5                                  ;
 ; Top-level Entity Name     ; slc3_sramtop                          ;
 ; Family                    ; MAX 10                                ;
@@ -81,15 +81,15 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Sep 30 15:33:11 2022
+    Info: Processing started: Thu Oct 06 20:23:29 2022
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Lab5 -c Lab5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
 Info (204019): Generated file Lab5.svo in folder "C:/Users/zdrag/Documents/GitHub/385-FA2022/Lab5/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4662 megabytes
-    Info: Processing ended: Fri Sep 30 15:33:14 2022
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4672 megabytes
+    Info: Processing ended: Thu Oct 06 20:23:30 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -50,35 +50,38 @@ logic [15:0] MAR, MDR, IR, PC, ALU, datapath,
 		ADDR2_3, ADDR2_2, ADDR2_1,
 		ADDR2_R, ADDR1_R, ADDR_R,
 		SR1_OUT, SR2_OUT, i5_OUT, SR2M_val;
-		
-		
-assign hex_4[0] = IR[3:0];
-assign hex_4[1] = IR[7:4];
-assign hex_4[2] = IR[11:8];
-assign hex_4[3] = IR[15:12];
 
+
+		
 
 // Connect MAR to ADDR, which is also connected as an input into MEM2IO
 //	MEM2IO will determine what gets put onto Data_CPU (which serves as a potential
 //	input into MDR)
 assign ADDR = MAR; 
-assign MIO_EN = OE;
+assign MIO_EN = ~OE;
 // Connect everything to the data path (you have to figure out this part)
 bufferMUX bufferMUX (.Select ({GatePC, GateMDR, GateALU, GateMARMUX}), .*, .Output (datapath));
 
-o16MUX21 MIO (.Sel (MIO_EN), .i_data ('{Data_from_SRAM, datapath}), .o_data (MIO_val));
+o16MUX21 MIO (.Sel (MIO_EN), .i_data ('{MDR_In, datapath}), .o_data (MIO_val));
 
 i6SEXT i6	(.s_in (IR[5:0]) , .s_out (ADDR2_1));
 i9SEXT i9	(.s_in (IR[8:0]) , .s_out (ADDR2_2));
 i11SEXT i11 (.s_in (IR[10:0]), .s_out (ADDR2_3));
 
-o16MUX41 ADDR2 (.Sel (ADDR2MUX), .i_data (`{ADDR2_3, ADDR2_2, ADDR2_1, 16'b0000000000000000}), .o_data (ADDR2_R));
-o16MUX21 ADDR1 (.Sel (ADDR1MUX), .i_data (`{SR2_OUT, PC}), .o_data (ADDR1_R));
+o16MUX41 ADDR2 (.Sel (ADDR2MUX), .i_data ('{16'b0000000000000000, ADDR2_1, ADDR2_2, ADDR2_3}), .o_data (ADDR2_R));
+o16MUX21 ADDR1 (.Sel (ADDR1MUX), .i_data ('{SR1_OUT, PC}), .o_data (ADDR1_R));
 
 //adder
-assign ADDR_R = ADDR2_R + ADDR1_R;
+always_comb
+	begin
+		ADDR_R = ADDR2_R + ADDR1_R;
+		if (LD_LED)
+			LED = IR[9:0];
+		else
+			LED = 10'b0000000000;
+	end
  
-o16MUX31 PCSel (.Sel (PCMUX), .i_data ('{datapath, ADDR_R, PC + 1}), .o_data (PC_val));
+o16MUX41 PCSel (.Sel (PCMUX), .i_data ('{PC + 1, ADDR_R, datapath, 16'b0000000000000000}), .o_data (PC_val));
 
 i5SEXT i5 (.s_in (IR[4:0]), .s_out (i5_OUT));
 o16MUX21 SR2M (.Sel (SR2MUX), .i_data ('{i5_OUT, SR2_OUT}), .o_data (SR2M_val));
@@ -90,12 +93,13 @@ reg_16  IR_reg (.Clk (Clk), .Reset (Reset), .Load (LD_IR),  .D (datapath), .Data
 reg_16 MDR_reg (.Clk (Clk), .Reset (Reset), .Load (LD_MDR), .D (MIO_val), 	.Data_Out (MDR));
 reg_16  PC_reg (.Clk (Clk), .Reset (Reset), .Load (LD_PC),  .D (PC_val), 	.Data_Out (PC));
 
-reg_file regfile (.LD_Reg (LD_REG), .cDR (DRMUX), .cSR1 (SR1MUX), .Clk (Clk), .reset (Reset));
+reg_file regfile (.LD_Reg (LD_REG), .cDR (DRMUX), .cSR1 (SR1MUX), .Clk (Clk), .reset (Reset),
+						.IR (IR), .data (datapath), .SR2 (SR2_OUT), .SR1 (SR1_OUT));
 
 BEN_cal Br_En (.nzp (IR[11:9]), .*);
 
 // Our SRAM and I/O controller
- (note, this plugs into MDR/MAR)
+// (note, this plugs into MDR/MAR)
 Mem2IO memory_subsystem(
     .*, .Reset(Reset), .ADDR(ADDR), .Switches(SW),
     .HEX0(hex_4[0][3:0]), .HEX1(hex_4[1][3:0]), .HEX2(hex_4[2][3:0]), .HEX3(hex_4[3][3:0]),

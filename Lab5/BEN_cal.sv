@@ -1,8 +1,8 @@
 module BEN_cal (
 	input [2:0] nzp,
 	input [15:0] datapath,
-	input LD.BEN, LD.CC,
-	output BEN
+	input LD_BEN, LD_CC, Clk,
+	output logic BEN
 );
 
 logic N, Z, P, A_R, M_U, M_L, 
@@ -11,13 +11,13 @@ logic N, Z, P, A_R, M_U, M_L,
 
 always_ff @ (posedge Clk)
  begin
-	if (LD.CC)
+	if (LD_CC)
 	 begin
 		N <= datapath[15];
 		Z <= M_U;
 		P <= M_L;
 	 end
-	if (LD.BEN)
+	if (LD_BEN)
 		BEN <= BEN_R;
  end
  
@@ -30,7 +30,7 @@ always_comb
 	M_L = ((~M_U) & (~datapath[15]) & A_R);
 	
 	N_M = (N & nzp[2]);
-	Z_M = (Z & nzp[1]):
+	Z_M = (Z & nzp[1]);
 	P_M = (P & nzp[0]);
 	
 	BEN_R = (N_M | Z_M | P_M);
