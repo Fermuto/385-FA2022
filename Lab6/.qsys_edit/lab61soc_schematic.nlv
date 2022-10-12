@@ -1,5 +1,6 @@
 # # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
 # 
+preplace inst lab61soc.sdram_pll -pg 1 -lvl 3 -y 310
 preplace inst lab61soc.sdram -pg 1 -lvl 3 -y 130
 preplace inst lab61soc.nios2_gen2_0.cpu -pg 1
 preplace inst lab61soc.nios2_gen2_0.clock_bridge -pg 1
@@ -9,10 +10,10 @@ preplace inst lab61soc.clk_0 -pg 1 -lvl 1 -y 140
 preplace inst lab61soc -pg 1 -lvl 1 -y 40 -regy -20
 preplace inst lab61soc.onchip_memory2_0 -pg 1 -lvl 3 -y 230
 preplace inst lab61soc.nios2_gen2_0.reset_bridge -pg 1
-preplace netloc FAN_OUT<net_container>lab61soc</net_container>(SLAVE)sdram.clk,(SLAVE)onchip_memory2_0.clk1,(SLAVE)nios2_gen2_0.clk,(SLAVE)led.clk,(MASTER)clk_0.clk) 1 1 2 240 60 660
-preplace netloc INTERCONNECT<net_container>lab61soc</net_container>(SLAVE)onchip_memory2_0.s1,(MASTER)nios2_gen2_0.data_master,(SLAVE)nios2_gen2_0.debug_mem_slave,(SLAVE)sdram.s1,(MASTER)nios2_gen2_0.instruction_master,(SLAVE)led.s1) 1 1 2 260 80 620
-preplace netloc FAN_OUT<net_container>lab61soc</net_container>(SLAVE)nios2_gen2_0.reset,(SLAVE)sdram.reset,(SLAVE)onchip_memory2_0.reset1,(SLAVE)led.reset,(MASTER)clk_0.clk_reset) 1 1 2 240 260 640
+preplace netloc FAN_OUT<net_container>lab61soc</net_container>(SLAVE)nios2_gen2_0.reset,(SLAVE)onchip_memory2_0.reset1,(MASTER)clk_0.clk_reset,(SLAVE)led.reset,(SLAVE)sdram.reset,(SLAVE)sdram_pll.inclk_interface_reset) 1 1 2 240 280 680
+preplace netloc FAN_OUT<net_container>lab61soc</net_container>(MASTER)clk_0.clk,(SLAVE)onchip_memory2_0.clk1,(SLAVE)led.clk,(SLAVE)nios2_gen2_0.clk,(SLAVE)sdram.clk,(SLAVE)sdram_pll.inclk_interface) 1 1 2 260 260 660
+preplace netloc INTERCONNECT<net_container>lab61soc</net_container>(SLAVE)sdram.s1,(SLAVE)led.s1,(SLAVE)nios2_gen2_0.debug_mem_slave,(SLAVE)sdram_pll.pll_slave,(MASTER)nios2_gen2_0.instruction_master,(MASTER)nios2_gen2_0.data_master,(SLAVE)onchip_memory2_0.s1) 1 1 2 280 300 640
+preplace netloc POINT_TO_POINT<net_container>lab61soc</net_container>(SLAVE)led.external_connection,(SLAVE)sdram.wire) 1 2 1 700
 preplace netloc EXPORT<net_container>lab61soc</net_container>(SLAVE)lab61soc.clk,(SLAVE)clk_0.clk_in) 1 0 1 N
-preplace netloc POINT_TO_POINT<net_container>lab61soc</net_container>(SLAVE)sdram.wire,(SLAVE)led.external_connection) 1 2 1 680
-levelinfo -pg 1 0 30 890
-levelinfo -hier lab61soc 40 70 380 730 880
+levelinfo -pg 1 0 30 950
+levelinfo -hier lab61soc 40 70 400 750 940

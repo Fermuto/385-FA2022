@@ -1,0 +1,69 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/ajinusnlch/Documents/GitHub/385-FA2022/Lab6/lab61soc.qsys --block-symbol-file --output-directory=/home/ajinusnlch/Documents/GitHub/385-FA2022/Lab6/lab61soc --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading Lab6/lab61soc.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 19.1]
+Progress: Parameterizing module clk_0
+Progress: Adding led [altera_avalon_pio 19.1]
+Progress: Parameterizing module led
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 19.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 19.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding sdram [altera_avalon_new_sdram_controller 19.1]
+Progress: Parameterizing module sdram
+Progress: Adding sdram_pll [altpll 19.1]
+Progress: Parameterizing module sdram_pll
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 19.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: lab61soc.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: lab61soc.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: lab61soc.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/ajinusnlch/Documents/GitHub/385-FA2022/Lab6/lab61soc.qsys --synthesis=VERILOG --output-directory=/home/ajinusnlch/Documents/GitHub/385-FA2022/Lab6/lab61soc/synthesis --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading Lab6/lab61soc.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 19.1]
+Progress: Parameterizing module clk_0
+Progress: Adding led [altera_avalon_pio 19.1]
+Progress: Parameterizing module led
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 19.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 19.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding sdram [altera_avalon_new_sdram_controller 19.1]
+Progress: Parameterizing module sdram
+Progress: Adding sdram_pll [altpll 19.1]
+Progress: Parameterizing module sdram_pll
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 19.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: lab61soc.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: lab61soc.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: lab61soc.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: lab61soc: Generating lab61soc "lab61soc" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src5 and cmd_mux_005.sink0
+Info: Inserting clock-crossing logic between cmd_demux_001.src5 and cmd_mux_005.sink1
+Info: Inserting clock-crossing logic between rsp_demux_005.src0 and rsp_mux.sink5
+Info: Inserting clock-crossing logic between rsp_demux_005.src1 and rsp_mux_001.sink5
+Info: led: Starting RTL generation for module 'lab61soc_led'
+Info: led:   Generation command is [exec /home/ajinusnlch/intelFPGA/19.1/quartus/linux64/perl/bin/perl -I /home/ajinusnlch/intelFPGA/19.1/quartus/sopc_builder/bin/europa -I /home/ajinusnlch/intelFPGA/19.1/quartus/sopc_builder/bin -I /home/ajinusnlch/intelFPGA/19.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/ajinusnlch/intelFPGA/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/ajinusnlch/intelFPGA/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab61soc_led --dir=/tmp/alt9277_8656475424435269617.dir/0002_led_gen/ --quartus_dir=/home/ajinusnlch/intelFPGA/19.1/quartus --verilog --config=/tmp/alt9277_8656475424435269617.dir/0002_led_gen//lab61soc_led_component_configuration.pl  --do_build_sim=0  ]
+Info: led: Can't locate Getopt/Long.pm in @INC (you may need to install the Getopt::Long module) (@INC contains: /home/ajinusnlch/intelFPGA/19.1/quartus/sopc_builder/bin/europa /home/ajinusnlch/intelFPGA/19.1/quartus/sopc_builder/bin /home/ajinusnlch/intelFPGA/19.1/quartus/../ip/altera/sopc_builder_ip/common /home/ajinusnlch/intelFPGA/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio /tools/perl/5.28.1/linux64/lib/site_perl/5.28.1/x86_64-linux /tools/perl/5.28.1/linux64/lib/site_perl/5.28.1 /tools/perl/5.28.1/linux64/lib/5.28.1/x86_64-linux /tools/perl/5.28.1/linux64/lib/5.28.1) at /home/ajinusnlch/intelFPGA/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl line 18.
+Info: led: BEGIN failed--compilation aborted at /home/ajinusnlch/intelFPGA/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl line 18.
+Info: led: Done RTL generation for module 'lab61soc_led'
+Error: led: Failed to find module lab61soc_led
+Info: led: "lab61soc" instantiated altera_avalon_pio "led"
+Error: Generation stopped, 9 or more modules remaining
+Info: lab61soc: Done "lab61soc" with 10 modules, 1 files
+Error: qsys-generate failed with exit code 1: 2 Errors, 0 Warnings
+Info: Finished: Create HDL design files for synthesis
