@@ -265,16 +265,6 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[6] -entity DE10_L
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[7] -entity DE10_LITE_Default
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[8] -entity DE10_LITE_Default
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[9] -entity DE10_LITE_Default
-set_location_assignment PIN_C10 -to SW[0]
-set_location_assignment PIN_C11 -to SW[1]
-set_location_assignment PIN_D12 -to SW[2]
-set_location_assignment PIN_C12 -to SW[3]
-set_location_assignment PIN_A12 -to SW[4]
-set_location_assignment PIN_B12 -to SW[5]
-set_location_assignment PIN_A13 -to SW[6]
-set_location_assignment PIN_A14 -to SW[7]
-set_location_assignment PIN_B14 -to SW[8]
-set_location_assignment PIN_F15 -to SW[9]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[0] -entity DE10_LITE_Default
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[1] -entity DE10_LITE_Default
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[2] -entity DE10_LITE_Default
@@ -440,4 +430,12 @@ set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
 set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_location_assignment PIN_C10 -to SWR[0]
+set_location_assignment PIN_C11 -to SWR[1]
+set_location_assignment PIN_D12 -to SWR[2]
+set_location_assignment PIN_C12 -to SWR[3]
+set_location_assignment PIN_A12 -to SWR[4]
+set_location_assignment PIN_B12 -to SWR[5]
+set_location_assignment PIN_A13 -to SWR[6]
+set_location_assignment PIN_A14 -to SWR[7]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

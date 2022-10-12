@@ -4,19 +4,21 @@
 
 `timescale 1 ps / 1 ps
 module lab61_soc (
-		input  wire        clk_clk,          //        clk.clk
-		output wire [7:0]  led_wire_export,  //   led_wire.export
-		input  wire        reset_reset_n,    //      reset.reset_n
-		output wire        sdram_clk_clk,    //  sdram_clk.clk
-		output wire [12:0] sdram_wire_addr,  // sdram_wire.addr
-		output wire [1:0]  sdram_wire_ba,    //           .ba
-		output wire        sdram_wire_cas_n, //           .cas_n
-		output wire        sdram_wire_cke,   //           .cke
-		output wire        sdram_wire_cs_n,  //           .cs_n
-		inout  wire [15:0] sdram_wire_dq,    //           .dq
-		output wire [1:0]  sdram_wire_dqm,   //           .dqm
-		output wire        sdram_wire_ras_n, //           .ras_n
-		output wire        sdram_wire_we_n   //           .we_n
+		input  wire [1:0]  buttons_wire_export,  //  buttons_wire.export
+		input  wire        clk_clk,              //           clk.clk
+		output wire [7:0]  led_wire_export,      //      led_wire.export
+		input  wire        reset_reset_n,        //         reset.reset_n
+		output wire        sdram_clk_clk,        //     sdram_clk.clk
+		output wire [12:0] sdram_wire_addr,      //    sdram_wire.addr
+		output wire [1:0]  sdram_wire_ba,        //              .ba
+		output wire        sdram_wire_cas_n,     //              .cas_n
+		output wire        sdram_wire_cke,       //              .cke
+		output wire        sdram_wire_cs_n,      //              .cs_n
+		inout  wire [15:0] sdram_wire_dq,        //              .dq
+		output wire [1:0]  sdram_wire_dqm,       //              .dqm
+		output wire        sdram_wire_ras_n,     //              .ras_n
+		output wire        sdram_wire_we_n,      //              .we_n
+		input  wire [7:0]  switches_wire_export  // switches_wire.export
 	);
 
 	wire         sdram_pll_c0_clk;                                           // sdram_pll:c0 -> [mm_interconnect_0:sdram_pll_c0_clk, rst_controller_001:clk, sdram:clk]
@@ -68,11 +70,23 @@ module lab61_soc (
 	wire         mm_interconnect_0_sdram_s1_readdatavalid;                   // sdram:za_valid -> mm_interconnect_0:sdram_s1_readdatavalid
 	wire         mm_interconnect_0_sdram_s1_write;                           // mm_interconnect_0:sdram_s1_write -> sdram:az_wr_n
 	wire  [15:0] mm_interconnect_0_sdram_s1_writedata;                       // mm_interconnect_0:sdram_s1_writedata -> sdram:az_data
+	wire  [31:0] mm_interconnect_0_switches_s1_readdata;                     // switches:readdata -> mm_interconnect_0:switches_s1_readdata
+	wire   [1:0] mm_interconnect_0_switches_s1_address;                      // mm_interconnect_0:switches_s1_address -> switches:address
+	wire  [31:0] mm_interconnect_0_buttons_s1_readdata;                      // buttons:readdata -> mm_interconnect_0:buttons_s1_readdata
+	wire   [1:0] mm_interconnect_0_buttons_s1_address;                       // mm_interconnect_0:buttons_s1_address -> buttons:address
 	wire  [31:0] nios2_gen2_0_irq_irq;                                       // irq_mapper:sender_irq -> nios2_gen2_0:irq
-	wire         rst_controller_reset_out_reset;                             // rst_controller:reset_out -> [irq_mapper:reset, led:reset_n, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, nios2_gen2_0:reset_n, onchip_memory2_0:reset, rst_translator:in_reset, sdram_pll:reset, sysid_qsys_0:reset_n]
+	wire         rst_controller_reset_out_reset;                             // rst_controller:reset_out -> [buttons:reset_n, irq_mapper:reset, led:reset_n, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, nios2_gen2_0:reset_n, onchip_memory2_0:reset, rst_translator:in_reset, sdram_pll:reset, switches:reset_n, sysid_qsys_0:reset_n]
 	wire         rst_controller_reset_out_reset_req;                         // rst_controller:reset_req -> [nios2_gen2_0:reset_req, onchip_memory2_0:reset_req, rst_translator:reset_req_in]
 	wire         nios2_gen2_0_debug_reset_request_reset;                     // nios2_gen2_0:debug_reset_request -> [rst_controller:reset_in1, rst_controller_001:reset_in1]
 	wire         rst_controller_001_reset_out_reset;                         // rst_controller_001:reset_out -> [mm_interconnect_0:sdram_reset_reset_bridge_in_reset_reset, sdram:reset_n]
+
+	lab61_soc_buttons buttons (
+		.clk      (clk_clk),                               //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),       //               reset.reset_n
+		.address  (mm_interconnect_0_buttons_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_buttons_s1_readdata), //                    .readdata
+		.in_port  (buttons_wire_export)                    // external_connection.export
+	);
 
 	lab61_soc_led led (
 		.clk        (clk_clk),                             //                 clk.clk
@@ -178,6 +192,14 @@ module lab61_soc (
 		.configupdate       (1'b0)                                             //           (terminated)
 	);
 
+	lab61_soc_switches switches (
+		.clk      (clk_clk),                                //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),        //               reset.reset_n
+		.address  (mm_interconnect_0_switches_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_switches_s1_readdata), //                    .readdata
+		.in_port  (switches_wire_export)                    // external_connection.export
+	);
+
 	lab61_soc_sysid_qsys_0 sysid_qsys_0 (
 		.clock    (clk_clk),                                               //           clk.clk
 		.reset_n  (~rst_controller_reset_out_reset),                       //         reset.reset_n
@@ -202,6 +224,8 @@ module lab61_soc (
 		.nios2_gen2_0_instruction_master_waitrequest    (nios2_gen2_0_instruction_master_waitrequest),                //                                         .waitrequest
 		.nios2_gen2_0_instruction_master_read           (nios2_gen2_0_instruction_master_read),                       //                                         .read
 		.nios2_gen2_0_instruction_master_readdata       (nios2_gen2_0_instruction_master_readdata),                   //                                         .readdata
+		.buttons_s1_address                             (mm_interconnect_0_buttons_s1_address),                       //                               buttons_s1.address
+		.buttons_s1_readdata                            (mm_interconnect_0_buttons_s1_readdata),                      //                                         .readdata
 		.led_s1_address                                 (mm_interconnect_0_led_s1_address),                           //                                   led_s1.address
 		.led_s1_write                                   (mm_interconnect_0_led_s1_write),                             //                                         .write
 		.led_s1_readdata                                (mm_interconnect_0_led_s1_readdata),                          //                                         .readdata
@@ -236,6 +260,8 @@ module lab61_soc (
 		.sdram_pll_pll_slave_read                       (mm_interconnect_0_sdram_pll_pll_slave_read),                 //                                         .read
 		.sdram_pll_pll_slave_readdata                   (mm_interconnect_0_sdram_pll_pll_slave_readdata),             //                                         .readdata
 		.sdram_pll_pll_slave_writedata                  (mm_interconnect_0_sdram_pll_pll_slave_writedata),            //                                         .writedata
+		.switches_s1_address                            (mm_interconnect_0_switches_s1_address),                      //                              switches_s1.address
+		.switches_s1_readdata                           (mm_interconnect_0_switches_s1_readdata),                     //                                         .readdata
 		.sysid_qsys_0_control_slave_address             (mm_interconnect_0_sysid_qsys_0_control_slave_address),       //               sysid_qsys_0_control_slave.address
 		.sysid_qsys_0_control_slave_readdata            (mm_interconnect_0_sysid_qsys_0_control_slave_readdata)       //                                         .readdata
 	);
