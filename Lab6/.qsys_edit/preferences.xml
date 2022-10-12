@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="143" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="211" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Basic Functions/Clocks; PLLs and Resets,Project,Library/Basic Functions/Clocks; PLLs and Resets/PLL,Library/Basic Functions,Library,Library/Memory Interfaces and Controllers/SDRAM,Library/Memory Interfaces and Controllers" />
+ <window width="1846" height="1053" x="74" y="27" />
+</preferences>
