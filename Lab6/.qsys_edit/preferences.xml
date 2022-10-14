@@ -8,6 +8,7 @@
    <name preferredWidth="211" />
   </columns>
  </systemtable>
- <library expandedCategories="Project,Library" />
+ <library
+   expandedCategories="Library/Interface Protocols/Serial,Library/Interface Protocols,Library/Processors and Peripherals,Library,Library/Basic Functions,Library/University Program,Library/Basic Functions/On Chip Memory,Library/Memory Interfaces and Controllers,Library/Processors and Peripherals/Peripherals,Project,Library/Memory Interfaces and Controllers/Flash,Library/University Program/Generic IO" />
  <window width="1846" height="1053" x="74" y="27" />
 </preferences>

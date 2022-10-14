@@ -1,6 +1,6 @@
 Flow report for Lab5
-Fri Oct 07 02:16:38 2022
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Fri Oct 14 11:32:45 2022
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Standard Edition
 
 
 ---------------------
@@ -21,9 +21,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -33,32 +33,33 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Flow Summary                                                                     ;
-+------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Oct 07 02:16:38 2022       ;
-; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                      ; Lab5                                        ;
-; Top-level Entity Name              ; slc3_testtop                                ;
-; Family                             ; MAX 10                                      ;
-; Device                             ; 10M50DAF484C7G                              ;
-; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 700                                         ;
-;     Total combinational functions  ; 554                                         ;
-;     Dedicated logic registers      ; 244                                         ;
-; Total registers                    ; 244                                         ;
-; Total pins                         ; 51                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-; UFM blocks                         ; 0                                           ;
-; ADC blocks                         ; 0                                           ;
-+------------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Fri Oct 14 11:32:45 2022           ;
+; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Standard Edition ;
+; Revision Name                      ; Lab5                                            ;
+; Top-level Entity Name              ; slc3_testtop                                    ;
+; Family                             ; MAX 10                                          ;
+; Device                             ; 10M50DAF484C7G                                  ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 574 / 49,760 ( 1 % )                            ;
+;     Total combinational functions  ; 555 / 49,760 ( 1 % )                            ;
+;     Dedicated logic registers      ; 244 / 49,760 ( < 1 % )                          ;
+; Total registers                    ; 244                                             ;
+; Total pins                         ; 51 / 360 ( 14 % )                               ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                           ;
+; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                                 ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                                   ;
+; ADC blocks                         ; 0 / 2 ( 0 % )                                   ;
++------------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -66,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/07/2022 02:16:08 ;
+; Start date & time ; 10/14/2022 11:32:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab5                ;
 +-------------------+---------------------+
@@ -77,7 +78,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+--------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name  ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+--------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 186420051946.166512696713280           ; --            ; --           ; --             ;
+; COMPILER_SIGNATURE_ID                ; 225373656116316.166576512941732        ; --            ; --           ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; testbench_L52  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; testbench_L51  ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench_L52                          ; --            ; --           ; eda_simulation ;
@@ -93,6 +94,7 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10000 ns                               ; --            ; --           ; testbench_L52  ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1000 ns                                ; --            ; --           ; testbench_L51  ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --           ; eda_simulation ;
+; FLOW_ENABLE_POWER_ANALYZER           ; On                                     ; Off           ; --           ; --             ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --           ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --           ; --             ;
 ; MISC_FILE                            ; ram_bb.v                               ; --            ; --           ; --             ;
@@ -100,6 +102,7 @@ refer to the applicable agreement for further details.
 ; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; slc3_testtop ; Top            ;
 ; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; slc3_testtop ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --           ; --             ;
+; POWER_DEFAULT_INPUT_IO_TOGGLE_RATE   ; 12.5 %                                 ; 12.5%         ; --           ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --           ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --           ; --             ;
 ; TOP_LEVEL_ENTITY                     ; slc3_testtop                           ; Lab5          ; --           ; --             ;
@@ -111,24 +114,39 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:32     ; 1.0                     ; 4780 MB             ; 00:01:10                           ;
-; Total                ; 00:00:32     ; --                      ; --                  ; 00:01:10                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 904 MB              ; 00:00:17                           ;
+; Fitter               ; 00:00:11     ; 1.1                     ; 1648 MB             ; 00:00:13                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 813 MB              ; 00:00:02                           ;
+; Power Analyzer       ; 00:00:06     ; 1.1                     ; 1295 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.2                     ; 877 MB              ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1032 MB             ; 00:00:00                           ;
+; Total                ; 00:00:33     ; --                      ; --                  ; 00:00:42                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; LAPTOP-GMJRP5OK  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++------------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                                ;
++----------------------+--------------------------+----------------+------------+----------------+
+; Module Name          ; Machine Hostname         ; OS Name        ; OS Version ; Processor type ;
++----------------------+--------------------------+----------------+------------+----------------+
+; Analysis & Synthesis ; ajinusnlch-ThinkPad-X390 ; Ubuntu 22.04.1 ; 22         ; x86_64         ;
+; Fitter               ; ajinusnlch-ThinkPad-X390 ; Ubuntu 22.04.1 ; 22         ; x86_64         ;
+; Assembler            ; ajinusnlch-ThinkPad-X390 ; Ubuntu 22.04.1 ; 22         ; x86_64         ;
+; Power Analyzer       ; ajinusnlch-ThinkPad-X390 ; Ubuntu 22.04.1 ; 22         ; x86_64         ;
+; Timing Analyzer      ; ajinusnlch-ThinkPad-X390 ; Ubuntu 22.04.1 ; 22         ; x86_64         ;
+; EDA Netlist Writer   ; ajinusnlch-ThinkPad-X390 ; Ubuntu 22.04.1 ; 22         ; x86_64         ;
++----------------------+--------------------------+----------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Lab5 -c Lab5
+quartus_fit --read_settings_files=off --write_settings_files=off Lab5 -c Lab5
+quartus_asm --read_settings_files=off --write_settings_files=off Lab5 -c Lab5
+quartus_pow --read_settings_files=off --write_settings_files=off Lab5 -c Lab5
+quartus_sta Lab5 -c Lab5
+quartus_eda --read_settings_files=off --write_settings_files=off Lab5 -c Lab5
 
 
 

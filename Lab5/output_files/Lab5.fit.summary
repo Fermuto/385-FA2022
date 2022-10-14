@@ -1,17 +1,17 @@
-Fitter Status : Successful - Thu Oct 06 20:23:19 2022
-Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Fitter Status : Successful - Fri Oct 14 11:32:28 2022
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Standard Edition
 Revision Name : Lab5
-Top-level Entity Name : slc3_sramtop
+Top-level Entity Name : slc3_testtop
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 900 / 49,760 ( 2 % )
-    Total combinational functions : 883 / 49,760 ( 2 % )
-    Dedicated logic registers : 261 / 49,760 ( < 1 % )
-Total registers : 261
+Total logic elements : 574 / 49,760 ( 1 % )
+    Total combinational functions : 555 / 49,760 ( 1 % )
+    Dedicated logic registers : 244 / 49,760 ( < 1 % )
+Total registers : 244
 Total pins : 51 / 360 ( 14 % )
 Total virtual pins : 0
-Total memory bits : 16,384 / 1,677,312 ( < 1 % )
+Total memory bits : 0 / 1,677,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 UFM blocks : 0 / 1 ( 0 % )
