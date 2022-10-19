@@ -13,6 +13,7 @@
 #include <sys/alt_stdio.h>
 #include <unistd.h>
 
+volatile unsigned int *SPI_MASTER_BASE = (unsigned int*)0x00000060; //make a pointer to access the SPI block
 //variables and data structures
 //External variables
 extern BYTE usb_task_state;
@@ -35,7 +36,20 @@ void MAXreg_wr(BYTE reg, BYTE val) {
 	//read return code from SPI peripheral (see Intel documentation) 
 	//if return code < 0 print an error
 	//deselect MAX3421E (may not be necessary if you are using SPI peripheral)
+	int rcode;
+	reg = reg + 2;
+	rcode = alt_avalon_spi_command(SPI_MASTER_BASE, 0, 1, &reg, 0, NULL, ALT_AVALON_SPI_COMMAND_MERGE);
+	if (rcode < 0)
+		{
+			printf("Error Writing Single Val");
+		}
+	rcode = alt_avalon_spi_command(SPI_MASTER_BASE, 0, 1, &val, 0, NULL, 0);
+	if (rcode < 0)
+	{
+		printf("Error Writing Single Val");
+	}
 }
+
 //multiple-byte write
 //returns a pointer to a memory position after last written
 BYTE* MAXbytes_wr(BYTE reg, BYTE nbytes, BYTE* data) {
@@ -47,6 +61,19 @@ BYTE* MAXbytes_wr(BYTE reg, BYTE nbytes, BYTE* data) {
 	//if return code < 0  print an error
 	//deselect MAX3421E (may not be necessary if you are using SPI peripheral)
 	//return (data + nbytes);
+	int rcode;
+	reg = reg + 2;
+	rcode = alt_avalon_spi_command(SPI_MASTER_BASE, 0, 1, &reg, 0, NULL, ALT_AVALON_SPI_COMMAND_MERGE);
+	if (rcode < 0)
+		{
+			printf("Error Writing Multiple Data");
+		}
+	rcode = alt_avalon_spi_command(SPI_MASTER_BASE, 0, nbytes, data, 0, NULL, 0);
+	if (rcode < 0)
+	{
+		printf("Error Writing Multiple Data");
+	}
+	return (data + nbytes);
 }
 
 //reads register from MAX3421E via SPI
@@ -59,6 +86,19 @@ BYTE MAXreg_rd(BYTE reg) {
 	//if return code < 0 print an error
 	//deselect MAX3421E (may not be necessary if you are using SPI peripheral)
 	//return val
+	int rcode;
+	BYTE val;
+	rcode = alt_avalon_spi_command(SPI_MASTER_BASE, 0, 1, &reg, 0, NULL, ALT_AVALON_SPI_COMMAND_MERGE);
+	if (rcode < 0)
+			{
+				printf("Error Reading Data Val");
+			}
+	rcode = alt_avalon_spi_command(SPI_MASTER_BASE, 0, 0, NULL, 1, &val, 0);
+	if (rcode < 0)
+		{
+			printf("Error Reading Data Val");
+		}
+	return val;
 }
 //multiple-byte write
 //returns a pointer to a memory position after last written
@@ -71,6 +111,19 @@ BYTE* MAXbytes_rd(BYTE reg, BYTE nbytes, BYTE* data) {
 	//if return code < 0 print an error
 	//deselect MAX3421E (may not be necessary if you are using SPI peripheral)
 	//return (data + nbytes);
+	//dereference reg and data
+	int rcode;
+	rcode = alt_avalon_spi_command(SPI_MASTER_BASE, 0, 1, &reg, 0, NULL, ALT_AVALON_SPI_COMMAND_MERGE);
+	if (rcode < 0)
+		{
+			printf("Error Reading Multiple Data");
+		}
+	rcode = alt_avalon_spi_command(SPI_MASTER_BASE, 0, 0, NULL, nbytes, data, 0);
+	if (rcode < 0)
+	{
+		printf("Error Reading Multiple Data");
+	}
+	return (data + nbytes);
 }
 /* reset MAX3421E using chip reset bit. SPI configuration is not affected   */
 void MAX3421E_reset(void) {

@@ -59,30 +59,69 @@ module  ball ( input Reset, frame_clk,
 					  
 				 
 				 case (keycode)
+				 // if position is at edge, then ignore keycode
 					8'h04 : begin
-
-								Ball_X_Motion <= -1;//A
-								Ball_Y_Motion<= 0;
+								if (Ball_X_Pos < 10)
+								 begin
+									Ball_X_Motion <= Ball_X_Step;
+								 end
+								else
+								 begin
+									Ball_X_Motion <= -1;//A
+									Ball_Y_Motion<= 0;
+								 end
 							  end
 					        
 					8'h07 : begin
-								
-					        Ball_X_Motion <= 1;//D
-							  Ball_Y_Motion <= 0;
+								if (Ball_X_Pos > 629)
+								 begin
+									Ball_X_Motion <= (~ (Ball_X_Step) + 1'b1);
+								 end
+								else
+								 begin
+									Ball_X_Motion <= 1;//D
+									Ball_Y_Motion <= 0;
+								 end
 							  end
 
 							  
 					8'h16 : begin
-
-					        Ball_Y_Motion <= 1;//S
-							  Ball_X_Motion <= 0;
+								if (Ball_Y_Pos > 439)
+								 begin
+									Ball_Y_Motion <= (~ (Ball_Y_Step) + 1'b1);
+								 end
+								else
+								 begin
+									Ball_Y_Motion <= 1;//S
+									Ball_X_Motion <= 0;
+								 end
+					 
 							 end
 							  
-					8'h1A : begin
+					8'h1A : 
+							begin
+							if (Ball_Y_Pos < 10)
+							 begin
+								Ball_Y_Motion <= Ball_Y_Step;
+							 end
+							else
+							 begin
 					        Ball_Y_Motion <= -1;//W
 							  Ball_X_Motion <= 0;
-							 end	  
-					default: ;
+							 end
+							 
+							end	  
+					default: 
+							begin
+								if (Ball_X_Motion != 0)
+								begin
+									Ball_Y_Motion <= 1'b0;
+								end
+								else if (Ball_Y_Motion != 0)
+								begin
+									Ball_X_Motion <= 1'b0;
+								end
+							end
 			   endcase
 				 
 				 Ball_Y_Pos <= (Ball_Y_Pos + Ball_Y_Motion);  // Update ball position

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="lab62_soc" kind="lab62_soc" version="1.0" fabric="QSYS">
  <!-- Format version 19.1 670 (Future versions may contain additional information.) -->
- <!-- 2022.10.12.18:11:51 -->
+ <!-- 2022.10.18.18:10:00 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1665616311</value>
+  <value>1666134599</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -12373,7 +12373,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1665616311</value>
+   <value>1666134599</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -12393,7 +12393,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1665616311</value>
+   <value>1666134599</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -12409,7 +12409,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1665616311</value>
+   <value>1666134599</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -18731,6 +18731,33 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>reset</endConnectionPoint>
  </connection>
  <connection
+   name="nios2_gen2_0.debug_reset_request/spi_0.reset"
+   kind="reset"
+   version="19.1"
+   start="nios2_gen2_0.debug_reset_request"
+   end="spi_0.reset">
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <startModule>nios2_gen2_0</startModule>
+  <startConnectionPoint>debug_reset_request</startConnectionPoint>
+  <endModule>spi_0</endModule>
+  <endConnectionPoint>reset</endConnectionPoint>
+ </connection>
+ <connection
    name="nios2_gen2_0.debug_reset_request/onchip_memory2_0.reset1"
    kind="reset"
    version="19.1"
@@ -18974,7 +19001,7 @@ parameters are a RESULT of the module parameters. -->
   <version>19.1</version>
  </plugin>
  <plugin>
-  <instanceCount>29</instanceCount>
+  <instanceCount>30</instanceCount>
   <name>reset</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IConnection</subtype>

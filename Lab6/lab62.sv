@@ -61,7 +61,7 @@ module lab62 (
 logic Reset_h, vssig, blank, sync, VGA_Clk;
 
 
-//=======================================================
+//==================================================S=====
 //  REG/WIRE declarations
 //=======================================================
 	logic SPI0_CS_N, SPI0_SCLK, SPI0_MISO, SPI0_MOSI, USB_GPX, USB_IRQ, USB_RST;
@@ -160,6 +160,10 @@ logic Reset_h, vssig, blank, sync, VGA_Clk;
 
 
 //instantiate a vga_controller, ball, and color_mapper here with the ports.
+vga_controller controller0(.Clk (MAX10_CLK1_50), .Reset (Reset_h), .hs (VGA_HS), .vs (VGA_VS), .pixel_clk (VGA_Clk), .blank (blank), .sync (sync), .DrawX (drawxsig), .DrawY (drawysig));
 
+ball ball0(.Reset (Reset_h), .frame_clk (VGA_VS), .keycode (keycode), .BallX (ballxsig), .BallY (ballysig), .BallS(ballsizesig));
+
+color_mapper colors0(.BallX (ballxsig), .BallY (ballysig), .DrawX (drawxsig), .DrawY (drawysig), .Ball_size (ballsizesig), .Red (Red), .Green (Green), .Blue (Blue));
 
 endmodule
