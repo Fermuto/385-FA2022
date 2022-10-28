@@ -33,7 +33,7 @@ struct TEXT_VGA_STRUCT {
 };
 
 //you may have to change this line depending on your platform designer
-static volatile struct TEXT_VGA_STRUCT* vga_ctrl = 0x00002000;
+static volatile struct TEXT_VGA_STRUCT* vga_ctrl = VGA_TEXT_MODE_CONTROLLER_BASE;
 
 void textVGASetColor(int background, int foreground);
 void textVGAClr();
