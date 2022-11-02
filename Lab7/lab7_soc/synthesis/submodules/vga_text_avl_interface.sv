@@ -52,7 +52,7 @@ logic blank, sync, VGA_Clk, inversion;
 
 logic[31:0] row, col, sprites, ramq;
 logic[10:0] addr;
-logic[9:0] drawxsig, drawysig, char_addr, f_addr;
+logic[11:0] drawxsig, drawysig, char_addr, f_addr;
 logic[7:0] sprite_data;
 logic[3:0] F_RED, F_GRE, F_BLU, B_RED, B_GRE, B_BLU;
 logic[3:0] spriteysig;
@@ -62,13 +62,13 @@ logic[1:0] f_spec;
 logic Avalon_Write, Palette_Write, color_sel;
 logic[3:0] Palette_Off;
 logic[11:0] colors_F, colors_B;
-logic[31:0] int_modF, int_divF, int_modB, int_divB;
+logic[31:0] int_modF, int_divF, int_modB, int_divB, RAM_OUT, PAL_OUT;
 //Declare submodules..e.g. VGA controller, ROMS, etc
 vga_controller vga_0(.Clk(CLK),.Reset(RESET),.hs(hs), .vs(vs), .pixel_clk(VGA_Clk), .blank(blank), .sync(sync), .DrawX(drawxsig), .DrawY(drawysig)); 
 									 
 font_rom bitmaps(.addr(addr), .data(sprite_data));
 
-ram memoree(.address_a (AVL_ADDR), .byteena_a (AVL_BYTE_EN), .data_a (AVL_WRITEDATA), .rden_a (AVL_READ), .wren_a (Avalon_Write), .q_a (AVL_READDATA),
+ram memoree(.address_a (AVL_ADDR), .byteena_a (AVL_BYTE_EN), .data_a (AVL_WRITEDATA), .rden_a (AVL_READ), .wren_a (Avalon_Write), .q_a (RAM_OUT),
 				.address_b (char_addr), .byteena_b (4'b1111), .data_b (32'b00000000000000000000000000000000), .rden_b (1'b1), .wren_b (1'b0), .q_b (sprites),
 				.clock (CLK));
 
@@ -99,7 +99,7 @@ begin
      end
      else 
 	  begin
-        if (Palette_Write == 1'b1)
+        if (Palette_Write == 1'b1 && AVL_WRITE)
         begin
 			  case(AVL_BYTE_EN)
 					4'b1111:
@@ -118,7 +118,24 @@ begin
 						 PALETTE[Palette_Off][7:0] <= AVL_WRITEDATA[7:0];    
 			  endcase
         end
+		  else if (Palette_Write == 1'b1 && AVL_READ)
+		  begin
+				PAL_OUT <= PALETTE[Palette_Off];
+		  end
     end
+end
+
+always_comb
+if (Palette_Write == 1'b1 && AVL_READ)
+begin
+AVL_READDATA = PAL_OUT;
+end
+
+
+else
+
+begin
+AVL_READDATA = RAM_OUT;
 end
 
 always_comb 
@@ -197,22 +214,22 @@ begin
 	
 	if (int_modF)
 	begin
-		colors_F = PALETTE[int_divF][24:13];
+		colors_B = PALETTE[int_divF][24:13];
 	end
 	
-	else if (!int_modF)
+	if (!int_modF)
 	begin
-		colors_F = PALETTE[int_divF][12:1];
+		colors_B = PALETTE[int_divF][12:1];
 	end
 	
-	else if (int_modB)
+	if (int_modB)
 	begin
-		colors_B = PALETTE[int_divB][24:13];
+		colors_F = PALETTE[int_divB][24:13];
 	end
 	
 	else
 	begin
-		colors_B = PALETTE[int_divB][12:1];
+		colors_F = PALETTE[int_divB][12:1];
 	end
 	
 	F_RED <= colors_F[11:8];

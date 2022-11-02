@@ -18,9 +18,9 @@
 
 struct TEXT_VGA_STRUCT {
 	alt_u8 VRAM [ROWS*COLUMNS*2]; //Week 2 - extended VRAM
-	alt_u8 Reserved_1 [3392];
-	alt_u8 Palette [32];
-	alt_u8 Reserved_2 [8160];
+	const alt_u8 Reserved_1 [3392];
+	alt_u32 Palette [8];
+	const alt_u8 Reserved_2 [8160];
 	//modify this by adding const bytes to skip to palette, or manually compute palette
 
 };
