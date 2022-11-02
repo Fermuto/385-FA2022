@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'lab7_soc'
  * SOPC Builder design path: ../../lab7_soc.sopcinfo
  *
- * Generated: Wed Nov 02 13:35:47 CDT 2022
+ * Generated: Wed Nov 02 17:04:47 CDT 2022
  */
 
 /*
@@ -191,7 +191,7 @@
 #define VGA_TEXT_MODE_CONTROLLER_IRQ -1
 #define VGA_TEXT_MODE_CONTROLLER_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define VGA_TEXT_MODE_CONTROLLER_NAME "/dev/VGA_text_mode_controller"
-#define VGA_TEXT_MODE_CONTROLLER_SPAN 4096
+#define VGA_TEXT_MODE_CONTROLLER_SPAN 16384
 #define VGA_TEXT_MODE_CONTROLLER_TYPE "VGA_text_mode_controller"
 
 
@@ -457,7 +457,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1667411236
+#define SYSID_QSYS_0_TIMESTAMP 1667426441
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 

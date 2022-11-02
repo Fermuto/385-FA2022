@@ -98,7 +98,7 @@ module lab7_soc_mm_interconnect_0 (
 		input  wire [31:0] usb_rst_s1_readdata,                              //                                         .readdata
 		output wire [31:0] usb_rst_s1_writedata,                             //                                         .writedata
 		output wire        usb_rst_s1_chipselect,                            //                                         .chipselect
-		output wire [9:0]  VGA_text_mode_controller_avl_mm_slave_address,    //    VGA_text_mode_controller_avl_mm_slave.address
+		output wire [11:0] VGA_text_mode_controller_avl_mm_slave_address,    //    VGA_text_mode_controller_avl_mm_slave.address
 		output wire        VGA_text_mode_controller_avl_mm_slave_write,      //                                         .write
 		output wire        VGA_text_mode_controller_avl_mm_slave_read,       //                                         .read
 		input  wire [31:0] VGA_text_mode_controller_avl_mm_slave_readdata,   //                                         .readdata
@@ -1498,7 +1498,7 @@ module lab7_soc_mm_interconnect_0 (
 	);
 
 	altera_merlin_slave_translator #(
-		.AV_ADDRESS_W                   (10),
+		.AV_ADDRESS_W                   (12),
 		.AV_DATA_W                      (32),
 		.UAV_DATA_W                     (32),
 		.AV_BURSTCOUNT_W                (1),

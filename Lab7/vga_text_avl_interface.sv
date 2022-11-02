@@ -74,11 +74,11 @@ ram memoree(.address_a (AVL_ADDR), .byteena_a (AVL_BYTE_EN), .data_a (AVL_WRITED
 
 always_comb
 begin
+	Palette_Off = AVL_ADDR[2:0];
 	if (AVL_ADDR[11] == 1'b1)
 	begin
 		Palette_Write = 1'b1;
 		Avalon_Write = 1'b0;
-		Palette_Off = AVL_ADDR[2:0];
 	end
 	
 	else
@@ -136,6 +136,9 @@ always_comb
 begin
 //	sprites = LOCAL_REG[char_addr];
 //	colors = 32'b00000000000000000000000000000000;
+	color_sel <= 1'b1;
+	addr[10:4] <= sprites[30:24];
+	inversion <= sprites[31];
 	case(f_spec)
 		2'b01:
 			 begin
@@ -160,23 +163,33 @@ begin
 //			 inversion <= sprites[31];
 //			 end
 	endcase
+	
+	
+	int_modF = ((sprites[23:20]) % 2'd2);
+	int_divF = ((sprites[23:20]) / 2'd2);
+		
+	int_modB = (sprites[19:16]) % 2'd2;
+	int_divB = (sprites[19:16]) / 2'd2;
+	
+	colors_F = 12'b000000000000;
+	colors_B = 12'b000000000000;
 	if (color_sel == 1'b1)
 	begin
-		int_modF = sprites[23:20] % 2'b2;
-		int_divF = sprites[23:20] / 2'b2;
+		int_modF = ((sprites[23:20]) % 2'd2);
+		int_divF = ((sprites[23:20]) / 2'd2);
 		
-		int_modB = sprites[19:16] % 2'b2;
-		int_divB = sprites[19:16] / 2'b2;
+		int_modB = (sprites[19:16]) % 2'd2;
+		int_divB = (sprites[19:16]) / 2'd2;
 
 	end
 	
 	else
 	begin
-		int_modF = sprites[7:4] % 2'b2;
-		int_divF = sprites[7:4] / 2'b2;
+		int_modF = (sprites[7:4]) % 2'd2;
+		int_divF = (sprites[7:4]) / 2'd2;
 		
-		int_modB = sprites[3:0] % 2'b2;
-		int_divB = sprites[3:0] / 2'b2;
+		int_modB = (sprites[3:0]) % 2'd2;
+		int_divB = (sprites[3:0]) / 2'd2;
 	end
 	
 	if (int_modF)
@@ -196,8 +209,9 @@ begin
 	
 	else
 	begin
-		colors_B = PALETTE[int_divB[12:1]
+		colors_B = PALETTE[int_divB][12:1];
 	end
+	
 	F_RED <= colors_F[11:8];
 	F_GRE <= colors_F[7:4];
 	F_BLU <= colors_F[3:0];
@@ -225,7 +239,6 @@ begin
 	begin
 		if ((inversion && sprite_data[spritexsig]) || (!inversion && !sprite_data[spritexsig])) 
 		begin 
-		
 			red <= F_RED;
 			green <= F_GRE;
 			blue <= F_BLU;
