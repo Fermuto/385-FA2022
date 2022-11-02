@@ -164,7 +164,10 @@ begin
 //			 end
 	endcase
 	
-	
+end
+
+always_comb
+begin
 	int_modF = ((sprites[23:20]) % 2'd2);
 	int_divF = ((sprites[23:20]) / 2'd2);
 		
