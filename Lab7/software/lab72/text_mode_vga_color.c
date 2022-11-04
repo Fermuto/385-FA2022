@@ -46,8 +46,7 @@ void setColorPalette (alt_u8 color, alt_u8 red, alt_u8 green, alt_u8 blue)
 		temp += blue << 1;
 		temp += green << 5;
 		temp += red << 9;
-		reading = temp;
-		vga_ctrl->Palette[color / 2] = reading;
+		vga_ctrl->Palette[color / 2] = temp;
 	}
 	else
 	{
@@ -55,8 +54,7 @@ void setColorPalette (alt_u8 color, alt_u8 red, alt_u8 green, alt_u8 blue)
 		temp += blue << 13;
 		temp += green << 17;
 		temp += red << 21;
-		reading = temp;
-		vga_ctrl->Palette[color / 2] = reading;
+		vga_ctrl->Palette[color / 2] = temp;
 
 	}
 }
